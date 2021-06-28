@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d7dcd86-3a7c-4b5b-bb55-06df05ecbf23">
+  <producedTypes>
+    <selectionType typeId="a3149712-edc0-4988-b050-5f5e491f1f08" valueTypeId="93dbe148-4f14-4274-a884-7d1f95fd5b0b"/>
+    <listType typeId="54297e8d-6b01-425f-9629-5096b2cbedbf" valueTypeId="3912cf98-7a5a-484a-a81d-4774e7d8f665"/>
+    <managerType typeId="c84b3f7f-8dfa-4c26-ba64-2ec21cc64876" valueTypeId="80f2eaac-fbcc-4325-988a-79a22265ee5e"/>
+    <recordSetType typeId="7e946a12-9c1a-4232-97f6-4559c6c91ca9" valueTypeId="bb3ba994-5e16-4b8c-ad3d-04fa41efcae7"/>
+    <recordKeyType typeId="4deb4fa0-cd67-4b67-94e7-6fe77513729f" valueTypeId="7cedd6d9-3bdc-46fa-886e-7f060aaf4acb"/>
+    <recordType typeId="26de30ee-f375-43d1-83f4-3989e4655bec" valueTypeId="b1f38b3a-2e03-40d7-bf30-feaca3db2fe2"/>
+    <recordManagerType typeId="c4929bf8-6c36-473c-ade1-62f0578aab0a" valueTypeId="80edb747-f63c-45ce-b129-e25333773bdb"/>
+  </producedTypes>
+  <name>СверткаДублейПредметовСнабженияВспомогательный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свертка дублей предметов снабжения вспомогательный</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6e05ccad-fa7d-4b2d-b715-e5f81b123a3c">
+    <name>ЭлементСтруктурыОригинал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент структуры оригинал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="626cb1f7-fc2f-413a-a3a4-e538dfb0eb5d">
+    <name>ЭлементСтруктурыДубликат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент структуры дубликат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

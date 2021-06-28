@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ad3ad25a-e3cc-4011-92bc-d327d58c0451">
+  <producedTypes>
+    <managerType typeId="3250bef8-0577-4cf3-9d0a-942fd1d07fd5" valueTypeId="85c8e4db-a80a-477c-a0cb-fb68daa3faef"/>
+    <valueManagerType typeId="7bd15a1f-d860-493c-a73d-2d2b80a7b9ae" valueTypeId="ad3b52d6-7244-451a-a769-70d538ba5df6"/>
+    <valueKeyType typeId="60feeb9c-37d6-5451-8d3a-0c8de0629ca3" valueTypeId="fe8e4557-6411-5bb8-8b82-7d806d624119"/>
+  </producedTypes>
+  <name>ИспользоватьБизнесПроцессыДляРедактированияСтруктурыКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать бизнес-процессы для редактирования структуры корабля</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

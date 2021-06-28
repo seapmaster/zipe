@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="20afb4da-0eed-428e-8361-60724955955d">
+  <producedTypes>
+    <refType typeId="f866f045-0da1-43d7-b749-72727a3d894c" valueTypeId="8029920b-eb1f-4b41-b6b8-43b6711ecea8"/>
+    <listType typeId="466d18a3-175b-4644-b76b-91648e78d340" valueTypeId="92dd7f45-e98c-4a13-99d1-ec2b2c57a25f"/>
+    <managerType typeId="c97113ed-943a-493f-874d-abf68f3ce0f4" valueTypeId="d81d5102-de7b-4a71-ae22-c977ec07169e"/>
+  </producedTypes>
+  <name>СтатусыВыгрузкиПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы выгрузки предметов снабжения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7b7f9333-bb07-4639-9311-d5658b3abf9c">
+    <name>Отправлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправлено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="35b82cad-50d8-4d73-971a-2107689ef08f">
+    <name>Загружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

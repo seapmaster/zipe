@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25444f29-5b11-4fb5-8183-6616c759dd26">
+  <producedTypes>
+    <refType typeId="2e61d7d1-612d-4f18-90c2-216c6fe5ef36" valueTypeId="8a139edd-8c13-4d4e-b163-07d4abc03a31"/>
+    <listType typeId="ccd3f070-619d-4050-abc2-708981b91596" valueTypeId="d352f702-1041-4046-92ed-adba27837053"/>
+    <objectType typeId="cda31908-012f-4c19-9cbc-e91461371e29" valueTypeId="78c0d026-a4e9-451a-9ec8-90ac8fd75ed9"/>
+    <managerType typeId="96901c12-358c-4fed-9824-f2cd67072eb2" valueTypeId="378ac870-88fb-43ed-ac6b-4123f0b3c494"/>
+    <recordManagerType typeId="0186b7f5-0b1e-4e76-8075-40315ba05d6a" valueTypeId="e3d401fa-3724-4c54-be24-c723299e288a"/>
+    <recordSetType typeId="34f5ba17-27c3-4e6c-8811-2375e62e1aa8" valueTypeId="67bcb984-506d-4285-84bf-758cea2e2793"/>
+    <recordType typeId="5a3ddebe-a924-49e4-be17-11212915cb44" valueTypeId="a91e4b54-5e6d-48f4-ac7b-595d34275cae"/>
+    <recordKeyType typeId="f39b39d1-2c63-4ebe-b45a-874fe16b565d" valueTypeId="184c1f8b-7335-4356-955e-a9dd9f1250ef"/>
+  </producedTypes>
+  <name>Dealer</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Dealer</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="5e43b4f7-1c0d-4c7c-a68a-5dd183a7a5df">
+    <name>OEMVendorCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>OEMVendorCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="cc4ec1df-7fee-4860-879f-5674d7329d3e">
+    <name>DealerVendorCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>DealerVendorCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

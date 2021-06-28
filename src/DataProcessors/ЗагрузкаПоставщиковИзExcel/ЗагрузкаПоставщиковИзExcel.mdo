@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22e8bf6d-c6b1-4055-a2f6-fe0761ecdbe2">
+  <producedTypes>
+    <objectType typeId="6f7480c2-53c4-4c5d-8bd1-af5bc7d01f4e" valueTypeId="4430f8e0-8dec-421a-9a9a-5e4ad07299ae"/>
+    <managerType typeId="5e7981d5-963d-4091-895b-a1d6b73f382d" valueTypeId="245d047f-bddf-4d2b-96da-5ddfcfedab7f"/>
+  </producedTypes>
+  <name>ЗагрузкаПоставщиковИзExcel</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка поставщиков из excel</value>
+  </synonym>
+  <comment>обновляет информацию по поставщикам, загруженным как абонентские ящики</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаПоставщиковИзExcel.Form.Форма</defaultForm>
+  <forms uuid="0da9dd9d-4227-4782-a389-3bee75126176">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

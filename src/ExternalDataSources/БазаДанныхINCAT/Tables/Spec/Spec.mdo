@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48782e4d-d9df-4a9b-8f3d-1f3b42694650">
+  <producedTypes>
+    <refType typeId="01cf96bd-2d6a-435e-a2ec-1b647053b7e2" valueTypeId="c005f8c5-29ee-4790-bcbe-2fb3d56ac0c3"/>
+    <listType typeId="3f6cdbf1-9a83-4193-8562-59e34909a82e" valueTypeId="c0e03cb2-93d9-4ddf-9e5c-f31ed2e155a0"/>
+    <objectType typeId="3c759d97-2784-4afc-9eb9-5e5e82b5339f" valueTypeId="65c6b76f-4cfe-474f-ab8d-c4fd4a5872a5"/>
+    <managerType typeId="fe770840-a504-4a0b-b7fd-9ff9117f0bf9" valueTypeId="4bc926b2-2f5b-4056-9256-b9d64178b571"/>
+    <recordManagerType typeId="7ab9c6ba-4f35-4d8c-bc19-80c02ccab8bc" valueTypeId="b385ddc1-ca28-4e66-9b69-3759d506be0b"/>
+    <recordSetType typeId="3fe0f054-0e8b-4e13-b031-9d8c3111edbd" valueTypeId="69c4053b-bd7c-4973-8f01-1bc22ef80808"/>
+    <recordType typeId="e2ae94f3-6a1b-4fc3-8f6a-d3349affdc0f" valueTypeId="f558c5cc-e68e-4d50-b4dd-34f973074a59"/>
+    <recordKeyType typeId="eabe71dc-be4d-44eb-b9b5-0f7073d5bc94" valueTypeId="3e121596-f6c1-4f22-a95a-68e3691266d3"/>
+  </producedTypes>
+  <name>Spec</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Spec</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="56a14fa2-fd41-4a1f-87d1-999f35512d87">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="c0248baa-d378-48cf-beca-51e1ced2db48">
+    <name>SpecName</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>SpecName</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="83735278-8c50-4851-bb18-772e19b2cccd">
+    <name>Value</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Value</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

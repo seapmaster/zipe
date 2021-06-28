@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f53ede74-68ba-44f2-b335-bd3a6d52e405">
+  <producedTypes>
+    <selectionType typeId="6589dee7-08d2-4225-87e5-ee0a4935d6ee" valueTypeId="54a60af9-c7c6-4f92-ba7d-1e1d57e0fb1e"/>
+    <listType typeId="bcbb9251-2538-4396-a373-bc2c85fc80c2" valueTypeId="51c2cf92-0c35-4cd3-a91e-20eca3acc3d2"/>
+    <managerType typeId="bbe888b4-fc02-4182-b717-bed8794412b4" valueTypeId="b1d065eb-b5af-45d1-a63b-dd92f2486a29"/>
+    <recordSetType typeId="083981bc-0ee7-4b12-9be6-301b20fee0b8" valueTypeId="f05fda54-8f4d-4bbf-b22f-0d5ac514da01"/>
+    <recordKeyType typeId="164e57b4-35fd-4eed-a49e-98daa545b95a" valueTypeId="6f17f03c-87f8-4033-a3d0-eacb3cbb15a6"/>
+    <recordType typeId="ab0aa051-bb78-4eac-af48-3ccbc161ad49" valueTypeId="6306aa54-9bc1-460a-b3c0-613dba52a531"/>
+    <recordManagerType typeId="af6e0de6-c516-4aa5-827d-028e625d0e02" valueTypeId="41d89a9f-eaeb-45f1-a8ee-361f23445f7d"/>
+  </producedTypes>
+  <name>ЭтапыВыполненияЗаявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы выполнения заявки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c2806ff8-a872-4216-b529-22beeba420ec">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="e6e88153-9cd9-43cb-bb8a-c9900e78f477">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Заявка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

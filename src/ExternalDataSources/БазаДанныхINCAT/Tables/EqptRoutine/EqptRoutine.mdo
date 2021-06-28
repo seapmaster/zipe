@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0639c8e4-6d6c-404d-937e-3db7a1ed9e94">
+  <producedTypes>
+    <refType typeId="2f2aa04f-36f1-4d5a-b2dd-90972b2e1617" valueTypeId="f658164d-6e2c-4dfd-b199-a84334edaf12"/>
+    <listType typeId="516dca7e-1886-4a0b-912d-97712216fcce" valueTypeId="5fd84ba8-8166-4889-aed8-b5fcd48d7f00"/>
+    <objectType typeId="2388aaf6-9833-4fd0-9d39-fcdacd26489d" valueTypeId="a6e0f54c-83a9-4f76-9184-c611916e67b2"/>
+    <managerType typeId="eeaf877e-deb5-471b-8a85-4834b0c73475" valueTypeId="04c0e09f-ceb6-4d5c-b9b7-810bd664d6bf"/>
+    <recordManagerType typeId="49d1b0cb-4a06-44d4-90c3-5460d5a84694" valueTypeId="287b0366-9436-41ff-8d7c-e4977e6139cd"/>
+    <recordSetType typeId="9e1b7fb1-61af-4f77-af40-4df2801a9825" valueTypeId="64a7a3a4-c01d-44d1-96eb-dceb46b3a574"/>
+    <recordType typeId="c97b6ed2-dc49-4f1f-92c0-81326363437c" valueTypeId="f1eb647e-b715-46f5-8517-38bad34317ff"/>
+    <recordKeyType typeId="6cb00c2a-08a2-41e6-882f-6da52c082626" valueTypeId="f40c7ba7-095c-41e9-aaa8-94d8e5627cee"/>
+  </producedTypes>
+  <name>EqptRoutine</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>EqptRoutine</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="5aaf357f-52fe-467f-9572-8628de56711b">
+    <name>EqptItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>EqptItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="31846b6b-2562-4b26-9fc9-4d3989e4abe3">
+    <name>RoutineType</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>RoutineType</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="db56c8a9-2665-412e-95eb-e2a60100b522">
+    <name>Periodicity</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>Periodicity</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="2f29f711-4582-4530-ae91-1e0f81d28a4c">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="95c6bbeb-2e2a-486f-847f-f6f25388b9d8">
+    <name>QtyPart</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>38</precision>
+        <scale>8</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>QtyPart</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

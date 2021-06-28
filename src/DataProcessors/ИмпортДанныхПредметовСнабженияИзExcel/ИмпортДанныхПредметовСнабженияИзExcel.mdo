@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9f374d9-9378-419b-9652-a82120c05b23">
+  <producedTypes>
+    <objectType typeId="d448934a-71f5-4104-94a1-3aa381aa7c54" valueTypeId="214e4a5c-c664-4897-b4db-667959585fe5"/>
+    <managerType typeId="e3d697c7-1453-4553-a58a-e6c4785e6145" valueTypeId="7757bb80-36d4-4e59-b35d-fc56b9d541ec"/>
+  </producedTypes>
+  <name>ИмпортДанныхПредметовСнабженияИзExcel</name>
+  <synonym>
+    <key>ru</key>
+    <value>Импорт данных предметов снабжения из Excel</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ИмпортДанныхПредметовСнабженияИзExcel.Form.Форма</defaultForm>
+  <forms uuid="d3356701-0ddc-4c12-a00c-81f7ad2feef0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

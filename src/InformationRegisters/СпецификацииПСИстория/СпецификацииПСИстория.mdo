@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b248d85c-e9f1-48f7-96f6-1848c0663831">
+  <producedTypes>
+    <selectionType typeId="d25185d7-d70c-4cc0-858f-c3b86520d7a3" valueTypeId="bea3e8d8-110a-47bb-bdec-6f9f1cfeeb09"/>
+    <listType typeId="71c4f132-42d8-45ea-bf03-6448461bb3e6" valueTypeId="9ba49eee-3186-43fd-92a2-1f0d76698e89"/>
+    <managerType typeId="adfcac15-0755-4e9b-b7fa-0a14a4d03298" valueTypeId="433fffd8-1f6e-44c8-b83e-b1a5b8e4e17e"/>
+    <recordSetType typeId="903a4714-1b8c-4e76-88fa-e12b8638bf56" valueTypeId="db89539d-d570-495b-97eb-9697979a5286"/>
+    <recordKeyType typeId="2b24cf77-9fcd-41a9-bc01-13e98b4e5d57" valueTypeId="afaea8c9-1f42-4163-915e-c34b6b79f7e2"/>
+    <recordType typeId="ad70075e-d69b-4d3c-915d-2eba57f543d6" valueTypeId="f49af5f2-4117-4d29-883d-661f253e75c2"/>
+    <recordManagerType typeId="e5273f42-268c-4165-897a-92c9a570b14e" valueTypeId="46280f02-e0f4-42a9-9a82-df94613c8346"/>
+  </producedTypes>
+  <name>СпецификацииПСИстория</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спецификации предметов снабжения история </value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>История состава предметов снабжения, в том числе входящих в ЗИП.</value>
+  </explanation>
+  <resources uuid="ee4d9ee7-e74e-4bac-81f0-08a9ffa3dbf0">
+    <name>ЗИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="954e760e-4253-4758-9240-f3659e429558">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e3c704d-8169-4ced-9647-605244a40a28">
+    <name>КоличествоВЗИПБорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП Борт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="49170cfc-c038-4f46-aef8-8d747dccec6a">
+    <name>КоличествоВЗИПБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП Б</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ca37934b-b390-442e-a824-1cfe0c784e48">
+    <name>КоличествоВЗИПДЭ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП ДЭ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a4a5ed03-3c2a-4b33-a72d-395b90fcb6a1">
+    <name>КоличествоВЗИПР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП Р</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="595ed9a0-6cc8-4366-971c-b0d73e8d87a6">
+    <name>НомерПозиции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер позиции</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d040b6fd-0da7-471f-aec0-e63bf4616fbd">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазделыСпецификацииЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9147edfe-67af-45f3-844d-677bebf22b2b">
+    <name>ПричинаВыбораДляЗИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина выбора для ЗИП</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПричиныВыбораПредметаСнабженияДляЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="92b28bdb-db83-4ae5-a823-0aeff6ba8fb0">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c17c638a-2b8b-40c0-8b83-ee5b85c26fae">
+    <name>ДатаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата записи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="3d853970-0cc6-4300-9de3-e42a15489ce3">
+    <name>UID</name>
+    <synonym>
+      <key>ru</key>
+      <value>UID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e8153f05-5afe-4004-9610-5d33b4d5eab7">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4d507090-a165-4017-97d1-640aee29ae60">
+    <name>СоставляющаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составляющая часть</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

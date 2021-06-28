@@ -1,0 +1,34 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://seaproject.ru/exchange_status">
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
+	<objectType name="Request">
+		<property name="Type" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/exchange_status" name="ArrayOfQueryRequest" type="d3p1:ArrayOfQueryRequest" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfQueryRequest">
+		<property xmlns:d3p1="http://seaproject.ru/exchange_status" name="QueryRequest" type="d3p1:QueryRequest" upperBound="-1"/>
+	</objectType>
+	<objectType name="QueryRequest">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="QueryUID" type="d3p1:DocumentRef.ЗапросТКПRFP" form="Attribute"/>
+	</objectType>
+	<objectType name="Respond">
+		<property name="Type" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/exchange_status" name="ArrayOfRespondQuery" type="d3p1:ArrayOfRespondQuery"/>
+	</objectType>
+	<objectType name="ArrayOfRespondQuery">
+		<property xmlns:d3p1="http://seaproject.ru/exchange_status" name="RespondQuery" type="d3p1:RespondQuery" upperBound="-1"/>
+	</objectType>
+	<objectType name="RespondQuery">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="QueryUID" type="d3p1:DocumentRef.ЗапросТКПRFP" form="Attribute"/>
+		<property name="NumberVTS" type="xs:string"/>
+		<property name="DateVTS" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/exchange_status" name="ArrayOfOrderRespond" type="d3p1:ArrayOfOrderRespond"/>
+	</objectType>
+	<objectType name="ArrayOfOrderRespond">
+		<property xmlns:d3p1="http://seaproject.ru/exchange_status" name="OrderRespond" type="d3p1:OrderRespond" upperBound="-1"/>
+	</objectType>
+	<objectType name="OrderRespond">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="OrderUID" type="d3p1:DocumentRef.Заявка" form="Attribute"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Status" type="d3p1:CatalogRef.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения"/>
+		<property name="Result" type="xs:string"/>
+	</objectType>
+</package>

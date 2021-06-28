@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b6afd01-50d3-4fd8-885a-23a79d94513c">
+  <name>Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Централизованное ведение классификаторов и справочников, используемых для обеспечения информационной совместимости подсистем.</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Справочники</picture>
+  </picture>
+  <content>Catalog.Организации</content>
+  <content>Catalog.ПредметыСнабженияНАТО</content>
+  <content>Catalog.ИностранныеЗаказчики</content>
+  <content>Catalog.УтвержденныеНаименованияПредметовСнабжения</content>
+  <content>Catalog.Флоты</content>
+  <content>Catalog.КлассыИПодклассыКораблей</content>
+  <content>Catalog.ПроектыКораблей</content>
+  <content>Catalog.ХарактеристикиКораблей</content>
+  <content>Catalog.ХарактеристикиПредметовСнабжения</content>
+  <content>CommonCommand.АкцептоватьИзмененияВСправочнике</content>
+  <content>CommonCommand.ВнестиИзмененияВСправочник</content>
+  <content>CommonModule.КорректировкаДанныхСправочников</content>
+  <content>ScheduledJob.КорректировкаСправочников</content>
+  <subsystems>ВнутренниеСправочникиИСС</subsystems>
+  <subsystems>ОбщероссийскиеКлассификаторы</subsystems>
+  <subsystems>НСИНеотображаемая</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed169c1d-7fa7-423f-a17e-0924da828a16">
+  <producedTypes>
+    <refType typeId="ba6686b3-9fc2-49f3-92dd-079291649699" valueTypeId="da0c97b2-a7cd-4882-ad8d-007671ede0f7"/>
+    <listType typeId="51e206f5-8a8b-4623-b2b3-383fe853f27c" valueTypeId="305ad2be-6d25-46ab-be62-eb012ecedb05"/>
+    <managerType typeId="e26700c6-be87-4c37-b6a4-ce68c0316820" valueTypeId="445a2492-2462-49c5-b19a-28e3b4f74527"/>
+  </producedTypes>
+  <name>ВидыПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды показателей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b3982f35-fcd4-4411-a219-f4c7a8c68064">
+    <name>Долговечность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долговечность</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ae8f40fc-a046-4a82-9002-bcb4dc33c25c">
+    <name>Безотказность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Безотказность</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="27216bd5-6416-49b2-99aa-ec4663bcf921">
+    <name>Сохраняемость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраняемость</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a4972f26-848f-433b-abdd-83e47d42da93">
+    <name>Ремонтопригодность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонтопригодность</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

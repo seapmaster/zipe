@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17e79d1f-2559-4f50-bf1b-631e599d842b">
+  <name>Спецификация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спецификация</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.СпецификацииПС</content>
+  <content>InformationRegister.СпецификацииПСИстория</content>
+  <content>InformationRegister.ОшибкаАктуализации</content>
+  <content>InformationRegister.АктуализацияСтруктурыПС</content>
+  <content>Catalog.НастройкиСохраненияРеквизитовПриОбъединенииДублей</content>
+  <content>DataProcessor.УдалениеДублейПредметовСнабжения</content>
+  <content>InformationRegister.ДанныеДублейСтруктурыЗаказа</content>
+  <content>DataProcessor.МастерУдаленияДублейСтруктурыЗаказа</content>
+  <content>DataProcessor.ПоискЗацикливанияВСпецификациях</content>
+  <content>DataProcessor.ОтчетОРасхожденииСтруктурыЗаказовИСпецификации</content>
+  <content>Constant.МаксимальноеКоличествоУровнейВложенностиСпецификации</content>
+  <content>CommonForm.ФормаПрименяемостиПредметаСнабжения</content>
+  <content>CommonModule.СпецификацииПредметовСнабжения</content>
+  <content>CommonModule.СпецификацииПредметовСнабженияПовтИсп</content>
+  <content>CommonModule.СтруктураЗаказа</content>
+  <content>CommonModule.СтруктураЗаказаВызовСервера</content>
+  <content>CommonModule.СтруктураЗаказаСерверПовтИсп</content>
+  <parentSubsystem>Subsystem.Каталоги</parentSubsystem>
+</mdclass:Subsystem>

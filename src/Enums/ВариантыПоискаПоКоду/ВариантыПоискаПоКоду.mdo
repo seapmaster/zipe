@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78fe6314-4f93-4f35-bf0f-0d72f6ee6952">
+  <producedTypes>
+    <refType typeId="4b6161bf-8ef3-4b55-979d-4b54fc3bc2d2" valueTypeId="76adc659-ee90-483f-993b-0e3df4046e83"/>
+    <listType typeId="329065f1-c57a-4e78-b506-1e6cf591125b" valueTypeId="bcf0e53c-4d32-4ee1-8e64-56cd7360e278"/>
+    <managerType typeId="23c350f0-98ce-44d5-aab5-05736462c586" valueTypeId="e958fd8e-ae3f-4a1c-878e-196a012fc5ef"/>
+  </producedTypes>
+  <name>ВариантыПоискаПоКоду</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты поиска по коду</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e48b9608-d5fe-403b-a766-ab3144240c8f">
+    <name>ФНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФНН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="97b5ea3a-521a-4075-a408-483f04140c1b">
+    <name>NSN</name>
+    <synonym>
+      <key>ru</key>
+      <value>NSN</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7fef222b-00c4-40b9-8ec9-0231b428e292">
+    <name>Обозначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обозначение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

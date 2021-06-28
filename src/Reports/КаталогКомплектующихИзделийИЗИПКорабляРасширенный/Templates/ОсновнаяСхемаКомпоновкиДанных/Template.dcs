@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗИПДЭ</dataPath>
+			<field>КоличествоВЗИПДЭ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокСлужбы</dataPath>
+			<field>СрокСлужбы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок службы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокХранения</dataPath>
+			<field>СрокХранения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок хранения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлементСтруктуры</dataPath>
+			<field>ЭлементСтруктуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент структуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаНаОтказ</dataPath>
+			<field>НаработкаНаОтказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка на отказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗИПБаза</dataPath>
+			<field>КоличествоВЗИПБаза</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПредметСнабжения</dataPath>
+			<field>ПредметСнабжения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокИзготовления</dataPath>
+			<field>СрокИзготовления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок изготовления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаДоРемонта</dataPath>
+			<field>НаработкаДоРемонта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка до ремонта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПравилаПоставки</dataPath>
+			<field>ПравилаПоставки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила поставки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗИП</dataPath>
+			<field>ЗИП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Обозначение</dataPath>
+			<field>Обозначение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обозначение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаДоСписания</dataPath>
+			<field>НаработкаДоСписания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка до списания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Корабль</dataPath>
+			<field>Корабль</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корабль</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗИПБорт</dataPath>
+			<field>КоличествоВЗИПБорт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИзображениеПредметаСнабжения</dataPath>
+			<field>ИзображениеПредметаСнабжения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изображение предмета снабжения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поставщик</dataPath>
+			<field>Поставщик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тип</dataPath>
+			<field>Тип</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДополнительныеНаименования.Владелец КАК Владелец,
+	ДополнительныеНаименования.ИмяРеквизита КАК ИмяРеквизита,
+	ДополнительныеНаименования.Перевод КАК Перевод
+ПОМЕСТИТЬ втДополнительныеНаименования
+ИЗ
+	РегистрСведений.ДополнительныеНаименования КАК ДополнительныеНаименования
+ГДЕ
+	ДополнительныеНаименования.Язык = &amp;ЯзыкПредставленияДанных
+
+ИНДЕКСИРОВАТЬ ПО
+	Владелец,
+	ИмяРеквизита
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Заказы.Ссылка КАК Корабль,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА ПРЕДСТАВЛЕНИЕССЫЛКИ(Заказы.Владелец)
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, "")
+	КОНЕЦ КАК Проект,
+	ЕСТЬNULL(Флоты.ВидКодовПредметовСнабженияДляОтчетов, ЗНАЧЕНИЕ(Перечисление.ВидыКодовПредметовСнабженияДляОтчетов.NSN)) КАК ВидКодов
+ПОМЕСТИТЬ втКорабль
+ИЗ
+	Справочник.Заказы КАК Заказы
+		ЛЕВОЕ СОЕДИНЕНИЕ втДополнительныеНаименования КАК втДополнительныеНаименования
+		ПО Заказы.Владелец = втДополнительныеНаименования.Владелец
+			И (втДополнительныеНаименования.ИмяРеквизита = "Наименование")
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Флоты КАК Флоты
+		ПО Заказы.Заказчик = Флоты.Ссылка
+ГДЕ
+	Заказы.Ссылка = &amp;Корабль
+
+ИНДЕКСИРОВАТЬ ПО
+	Корабль
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втКорабль.Корабль КАК Корабль,
+	втКорабль.Проект КАК Проект,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Количество КАК Количество,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения КАК ПредметСнабжения,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК ЭлементСтруктуры,
+	втКорабль.ВидКодов КАК ВидКодов,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП КАК ЗИП,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Тип КАК Тип
+ПОМЕСТИТЬ втСтруктураЗаказа
+ИЗ
+	втКорабль КАК втКорабль
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+		ПО втКорабль.Корабль = СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Владелец
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	втСтруктураЗаказа.Корабль КАК Корабль,
+	втСтруктураЗаказа.Проект КАК Проект,
+	втСтруктураЗаказа.Количество КАК Количество,
+	втСтруктураЗаказа.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втСтруктураЗаказа.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втСтруктураЗаказа.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА КаталогПредметовСнабжения.Наименование
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, "")
+	КОНЕЦ КАК Наименование,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА КаталогПредметовСнабжения.Обозначение
+		ИНАЧЕ КаталогПредметовСнабжения.ОбозначениеТранслитированное
+	КОНЕЦ КАК Обозначение,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА ЕСТЬNULL(ОКЕИ.Наименование, "")
+		ИНАЧЕ ЕСТЬNULL(ОКЕИ.УсловноеОбозначениеМеждународное, "")
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА втСтруктураЗаказа.ВидКодов = ЗНАЧЕНИЕ(Перечисление.ВидыКодовПредметовСнабженияДляОтчетов.INCAT)
+			ТОГДА ВЫБОР
+					КОГДА НЕ КаталогПредметовСнабжения.INCAT = ""
+						ТОГДА КаталогПредметовСнабжения.INCAT
+					КОГДА НЕ КаталогПредметовСнабжения.NSN = ""
+						ТОГДА КаталогПредметовСнабжения.NSN
+					КОГДА НЕ КаталогПредметовСнабжения.ФНН = ""
+						ТОГДА КаталогПредметовСнабжения.ФНН
+					КОГДА НЕ КаталогПредметовСнабжения.Обозначение = ""
+						ТОГДА КаталогПредметовСнабжения.Обозначение
+					КОГДА НЕ КаталогПредметовСнабжения.ДокументНаПоставку = ""
+							И НЕ КаталогПредметовСнабжения.Шифр = ""
+						ТОГДА КаталогПредметовСнабжения.ДокументНаПоставку + ": " + КаталогПредметовСнабжения.Шифр
+					ИНАЧЕ КаталогПредметовСнабжения.НомерОСК
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НЕ КаталогПредметовСнабжения.NSN = ""
+					ТОГДА КаталогПредметовСнабжения.NSN
+				КОГДА НЕ КаталогПредметовСнабжения.ФНН = ""
+					ТОГДА КаталогПредметовСнабжения.ФНН
+				КОГДА НЕ КаталогПредметовСнабжения.Обозначение = ""
+					ТОГДА КаталогПредметовСнабжения.Обозначение
+				КОГДА НЕ КаталогПредметовСнабжения.ДокументНаПоставку = ""
+						И НЕ КаталогПредметовСнабжения.Шифр = ""
+					ТОГДА КаталогПредметовСнабжения.ДокументНаПоставку + ": " + КаталогПредметовСнабжения.Шифр
+				ИНАЧЕ КаталогПредметовСнабжения.НомерОСК
+			КОНЕЦ
+	КОНЕЦ КАК Код,
+	ВЫРАЗИТЬ(КаталогПредметовСнабжения.ПравилаУпаковкиТранспортировкиХранения КАК СТРОКА(1000)) КАК ПравилаУпаковкиТранспортировкиХранения,
+	втСтруктураЗаказа.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втСтруктураЗаказа.ПредметСнабжения КАК ПредметСнабжения,
+	втСтруктураЗаказа.ЗИП КАК ЗИП,
+	втСтруктураЗаказа.Тип КАК Тип
+ПОМЕСТИТЬ втПредметыСнабжения
+ИЗ
+	втСтруктураЗаказа КАК втСтруктураЗаказа
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.КаталогПредметовСнабжения КАК КаталогПредметовСнабжения
+			ЛЕВОЕ СОЕДИНЕНИЕ втДополнительныеНаименования КАК втДополнительныеНаименования
+			ПО КаталогПредметовСнабжения.Ссылка = втДополнительныеНаименования.Владелец
+				И (втДополнительныеНаименования.ИмяРеквизита = "Наименование")
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ОКЕИ КАК ОКЕИ
+			ПО КаталогПредметовСнабжения.ЕдиницаИзмерения = ОКЕИ.Ссылка
+		ПО втСтруктураЗаказа.ПредметСнабжения = КаталогПредметовСнабжения.Ссылка
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втСтруктураЗаказа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втПредметыСнабжения.Корабль КАК Корабль,
+	втПредметыСнабжения.Проект КАК Проект,
+	втПредметыСнабжения.Количество КАК Количество,
+	втПредметыСнабжения.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втПредметыСнабжения.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втПредметыСнабжения.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	втПредметыСнабжения.ПредметСнабжения КАК ПредметСнабжения,
+	втПредметыСнабжения.Наименование КАК Наименование,
+	втПредметыСнабжения.Обозначение КАК Обозначение,
+	втПредметыСнабжения.Код КАК Код,
+	втПредметыСнабжения.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА втПредметыСнабжения.ПравилаУпаковкиТранспортировкиХранения
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, "")
+	КОНЕЦ КАК ПравилаПоставки,
+	ВЫБОР
+		КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.СрокХранения)
+			ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+		ИНАЧЕ 0
+	КОНЕЦ КАК СрокХранения,
+	ВЫБОР
+		КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НазначенныйСрокСлужбыДоСписания)
+			ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+		ИНАЧЕ 0
+	КОНЕЦ КАК СрокСлужбы,
+	ВЫБОР
+		КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НазначенныйРесурсДоЗаводскогоРемонта)
+			ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+		ИНАЧЕ 0
+	КОНЕЦ КАК НаработкаДоРемонта,
+	ВЫБОР
+		КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НазначенныйРесурсДоСписания)
+			ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+		ИНАЧЕ 0
+	КОНЕЦ КАК НаработкаДоСписания,
+	ВЫБОР
+		КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НаработкаНаОтказ)
+			ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+		ИНАЧЕ 0
+	КОНЕЦ КАК НаработкаНаОтказ,
+	ВЫБОР
+		КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.СрокИзготовления)
+			ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+		ИНАЧЕ 0
+	КОНЕЦ КАК СрокИзготовления,
+	втПредметыСнабжения.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втПредметыСнабжения.ЗИП КАК ЗИП,
+	втПредметыСнабжения.Тип КАК Тип
+ПОМЕСТИТЬ втПредметыСнабженияРесурсы
+ИЗ
+	втПредметыСнабжения КАК втПредметыСнабжения
+		ЛЕВОЕ СОЕДИНЕНИЕ втДополнительныеНаименования КАК втДополнительныеНаименования
+		ПО втПредметыСнабжения.ПредметСнабжения = втДополнительныеНаименования.Владелец
+			И (втДополнительныеНаименования.ИмяРеквизита = "ПравилаУпаковкиТранспортировкиХранения")
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РесурсыИСрокиСлужбыПредметовСнабжения КАК РесурсыИСрокиСлужбыПредметовСнабжения
+		ПО втПредметыСнабжения.ПредметСнабжения = РесурсыИСрокиСлужбыПредметовСнабжения.ПредметСнабжения
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втДополнительныеНаименования
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втПредметыСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втПредметыСнабженияРесурсы.Корабль КАК Корабль,
+	втПредметыСнабженияРесурсы.Проект КАК Проект,
+	втПредметыСнабженияРесурсы.Количество КАК Количество,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	втПредметыСнабженияРесурсы.ПредметСнабжения КАК ПредметСнабжения,
+	втПредметыСнабженияРесурсы.Наименование КАК Наименование,
+	втПредметыСнабженияРесурсы.Обозначение КАК Обозначение,
+	втПредметыСнабженияРесурсы.Код КАК Код,
+	втПредметыСнабженияРесурсы.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	втПредметыСнабженияРесурсы.ПравилаПоставки КАК ПравилаПоставки,
+	втПредметыСнабженияРесурсы.СрокХранения КАК СрокХранения,
+	втПредметыСнабженияРесурсы.СрокСлужбы КАК СрокСлужбы,
+	втПредметыСнабженияРесурсы.НаработкаДоРемонта КАК НаработкаДоРемонта,
+	втПредметыСнабженияРесурсы.НаработкаДоСписания КАК НаработкаДоСписания,
+	втПредметыСнабженияРесурсы.НаработкаНаОтказ КАК НаработкаНаОтказ,
+	втПредметыСнабженияРесурсы.СрокИзготовления КАК СрокИзготовления,
+	втПредметыСнабженияРесурсы.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втПредметыСнабженияРесурсы.ЗИП КАК ЗИП,
+	МАКСИМУМ(КаталогПредметовСнабженияПрисоединенныеФайлы.ДатаМодификацииУниверсальная) КАК ДатаМодификацииУниверсальная,
+	втПредметыСнабженияРесурсы.Тип КАК Тип
+ПОМЕСТИТЬ втПредметыСнабженияДатыКартинок
+ИЗ
+	втПредметыСнабженияРесурсы КАК втПредметыСнабженияРесурсы
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КаталогПредметовСнабженияПрисоединенныеФайлы КАК КаталогПредметовСнабженияПрисоединенныеФайлы
+		ПО втПредметыСнабженияРесурсы.ПредметСнабжения = КаталогПредметовСнабженияПрисоединенныеФайлы.ВладелецФайла
+			И (КаталогПредметовСнабженияПрисоединенныеФайлы.Расширение В (&amp;РасширенияКартинок))
+			И (НЕ КаталогПредметовСнабженияПрисоединенныеФайлы.Чертеж)
+
+СГРУППИРОВАТЬ ПО
+	втПредметыСнабженияРесурсы.Проект,
+	втПредметыСнабженияРесурсы.Корабль,
+	втПредметыСнабженияРесурсы.ПредметСнабжения,
+	втПредметыСнабженияРесурсы.Наименование,
+	втПредметыСнабженияРесурсы.Обозначение,
+	втПредметыСнабженияРесурсы.Код,
+	втПредметыСнабженияРесурсы.ЕдиницаИзмерения,
+	втПредметыСнабженияРесурсы.ПравилаПоставки,
+	втПредметыСнабженияРесурсы.ЭлементСтруктуры,
+	втПредметыСнабженияРесурсы.ЗИП,
+	втПредметыСнабженияРесурсы.Количество,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПБорт,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПБаза,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПДЭ,
+	втПредметыСнабженияРесурсы.СрокХранения,
+	втПредметыСнабженияРесурсы.СрокСлужбы,
+	втПредметыСнабженияРесурсы.НаработкаДоРемонта,
+	втПредметыСнабженияРесурсы.НаработкаДоСписания,
+	втПредметыСнабженияРесурсы.НаработкаНаОтказ,
+	втПредметыСнабженияРесурсы.СрокИзготовления,
+	втПредметыСнабженияРесурсы.Тип
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втПредметыСнабженияРесурсы
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втПредметыСнабженияДатыКартинок.Корабль КАК Корабль,
+	втПредметыСнабженияДатыКартинок.Проект КАК Проект,
+	КаталогПредметовСнабженияПрисоединенныеФайлы.Ссылка КАК ИзображениеПредметаСнабжения,
+	втПредметыСнабженияДатыКартинок.Количество КАК Количество,
+	втПредметыСнабженияДатыКартинок.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втПредметыСнабженияДатыКартинок.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втПредметыСнабженияДатыКартинок.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	втПредметыСнабженияДатыКартинок.ПредметСнабжения КАК ПредметСнабжения,
+	втПредметыСнабженияДатыКартинок.Наименование КАК Наименование,
+	втПредметыСнабженияДатыКартинок.Обозначение КАК Обозначение,
+	втПредметыСнабженияДатыКартинок.Код КАК Код,
+	втПредметыСнабженияДатыКартинок.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	втПредметыСнабженияДатыКартинок.ПравилаПоставки КАК ПравилаПоставки,
+	втПредметыСнабженияДатыКартинок.СрокХранения КАК СрокХранения,
+	втПредметыСнабженияДатыКартинок.СрокСлужбы КАК СрокСлужбы,
+	втПредметыСнабженияДатыКартинок.НаработкаДоРемонта КАК НаработкаДоРемонта,
+	втПредметыСнабженияДатыКартинок.НаработкаДоСписания КАК НаработкаДоСписания,
+	втПредметыСнабженияДатыКартинок.НаработкаНаОтказ КАК НаработкаНаОтказ,
+	втПредметыСнабженияДатыКартинок.СрокИзготовления КАК СрокИзготовления,
+	втПредметыСнабженияДатыКартинок.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втПредметыСнабженияДатыКартинок.ЗИП КАК ЗИП,
+	втПредметыСнабженияДатыКартинок.Тип КАК Тип
+ПОМЕСТИТЬ втПредметыСнабженияКартинки
+ИЗ
+	втПредметыСнабженияДатыКартинок КАК втПредметыСнабженияДатыКартинок
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КаталогПредметовСнабженияПрисоединенныеФайлы КАК КаталогПредметовСнабженияПрисоединенныеФайлы
+		ПО втПредметыСнабженияДатыКартинок.ПредметСнабжения = КаталогПредметовСнабженияПрисоединенныеФайлы.ВладелецФайла
+			И втПредметыСнабженияДатыКартинок.ДатаМодификацииУниверсальная = КаталогПредметовСнабженияПрисоединенныеФайлы.ДатаМодификацииУниверсальная
+			И (КаталогПредметовСнабженияПрисоединенныеФайлы.Расширение В (&amp;РасширенияКартинок))
+			И (НЕ КаталогПредметовСнабженияПрисоединенныеФайлы.Чертеж)
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втПредметыСнабженияДатыКартинок
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	втПредметыСнабженияКартинки.Корабль КАК Корабль,
+	втПредметыСнабженияКартинки.Проект КАК Проект,
+	втПредметыСнабженияКартинки.ИзображениеПредметаСнабжения КАК ИзображениеПредметаСнабжения,
+	втПредметыСнабженияКартинки.Количество КАК Количество,
+	втПредметыСнабженияКартинки.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втПредметыСнабженияКартинки.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втПредметыСнабженияКартинки.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	втПредметыСнабженияКартинки.ПредметСнабжения КАК ПредметСнабжения,
+	втПредметыСнабженияКартинки.Наименование КАК Наименование,
+	втПредметыСнабженияКартинки.Обозначение КАК Обозначение,
+	втПредметыСнабженияКартинки.Код КАК Код,
+	втПредметыСнабженияКартинки.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	втПредметыСнабженияКартинки.ПравилаПоставки КАК ПравилаПоставки,
+	втПредметыСнабженияКартинки.СрокХранения КАК СрокХранения,
+	втПредметыСнабженияКартинки.СрокСлужбы КАК СрокСлужбы,
+	втПредметыСнабженияКартинки.НаработкаДоРемонта КАК НаработкаДоРемонта,
+	втПредметыСнабженияКартинки.НаработкаДоСписания КАК НаработкаДоСписания,
+	втПредметыСнабженияКартинки.НаработкаНаОтказ КАК НаработкаНаОтказ,
+	втПредметыСнабженияКартинки.СрокИзготовления КАК СрокИзготовления,
+	ВЫБОР
+		КОГДА НЕ КаталогПредметовСнабженияИзготовителиИПоставщики.Ссылка ЕСТЬ NULL
+				И Организации.УчастникВТС
+			ТОГДА ВЫБОР
+					КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+						ТОГДА Организации.Наименование
+					ИНАЧЕ Организации.НазваниеОрганизацииАнгл
+				КОНЕЦ
+		ИНАЧЕ "АО ""ОСК"""
+	КОНЕЦ КАК Поставщик,
+	втПредметыСнабженияКартинки.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втПредметыСнабженияКартинки.ЗИП КАК ЗИП,
+	втПредметыСнабженияКартинки.Тип КАК Тип
+ИЗ
+	втПредметыСнабженияКартинки КАК втПредметыСнабженияКартинки
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КаталогПредметовСнабжения.ИзготовителиИПоставщики КАК КаталогПредметовСнабженияИзготовителиИПоставщики
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Организации КАК Организации
+			ПО КаталогПредметовСнабженияИзготовителиИПоставщики.Контрагент = Организации.Ссылка
+		ПО втПредметыСнабженияКартинки.ПредметСнабжения = КаталогПредметовСнабженияИзготовителиИПоставщики.Ссылка
+			И (КаталогПредметовСнабженияИзготовителиИПоставщики.Поставщик)
+
+УПОРЯДОЧИТЬ ПО
+	ЭлементСтруктуры ИЕРАРХИЯ УБЫВ</query>
+	</dataSet>
+	<parameter>
+		<name>Корабль</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Корабль</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Заказы</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Заказы.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ЯзыкПредставленияДанных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Язык представления данных</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Языки</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Языки.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>РасширенияКартинок</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Расширения картинок</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>10</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string">bmp</value>
+		<value xsi:type="xs:string">dib</value>
+		<value xsi:type="xs:string">rle</value>
+		<value xsi:type="xs:string">gif</value>
+		<value xsi:type="xs:string">jpg</value>
+		<value xsi:type="xs:string">jpeg</value>
+		<value xsi:type="xs:string">png</value>
+		<value xsi:type="xs:string">tif</value>
+		<value xsi:type="xs:string">ico</value>
+		<value xsi:type="xs:string">wmf</value>
+		<value xsi:type="xs:string">emf</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗИП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИзображениеПредметаСнабжения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Код</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВЗИПБаза</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВЗИПБорт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВЗИПДЭ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Корабль</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Наименование</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаработкаДоРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаработкаДоСписания</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаработкаНаОтказ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Обозначение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПравилаПоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПредметСнабжения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрокИзготовления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрокСлужбы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СрокХранения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭлементСтруктуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Тип</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Корабль</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>3123abfe-fc4d-499b-80b3-1d2f1a5a3937</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корабль</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЯзыкПредставленияДанных</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>8c11a44e-fbd0-45f0-9584-3602ed0ac2ca</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Язык представления данных</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасширенияКартинок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">bmp</dcscor:value>
+					<dcscor:value xsi:type="xs:string">dib</dcscor:value>
+					<dcscor:value xsi:type="xs:string">rle</dcscor:value>
+					<dcscor:value xsi:type="xs:string">gif</dcscor:value>
+					<dcscor:value xsi:type="xs:string">jpg</dcscor:value>
+					<dcscor:value xsi:type="xs:string">jpeg</dcscor:value>
+					<dcscor:value xsi:type="xs:string">png</dcscor:value>
+					<dcscor:value xsi:type="xs:string">tif</dcscor:value>
+					<dcscor:value xsi:type="xs:string">ico</dcscor:value>
+					<dcscor:value xsi:type="xs:string">wmf</dcscor:value>
+					<dcscor:value xsi:type="xs:string">emf</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Корабль</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Проект</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЭлементСтруктуры</dcsset:field>
+							<dcsset:groupType>Hierarchy</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ИзображениеПредметаСнабжения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Обозначение</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Код</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Количество</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>КоличествоВЗИПБорт</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>КоличествоВЗИПБаза</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>КоличествоВЗИПДЭ</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПравилаПоставки</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СрокХранения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СрокСлужбы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НаработкаДоСписания</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НаработкаДоРемонта</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НаработкаНаОтказ</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СрокИзготовления</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Тип</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЗИП</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПредметСнабжения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Поставщик</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Поставщик</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

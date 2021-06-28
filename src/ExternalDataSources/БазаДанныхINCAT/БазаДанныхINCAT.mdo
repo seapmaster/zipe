@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataSource xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c4cdd31-c9e8-40c7-9a54-287acc68ee4d">
+  <producedTypes>
+    <managerType typeId="ad336bf7-479b-42cb-836c-fb1d7c224d54" valueTypeId="8e282496-95c0-4b74-9466-11900d672619"/>
+    <tablesManagerType typeId="c62ddf96-c732-4834-8176-98b30b7db3f2" valueTypeId="a7bfb371-c884-41bc-8782-4b616688b7b3"/>
+    <cubesManagerType typeId="a9ca988e-5a05-46db-a8d0-07763a05361b" valueTypeId="8e1300a7-ff4a-4a5e-bd73-f034e542a0d6"/>
+  </producedTypes>
+  <name>БазаДанныхINCAT</name>
+  <synonym>
+    <key>ru</key>
+    <value>База данных INCAT</value>
+  </synonym>
+  <comment>//веденеев 28.08.2017// источник для работы с базой данных INCAT (проект 11356) в формате MS Access</comment>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.БАЗ_без__ITEM</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.ДЭ_без__ITEM</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Поиск_повторений_для_ZIP_BAZ</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Поиск_повторений_для_ZIP_DE</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Characteristic</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Dealer</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.EASK</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Eqpt</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.EqptRoutine</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Item</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.ItemVendor</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Price</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Spec</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Substitute</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Vendor</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.ZIP_BAZ</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.ZIP_DE</tables>
+  <tables>ExternalDataSource.БазаДанныхINCAT.Table.Запрос1</tables>
+</mdclass:ExternalDataSource>

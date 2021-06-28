@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c13e46d7-afe7-46d4-90f9-5d868fee0ae3">
+  <producedTypes>
+    <refType typeId="b21c87e7-ed9d-41df-b022-8fa3539c2511" valueTypeId="3407f79b-112c-42ec-990e-80d82450469c"/>
+    <listType typeId="037cc488-0f20-4315-bace-b2e321e59b5e" valueTypeId="fe650a26-cadc-4842-9992-b2e0c37b4d71"/>
+    <managerType typeId="5e9ff34a-9a6a-46d6-97af-f7dc4ceeba7c" valueTypeId="0f966b37-1250-4f12-a565-24aaae9e56cc"/>
+  </producedTypes>
+  <name>СтатусыКонтрактов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы контрактов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3a1cad06-dbec-4aa8-8360-9b65d8e4cdf1">
+    <name>Активен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c798fa1c-c311-42dc-b902-5a349eacbf60">
+    <name>Неактивен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неактивен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

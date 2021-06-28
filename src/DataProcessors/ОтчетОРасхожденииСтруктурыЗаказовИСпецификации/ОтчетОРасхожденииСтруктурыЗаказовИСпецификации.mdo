@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="660c2ada-29c8-4203-8a90-7428225170c5">
+  <producedTypes>
+    <objectType typeId="0adad8b4-5fba-4ae1-84bc-393b0808845b" valueTypeId="88c0464f-288e-409c-a0dd-33e82341b20d"/>
+    <managerType typeId="43fbc1f8-c98b-4cad-a281-195fa246c933" valueTypeId="8c5258fc-ea13-409a-a021-793550e742b4"/>
+  </producedTypes>
+  <name>ОтчетОРасхожденииСтруктурыЗаказовИСпецификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет о расхождении структуры заказов и спецификации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОтчетОРасхожденииСтруктурыЗаказовИСпецификации.Form.Форма</defaultForm>
+  <forms uuid="a866376e-d58e-4925-9270-d980652fde48">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9e860a45-162e-4eb0-825b-870d2260d04a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

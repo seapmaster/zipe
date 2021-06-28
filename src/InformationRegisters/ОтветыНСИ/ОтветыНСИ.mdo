@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf606545-3565-41f0-9a46-0f5558831fb2">
+  <producedTypes>
+    <selectionType typeId="44af1fbf-b856-4699-be5e-e70278386c08" valueTypeId="d1885f50-7f3d-4c76-b78a-c5f479509601"/>
+    <listType typeId="ad6804d2-fc3b-411f-84bc-26c19b6840da" valueTypeId="ac262e60-f1cb-4faa-815b-4292c58d0790"/>
+    <managerType typeId="21e17c1e-1c10-4dfb-8be1-d7589b1cbede" valueTypeId="453ca563-9509-4d93-948e-fd09d22cc28c"/>
+    <recordSetType typeId="cc0bef77-b787-49e2-92a1-da4fad741e40" valueTypeId="bc659fbc-bc86-4e67-950f-ea0ac58821f2"/>
+    <recordKeyType typeId="bca8f17f-f9c8-43c8-8370-c72e85ead3be" valueTypeId="93423fd4-7042-40c7-8337-0b643778025a"/>
+    <recordType typeId="59fd4e19-91bf-4a88-8851-b12ed572655d" valueTypeId="dc0479ba-ff3c-4ec7-bfe3-6050ad9a3344"/>
+    <recordManagerType typeId="4607f31b-bde1-46ff-854c-5c3d0cb0d2e1" valueTypeId="f7083317-89fb-43af-b8cf-6c8368a9fba0"/>
+  </producedTypes>
+  <name>ОтветыНСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответы НСИ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c076d473-1898-4bc4-8062-aa48a1e5a194">
+    <name>ТипЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип запроса</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыЗапросовКНСИ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9393fe4b-b009-4435-a773-4ce5f5d40278">
+    <name>ПочтовоеСообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почтовое сообщение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПочтовоеСообщение</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c49c5b02-9472-480a-8e91-e6f8e13b7a90">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="9f0fec67-4a78-4f6a-8239-4aafed2d28ef">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ba9971d8-e22b-4cb8-9c9c-2e9e3320f0e8">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b0019815-c07b-45a8-b6ac-5898aef243ef">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="98bc23ae-8207-4fb5-bfe2-acabf0ba5a65">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

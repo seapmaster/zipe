@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b0c50be-7242-40af-9c6c-bb59b469d327">
+  <producedTypes>
+    <refType typeId="4f72a754-e1ee-4c21-bff1-e363aa28f48e" valueTypeId="509019dd-6841-49ef-b121-d69e6b2ce38b"/>
+    <listType typeId="f8d468ac-3258-4fad-ba17-5150e9587b85" valueTypeId="d33ad34f-fd6d-43e0-bdc0-5f8452088fbc"/>
+    <managerType typeId="2d026fc2-3711-4c43-93fb-2a966240b1fa" valueTypeId="97b15da6-a0a1-4e47-81df-42e61964fa25"/>
+  </producedTypes>
+  <name>ТипыВходящихЗапросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы входящих запросов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0688de08-3c8e-4743-83f4-b3d4d8a8266b">
+    <name>ЗагрузкаЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка заявок</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bbfbc108-850a-4728-98d5-ad044bb0b969">
+    <name>ПолучениеСтатусов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение статусов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b0265a7c-f43b-48f7-91dc-8f0e547fc144">
+    <name>ДобавлениеФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление файлов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ee9e8545-7bcb-4ba4-aa2a-667f9803bc47">
+    <name>ИзменениеЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение заявки</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2dc5de77-497f-4926-997e-61771ff044d7">
+  <producedTypes>
+    <refType typeId="29995f5f-ad1a-44e9-b109-300e4b78515e" valueTypeId="93efeb98-c116-4298-b10a-d4e3d3b7ddf7"/>
+    <listType typeId="5e954255-9acb-4c95-89db-4eefd1c09f96" valueTypeId="4d3907d9-c56c-4f74-95d4-6a415198321e"/>
+    <managerType typeId="d083e751-79a5-454f-bcd0-ef8a22e655b0" valueTypeId="c57b62b7-91aa-4d08-bce4-c3bc26931bab"/>
+  </producedTypes>
+  <name>ВидыИзмененийСпецификацииПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды изменений спецификации предметов снабжения</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Виды изменения состава предметов снабжения. Предназначены для изменения структуры заказов по комплектующим изделиям и ЗИП.</value>
+  </explanation>
+  <enumValues uuid="f7fd2b85-e779-401f-a432-421821b53351">
+    <name>Добавление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5c1749f0-c560-4ad9-8e0f-5fd704b33fd3">
+    <name>Удаление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2bc57c85-c5b5-4037-98d7-ab8775cadadd">
+    <name>ИзменениеПризнакаЗИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение признака ЗИП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="74094a96-f3e5-4a7d-8b2b-5e0fc710c8a7">
+    <name>ПрочиеИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие изменения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5b67dd92-98e4-42a8-893f-303396935639">
+    <name>УдалениеДубликатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление дубликатов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eceff3ec-c28e-4629-92e1-f1636466f1dd">
+    <name>СворачиваниеПриУдаленииДубликатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сворачивание при удалении дубликатов</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.Помещения.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.ВооружениеКораблей.StandardCommand.OpenList</commands>
+      <commands>Catalog.РангиКораблей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ТипыКораблей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.StandardCommand.OpenList</commands>
+      <commands>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПричиныВыбораПредметаСнабженияДляЗИП.StandardCommand.OpenList</commands>
+      <commands>Catalog.ТипДокументацииДляИзготовленияИПоставкиПредметовСнабжения.StandardCommand.OpenList</commands>
+      <commands>Catalog.ТипыЗаменыПредметаСнабженияАналогом.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПризнакиПодбораИлиИзготовленияПредметовСнабжения.StandardCommand.OpenList</commands>
+      <commands>Catalog.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения.StandardCommand.OpenList</commands>
+      <commands>Catalog.КатегорииЗаявокНаПоставкуПС.StandardCommand.OpenList</commands>
+      <commands>Catalog.ВидыРемонта.StandardCommand.OpenList</commands>
+      <commands>Catalog.Помещения.StandardCommand.OpenList</commands>
+      <commands>Catalog.РазделыСпецификацииЗИП.StandardCommand.OpenList</commands>
+      <commands>Catalog.СтатусыЗаписейСправочниковИКаталогов.StandardCommand.OpenList</commands>
+      <commands>Catalog.ТипыПоказателейИзделий.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПараметрыУчетаПоказателей.StandardCommand.OpenList</commands>
+      <commands>Catalog.Языки.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

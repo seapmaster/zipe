@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68e46f79-4d51-40c0-9006-127b56e8c6a5">
+  <producedTypes>
+    <objectType typeId="8320f25c-c6f1-4eb2-be00-c02f74e3630f" valueTypeId="d882459b-f36f-4289-bb59-ec98bbfeea3d"/>
+    <managerType typeId="9c339c20-d41b-4114-b48e-9d67c00fc190" valueTypeId="8a08b75b-32ce-4eba-b443-1af75505ce9c"/>
+  </producedTypes>
+  <name>КаталогКомплектующихИзделийИЗИПКорабляРасширенный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог комплектующих изделий  и ЗИП корабля с графическим материалом (расширенный формат)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.КаталогКомплектующихИзделийИЗИПКорабляРасширенный.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.КаталогКомплектующихИзделийИЗИПКорабляРасширенный.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="c87ed0ef-4c55-4391-b181-7cd525f9d791">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="639ad80f-3059-4404-ba2a-ec5bf04504ca">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="0f4a9dbd-8107-4041-9f78-f09f6c6b4096">
+    <name>КаталогЗИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог ЗИП</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

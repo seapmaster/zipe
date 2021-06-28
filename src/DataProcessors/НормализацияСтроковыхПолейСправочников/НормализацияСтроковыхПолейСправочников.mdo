@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="641f89c4-3f9c-473d-8296-cc1ab6f26378">
+  <producedTypes>
+    <objectType typeId="022352f1-c874-4971-9eff-e8e05f021a63" valueTypeId="9dc5ddec-07d9-478f-ba6c-f78569ebcd87"/>
+    <managerType typeId="718b4feb-cd60-41a5-8943-72a35a866558" valueTypeId="3306cf9b-cdb4-44a7-b26d-6eb34a887b24"/>
+  </producedTypes>
+  <name>НормализацияСтроковыхПолейСправочников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормализация строковых полей справочников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.НормализацияСтроковыхПолейСправочников.Form.Форма</defaultForm>
+  <forms uuid="e3b6f99e-0a4d-403f-b476-b2d1db45cfa5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

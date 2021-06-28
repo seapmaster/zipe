@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a67fa229-d3b4-4c5f-8bc0-5ebf93c7af33">
+  <producedTypes>
+    <selectionType typeId="912e2df0-c534-45cb-a5ba-2d4d3c767aee" valueTypeId="8f986285-44be-4ff5-ae52-6cf326d45793"/>
+    <listType typeId="0a7994d7-7c7e-4a7d-8716-7d03dbe187dc" valueTypeId="c1197ceb-4f62-4ca5-9a35-0cb6ba820167"/>
+    <managerType typeId="d36ca228-21c6-4e3b-ad99-49772d439237" valueTypeId="3359f9eb-d22d-466b-be62-cd00b4702388"/>
+    <recordSetType typeId="b98ca3b5-0dfc-4e59-b0bb-eee98daa6786" valueTypeId="4fe4a2cf-eb5b-4499-8ae9-b54d7c9f07dd"/>
+    <recordKeyType typeId="8f538cff-7d11-4d4b-accc-52c510ed283b" valueTypeId="6948f8ff-7211-42bb-8770-8b50ff80702f"/>
+    <recordType typeId="79916076-574a-4f8b-ae0d-cddbb7ed9a5a" valueTypeId="cabc57c0-602a-46c3-a9bc-58e0346a4ead"/>
+    <recordManagerType typeId="fba90fa6-c205-46f0-be57-8bc80f1c8dae" valueTypeId="941063b3-f247-4f10-976f-805c429b7617"/>
+  </producedTypes>
+  <name>ЗначенияХарактеристикПредметовПоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения характеристик предметов поставки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="037d65cd-718c-4039-b437-affab8fd8bbf">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ХарактеристикиПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ab69ad2d-629b-4dbc-93e8-ca51b0a866c3">
+    <name>ПредметПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет поставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="874fd71e-3cc4-4be8-a72b-6709815c7625">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ХарактеристикиПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

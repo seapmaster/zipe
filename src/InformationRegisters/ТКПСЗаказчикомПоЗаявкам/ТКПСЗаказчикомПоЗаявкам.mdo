@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8fe0bc8-6053-463d-af10-b30163dc8a62">
+  <producedTypes>
+    <selectionType typeId="e1849bb3-32d0-4b9f-a928-cda6f5383b2b" valueTypeId="41914f8a-8feb-46a1-b1f2-334d2bd4d65d"/>
+    <listType typeId="25eac85a-e1ac-482e-a2a3-88473238404a" valueTypeId="4f9c7259-e923-4bfa-a5f3-f53014794703"/>
+    <managerType typeId="5902ea61-9487-4a8d-8f2d-aa46ec491c10" valueTypeId="d8afee5a-957b-440e-8818-d687a3e4fbdc"/>
+    <recordSetType typeId="88c6936e-b864-4c41-9010-f72c17cc0b6a" valueTypeId="6612044b-d4af-4703-b5d9-2e5919d6c256"/>
+    <recordKeyType typeId="bc4b5a18-4a96-4b4f-b7c8-42929858567a" valueTypeId="8b7a83e0-a150-4e7e-9fca-701feb17984b"/>
+    <recordType typeId="8e1734c3-cee1-4e6f-9dde-66a3df1d77f4" valueTypeId="f0d18833-ecf4-418f-9893-8cb49247af19"/>
+    <recordManagerType typeId="44dc3d52-6845-4adc-807a-af9d0a698545" valueTypeId="cfd6d9b0-683e-4e6c-ac66-3eb131cc3212"/>
+  </producedTypes>
+  <name>ТКПСЗаказчикомПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТКПСЗаказчиком по заявкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8bcc320d-cdb7-4585-bcfa-f00f389fd457">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="631929e4-9287-4ce2-b92d-d05ee548f536">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Заявка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1d838189-9683-427f-896e-a7a42535c352">
+    <name>ИдентификаторПозиции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор позиции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

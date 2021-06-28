@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b661ae1b-e3b8-40af-8376-3544f30a9f61">
+  <name>НСИНеотображаемая</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИНеотображаемая</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.ЗначенияХарактеристикПредметовПоставки</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

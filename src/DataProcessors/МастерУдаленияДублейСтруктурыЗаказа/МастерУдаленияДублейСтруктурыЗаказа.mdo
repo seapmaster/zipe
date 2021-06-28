@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46e073cb-6ea8-43ba-b8ff-6bc56b3ad747">
+  <producedTypes>
+    <objectType typeId="7f5e501e-bacb-4167-865b-f2c962bbb8cb" valueTypeId="c420a8fa-7838-4553-ab42-c45eec43f39b"/>
+    <managerType typeId="a433a8c7-02f1-4b4c-830b-66163e2169eb" valueTypeId="aa11a886-8489-448a-a8b0-276e08c6cc1e"/>
+  </producedTypes>
+  <name>МастерУдаленияДублейСтруктурыЗаказа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мастер удаления дублей структуры заказа</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.МастерУдаленияДублейСтруктурыЗаказа.Form.Форма</defaultForm>
+  <forms uuid="eda68fbd-7585-4233-8554-03778777d091">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4ec77e21-accb-4868-bce3-1f3259927480">
+    <name>ПошаговыйМастер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пошаговый мастер</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

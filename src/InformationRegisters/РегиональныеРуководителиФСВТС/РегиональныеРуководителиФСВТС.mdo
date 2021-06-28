@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c8e7e70-c07d-4c3b-8b26-c454dd4d9994">
+  <producedTypes>
+    <selectionType typeId="3074fe5e-c0de-4d55-b3a6-e9bf94b613fb" valueTypeId="a0118786-29ea-41ee-983f-55f596970a85"/>
+    <listType typeId="e8889eba-525a-423a-92a2-e5e10329afee" valueTypeId="ad2b5ff9-f86c-4585-a3d8-9e184f3db5c0"/>
+    <managerType typeId="a7034d4a-3e0e-493f-b7ae-c8d8234e9966" valueTypeId="3143030c-b223-45b8-b5a2-80dbc4a7b362"/>
+    <recordSetType typeId="9b7986ee-f852-422f-83d8-c97f3a061235" valueTypeId="cdddb888-318e-490a-926e-9b8049fa0982"/>
+    <recordKeyType typeId="fc39e720-b7de-4870-901a-423d1c3d0eee" valueTypeId="c4e8b69c-fca7-429d-84cc-a39ab042fc30"/>
+    <recordType typeId="54538b20-2f4b-4e34-8f70-e10f40067222" valueTypeId="d06f4b69-3acd-44a8-99e5-03ee0cbc979d"/>
+    <recordManagerType typeId="3cba4c78-2d3d-4152-a3de-019000521993" valueTypeId="ef4eb615-e9ac-4767-805f-8e93ed29275e"/>
+  </producedTypes>
+  <name>РегиональныеРуководителиФСВТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Региональные руководители</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="41aee167-843a-4a90-804e-eb6fecba2282">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5cd494de-bdf3-4b1a-85fd-1ffc4b2a1a18">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИностранныеЗаказчики</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

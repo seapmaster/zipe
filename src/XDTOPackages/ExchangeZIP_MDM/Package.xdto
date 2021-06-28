@@ -1,0 +1,328 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://seaproject.ru/mdm_zip" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="Author" base="xs:string" variety="Atomic"/>
+	<valueType name="Code" base="xs:string" variety="Atomic"/>
+	<valueType name="CreationDate" base="xs:date" variety="Atomic"/>
+	<valueType name="Group" base="xs:boolean" variety="Atomic"/>
+	<valueType name="ShortName" base="xs:string" variety="Atomic"/>
+	<valueType name="TypeRef" base="xs:string" variety="Atomic"/>
+	<valueType name="guid" base="xs:IDREF" variety="Atomic"/>
+	<objectType name="ArrayOfCatalogPS">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:CatalogPS" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfClassesShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:ClassesShip" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfEKPS">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:EKPS" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfESKD">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:ESKD" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfFlots">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:Flots" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKATO">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKATO" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKEI">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKEI" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKOK">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKOK" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKP">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKP" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKPD">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKPD" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKS">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKS" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKSM">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKSM" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKV">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKV" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfOKVED2">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:OKVED2" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfProjectShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:ProjectShip" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfRankShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:RankShip" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfS1000D">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:S1000D" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfSFI">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:SFI" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfTNVED">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:TNVED" upperBound="-1"/>
+	</objectType>
+	<objectType name="ArrayOfTypeShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Items" type="d3p1:TypeShip" upperBound="-1"/>
+	</objectType>
+	<objectType name="CatalogPS">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+		<property name="NameEng" type="xs:string"/>
+		<property name="DesignationRU" type="xs:string"/>
+		<property name="DesignationINT" type="xs:string"/>
+		<property name="ApprovedName" type="xs:string"/>
+		<property name="NomNumberVMF" type="xs:string"/>
+		<property name="FNN" type="xs:string"/>
+		<property name="NSN" type="xs:string"/>
+		<property name="Drawing" type="xs:string"/>
+		<property name="CodeOKPD2" type="xs:string"/>
+		<property name="CodeTNVED" type="xs:string"/>
+		<property name="Conragent" type="xs:string"/>
+		<property name="Developer" type="xs:string"/>
+		<property name="Manufacturer" type="xs:string"/>
+		<property name="Provider" type="xs:string"/>
+		<property name="Analog" type="xs:string"/>
+	</objectType>
+	<objectType name="ClassesShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Group" type="d3p1:Group"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="EKPS">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property name="Description" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="ESKD">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="Flots">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Country" type="d3p1:OKSM"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKATO">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property name="AddData" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKEI">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="FullName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="IntName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Type" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="SymbolInt" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="SymbolNat" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CodeInt" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CodeNat" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CodeILMS" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="DescILMS" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKOK">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+		<property name="KontrNumber" type="xs:anyType"/>
+		<property name="Abbreviation" type="xs:string"/>
+		<property name="Designation" type="xs:string"/>
+		<property name="YearAdop" type="xs:string"/>
+		<property name="DateIn" type="xs:string"/>
+		<property name="UseMK" type="xs:string"/>
+		<property name="FederationRegoin" type="xs:string"/>
+		<property name="OrganizationOK" type="xs:string"/>
+	</objectType>
+	<objectType name="OKP">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+		<property name="KontrNumber" type="xs:anyType"/>
+	</objectType>
+	<objectType name="OKPD">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Description" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKS">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKSM">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="FullName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Alpha2" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Alpha3" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKV">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="FullName" type="d3p1:ShortName"/>
+		<property name="NameCountry" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="OKVED2">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Description" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="Organization">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property name="Name" type="xs:string"/>
+		<property name="Provider" type="xs:boolean"/>
+		<property name="Manufacturer" type="xs:boolean"/>
+		<property name="Developer" type="xs:boolean"/>
+		<property name="inputOSK" type="xs:boolean"/>
+		<property name="AttrOSK" type="xs:boolean"/>
+		<property name="OKPO" type="xs:string"/>
+		<property name="INN" type="xs:string"/>
+		<property name="KPP" type="xs:string"/>
+		<property name="OGRN" type="xs:string"/>
+		<property name="OKVED2" type="xs:string"/>
+		<property name="Leader" type="xs:string"/>
+		<property name="FIOLeader" type="xs:string"/>
+		<property name="AddInfo" type="xs:string"/>
+		<property name="Status" type="xs:string"/>
+		<property name="Telefone" type="xs:string"/>
+		<property name="Fax" type="xs:string"/>
+		<property name="Email" type="xs:string"/>
+		<property name="WebСайт" type="xs:string"/>
+		<property name="SetlAccount" type="xs:string"/>
+		<property name="NameBank" type="xs:string"/>
+		<property name="CorrAccount" type="xs:string"/>
+		<property name="BIK" type="xs:string"/>
+		<property name="ShortNameEng" type="xs:string"/>
+		<property name="CodeCAGE" type="xs:string"/>
+		<property name="Index" type="xs:string"/>
+		<property name="RegionEng" type="xs:string"/>
+		<property name="CityEng" type="xs:string"/>
+		<property name="AdressEng" type="xs:string"/>
+		<property name="NameContact" type="xs:string"/>
+		<property name="CodeCertif" type="xs:string"/>
+		<property name="NumberCertif" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="ProjectShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeShip" type="d3p1:TypeShip"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="RankShip" type="d3p1:RankShip"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ClassesShip" type="d3p1:ClassesShip"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Contragent" type="d3p1:Organization"/>
+		<property name="ClassNATO" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="RankShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="S1000D">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="SFI">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+		<property name="NameEng" type="xs:string"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+	</objectType>
+	<objectType name="TNVED">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Parent" type="d3p1:guid"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="FullName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+	<objectType name="TypeShip">
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="guid" type="d3p1:guid" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Code" type="d3p1:Code"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="ShortName" type="d3p1:ShortName"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="TypeRef" type="d3p1:TypeRef"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="Author" type="d3p1:Author"/>
+		<property xmlns:d3p1="http://seaproject.ru/mdm_zip" name="CreationDate" type="d3p1:CreationDate"/>
+	</objectType>
+</package>

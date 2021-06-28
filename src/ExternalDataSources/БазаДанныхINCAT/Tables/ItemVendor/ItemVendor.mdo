@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21b60c4c-2863-4dfe-b8fd-095c22e99d85">
+  <producedTypes>
+    <refType typeId="8d9b60d4-9fc3-4630-9641-c67edae10878" valueTypeId="dd5ecef2-d5c9-4dd0-9e10-cf5a29e3bb5c"/>
+    <listType typeId="5b6f8c4e-1d68-434b-9974-eaa5f6e93f9e" valueTypeId="3fc08b3d-56a2-411b-8b30-cacb57f97202"/>
+    <objectType typeId="5d2d288d-44a3-476b-9bfa-78d150b44bc7" valueTypeId="bf69371f-6edb-4c43-b0f3-f3f239b40188"/>
+    <managerType typeId="36b51218-05a0-4b55-88b1-212188623f40" valueTypeId="bae1064c-44b4-45eb-a404-dc2df1cb2031"/>
+    <recordManagerType typeId="b61f7243-0246-48d3-8371-9a180f6cb635" valueTypeId="dbf6d712-be58-4e31-b0fb-5adca0fc9312"/>
+    <recordSetType typeId="1f4a6886-c451-47f5-b5cc-56778d0e7bf0" valueTypeId="686593e3-cc9f-4ccc-a067-5163569d97a4"/>
+    <recordType typeId="62882048-770d-4f84-b78a-ecb3665ba17f" valueTypeId="235f6402-fb54-4d8b-b0b7-c6b1d1028013"/>
+    <recordKeyType typeId="f65525b8-a380-497e-818e-0dba48425106" valueTypeId="55a9d5f5-1a2b-4fab-acf6-85d558d972a2"/>
+  </producedTypes>
+  <name>ItemVendor</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>ItemVendor</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="1c2bdd3d-217f-4b8c-aba3-990cbd9a1663">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="99b2ddb7-2f46-4b7a-910b-794e245d196a">
+    <name>VendorCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>VendorCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="51f82d94-9c6e-4961-b4fb-de8a92a5de0f">
+    <name>CertificationType</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>CertificationType</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="5a765b51-2893-410b-b22f-d914b1503acf">
+    <name>CertificationNo</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>CertificationNo</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="18da7403-1a16-431c-a77d-08966ec030c5">
+    <name>VendorPartNo</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>VendorPartNo</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef651a36-09f9-4efe-85a7-e791753dea88">
+  <producedTypes>
+    <objectType typeId="07656f1d-9383-42e4-ae29-ee5ddeb1906a" valueTypeId="713c4420-3ad2-4fe8-b65d-1bee8159610b"/>
+    <refType typeId="84d4af5b-9f24-4016-86dc-0c91096ce714" valueTypeId="a991ace4-e216-4513-a284-575bf9b89477"/>
+    <selectionType typeId="ca538a51-3703-4efc-adca-3d12057778e0" valueTypeId="02b23548-ef4e-4be3-ab29-9adbce6f7274"/>
+    <listType typeId="9fb502d9-ede8-420b-a251-1b820c716713" valueTypeId="b18cea52-2056-4324-b801-e51a7c458af5"/>
+    <managerType typeId="ec089ad6-d434-4649-89dd-36272bfc53b7" valueTypeId="cc7dff94-8a55-4c77-a2e6-8e7515d896af"/>
+  </producedTypes>
+  <name>Флоты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Флоты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Флоты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Флоты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>наименование флота</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>код флота</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Флоты.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Флоты.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="01a781c5-9ab1-40c0-815d-6f15c24c0fcc">
+    <name>Страна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страна</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКСМ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Государство, которому принадлежит данный флот</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1d07a860-d939-4ecf-bb4a-9f645fd05b4b">
+    <name>Герб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Герб</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФлотыПрисоединенныеФайлы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Герб флота</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea82788a-66e3-4bbc-abe0-9aec97a94a60">
+    <name>ЯзыкПредставленияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Язык представления данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Языки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Язык, на котором будет предоставляться информация для данного флота</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b94ec6e6-e578-4eb3-a076-c1b890314d56">
+    <name>ПорядокОтображения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок отображения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>служебное поле для сортировки в списках</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62d40031-addb-459b-94cb-b2932790581a">
+    <name>ВидКодовПредметовСнабженияДляОтчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид кодов ПС (для отчетов)</value>
+    </synonym>
+    <comment>//20.12.2017 Веденеев П. //для вывода в отчеты согласно ОПЗ 6</comment>
+    <type>
+      <types>EnumRef.ВидыКодовПредметовСнабженияДляОтчетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>вид уникального кода, который будет использоваться для предметов снабжения данного флота в некоторых отчетах (NSN, ФНН, INCAT и т.д.)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыКодовПредметовСнабженияДляОтчетов.EnumValue.NSN</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fa5fd3ba-13b7-4d14-939c-0390a4c77eb9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="47b5279f-6086-4db1-a749-9ef2b7306e2b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

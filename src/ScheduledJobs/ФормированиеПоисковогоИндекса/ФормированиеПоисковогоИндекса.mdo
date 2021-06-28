@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e07115a4-4357-4988-8bb8-40555a552d33">
+  <name>ФормированиеПоисковогоИндекса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование поискового индекса</value>
+  </synonym>
+  <methodName>CommonModule.ПоисковыйИндекс.ФормированиеПоисковогоИндекса</methodName>
+  <description>Формирование поискового индекса</description>
+  <use>true</use>
+  <predefined>true</predefined>
+</mdclass:ScheduledJob>

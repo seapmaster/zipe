@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3360b0a-cb89-469a-8582-3485a5089982">
+  <producedTypes>
+    <selectionType typeId="45ada7f2-567b-482d-9c56-26e4c5d0ee20" valueTypeId="82101c68-c352-4a20-8b76-c03a13b7ddc2"/>
+    <listType typeId="31df962f-61fe-4c87-97f6-46fbdb52bf7d" valueTypeId="ac56792e-17f6-4661-b651-6172f58ccd03"/>
+    <managerType typeId="b9a8f9e2-d8dd-4a23-a6ee-bcb34f37c9b1" valueTypeId="02fb422a-0e41-4ea9-82b0-f2e07b89123a"/>
+    <recordSetType typeId="c01c3efd-b42b-4668-83ee-c6dd0b081fd8" valueTypeId="2c74cd74-c5dd-42ff-bb0d-f8985169ad57"/>
+    <recordKeyType typeId="c132ddf3-1a0f-43a5-beb1-7f61c49996c5" valueTypeId="c82010ec-26d3-4a8a-b4d9-0a5b5f350032"/>
+    <recordType typeId="c76222f7-f4fc-44d3-acf3-f7d981c728f6" valueTypeId="de4f7e59-9161-4620-abfd-2ccd44b96ad5"/>
+    <recordManagerType typeId="38e5b347-3ea7-4099-8e52-3682ad89823b" valueTypeId="e9b5aea0-d817-4179-8f9c-3355972bbf54"/>
+  </producedTypes>
+  <name>ИсторияТОиРЭкземпляровКомплектующихИзделийКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>История ТО и Р экземпляров комплектующих изделий корабля</value>
+  </synonym>
+  <comment>История технического обслуживания и ремонта экземпляров комплектующих изделий корабля</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ИсторияТОиРЭкземпляровКомплектующихИзделийКорабля.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>дата выполнения  работ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>История технического обслуживания и ремонта экземпляров комплектующих изделий корабля</value>
+  </explanation>
+  <resources uuid="af0470bf-ff16-4df6-af58-392892d9e763">
+    <name>ТрудоемкостьРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудоемкость работ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>трудоемкость работы в нормо-часах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1dc81aab-39f6-4839-8cfe-2008b1af79e2">
+    <name>ТрудоемкостьСопутствующихРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудоемкость сопутствующих работ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>трудоемкость сопутствующих работ в нормо-часах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ce88334b-2d16-44fc-a9da-52a3b506d8f9">
+    <name>НомерЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>номер заводского заказа работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="c53a6619-d22c-445f-b606-17a98fc11416">
+    <name>ИсполнительРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>организация-исполнитель ремонтных работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6c007ad3-781c-4e61-8e78-b81dddf59fcb">
+    <name>Экземпляр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экземпляр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭкземплярыКомплектующихИзделийКорабля</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>экземпляр комплектующего изделия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6d0967b1-2977-415e-9fae-b10983740631">
+    <name>ВидРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>вид работ: ТО, средний ремонт, текущий ремонт и т.д.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a38f168c-0e13-448c-8753-71fd6752a037">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c4f5b1c-0125-4485-b828-3a2335a83724">
+    <name>ФормаВводаНаработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода наработки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

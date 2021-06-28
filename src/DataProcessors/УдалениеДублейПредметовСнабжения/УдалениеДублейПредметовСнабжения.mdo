@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a484e847-83a4-4587-b2bf-b9702401ebf0">
+  <producedTypes>
+    <objectType typeId="cafc1d79-8e93-42e5-adfd-e56d2db50af1" valueTypeId="bea323e7-3f94-4a0e-b0ce-26c5e9bb7735"/>
+    <managerType typeId="5ad51217-6092-424f-b785-13621bd3bec6" valueTypeId="1ea35aa1-a79c-4af5-8282-68df5ba6b965"/>
+  </producedTypes>
+  <name>УдалениеДублейПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление дублей предметов снабжения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалениеДублейПредметовСнабжения.Form.Форма</defaultForm>
+  <forms uuid="07547e36-cee0-4f8e-9aae-8deb28c0b765">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7d256bbb-b9ce-4b4b-9201-780cd042ab80">
+    <name>ФормаВыборРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбор реквизитов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e179e46e-a841-491b-a758-1336c151aab7">
+    <name>ФормаСпецификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма спецификация</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

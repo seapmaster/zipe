@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8525b63f-5b7d-4557-9ee8-0184460249bb">
+  <producedTypes>
+    <refType typeId="3477309b-7be3-43bd-bd5b-f3b10f5f934e" valueTypeId="dc34145d-2762-467d-b227-e1998cfc85c8"/>
+    <listType typeId="77b78b85-bae2-4996-828d-9a92b333b657" valueTypeId="4cc067c9-749b-45c4-9069-7434d23946d7"/>
+    <objectType typeId="ecba1622-fdd5-4f14-a3ad-350b6ae8f5cf" valueTypeId="dc89a949-2a46-419e-8dd8-10aaadb97190"/>
+    <managerType typeId="484f4e30-a212-486f-9e99-3b38431914cf" valueTypeId="5a49a098-6aac-4a31-bb5f-237b42e10e29"/>
+    <recordManagerType typeId="6a3d7ea2-9587-4564-91ba-4648e7c32f7c" valueTypeId="55fd5987-a656-4198-ace4-66204926043c"/>
+    <recordSetType typeId="39d0c93d-17d8-4fe4-ae76-ffba76aa75c5" valueTypeId="2dce483c-130c-46ab-a57f-199ae2203a8d"/>
+    <recordType typeId="e6480676-382e-43d5-a85c-0e5caa782c4c" valueTypeId="6432fe07-8322-4c0a-9a51-c0b487a3b582"/>
+    <recordKeyType typeId="7820d500-bd9d-4017-8927-4eace9a11ebd" valueTypeId="d6e1a465-b5d8-4730-918e-55fb10b99de4"/>
+  </producedTypes>
+  <name>Поиск_повторений_для_ZIP_DE</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>&quot;Поиск повторений для ZIP_DE&quot;</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="bb139537-1ee5-4ca2-9d41-1756bee1495b">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="debfefce-b0fa-41ba-91d5-8389f03c3812">
+    <name>Obozn</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Obozn</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="e140dbd1-1caf-45a4-b7e8-1adaedc9aa85">
+    <name>Name_rus</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Name_rus</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="e6dbb7a0-baae-409b-9e04-14d98ab8e8be">
+    <name>Name_ang_pol</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Name_ang_pol</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

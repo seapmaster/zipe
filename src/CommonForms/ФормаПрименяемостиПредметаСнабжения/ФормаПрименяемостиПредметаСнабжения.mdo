@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25cf81a3-f05b-4de8-b5aa-da2c34d77b30">
+  <name>ФормаПрименяемостиПредметаСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма применяемости предмета снабжения</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

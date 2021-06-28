@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9145964-2292-4331-8699-06fbba0eae0e">
+  <producedTypes>
+    <refType typeId="1935f3b8-8ec6-45c2-a3c6-397453bbba20" valueTypeId="82789369-39b8-4fe5-bf3f-7f1e849bdc6b"/>
+    <listType typeId="7fd7c7d5-ab27-4266-979b-ede7ab2b707f" valueTypeId="6f75d0f8-1747-4cae-87fd-18d2104872ce"/>
+    <managerType typeId="ae19bef3-61ce-4cd1-af44-db4e7781f852" valueTypeId="748bee43-07f2-454a-870d-5e6620d59a08"/>
+  </producedTypes>
+  <name>ТипыИзмененийОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы изменений объектов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3cc72ccc-34ee-4663-859b-df9b8510f9ab">
+    <name>Создан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создан</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="88072e7b-9497-4ee1-ba9f-115819d9272a">
+    <name>Добавлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e4f78db3-3b7a-4381-ab32-082ede759020">
+    <name>Изменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="83522482-c45e-4b26-8d7e-d8ba7d95383e">
+    <name>Удален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35336a1c-a65c-41c7-a693-ec783b92bb19">
+  <producedTypes>
+    <selectionType typeId="6258c42f-aa18-4090-af46-83eb5276ac0d" valueTypeId="079cce19-8f7b-4ce9-9c28-b6e604ebc530"/>
+    <listType typeId="570f6be2-72f5-4f17-9043-c994ac35ed09" valueTypeId="4807f641-1000-4809-861d-3671fbdae521"/>
+    <managerType typeId="9a69679c-b55c-4c23-bb00-d348b8fb1b21" valueTypeId="c0676484-8fb6-4b27-acfc-ac18f2d5b056"/>
+    <recordSetType typeId="0ca9f610-0174-4485-a471-5d23071972e7" valueTypeId="78af2651-5d97-4b86-b37f-4699aa30ae15"/>
+    <recordKeyType typeId="97e9e7d5-daec-40f2-a2e9-067c7fa0a594" valueTypeId="1d888a81-a648-4175-87c2-0a37c8a4f40f"/>
+    <recordType typeId="e459905f-15b3-4bea-9099-c73bf56b5979" valueTypeId="82d55469-8151-4e20-8416-50e0ada1d3fd"/>
+    <recordManagerType typeId="f9fa2d07-470c-4013-a9e7-36c013b39437" valueTypeId="6db6ed12-d7fe-49d4-9cc2-2f8f9fee1f64"/>
+  </producedTypes>
+  <name>ИсполнителиДЗОЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исполнители ДЗО заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="f16a2273-896b-4513-b927-e93b40e81c58">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Заявка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b241be14-b73e-46cc-9f32-059571d341f2">
+    <name>ИсполнительДЗО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель ДЗО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf4464b1-2304-48e2-95ff-9833ea86cba2">
+  <producedTypes>
+    <selectionType typeId="02f0b95e-5177-4510-bbe6-dc544c232639" valueTypeId="8b16ee66-279c-4d99-9175-a292e23ad1ff"/>
+    <listType typeId="34230e0c-c3a8-4ad2-908b-463dc291c434" valueTypeId="2497b07e-f006-4d0e-be71-ccd757551a88"/>
+    <managerType typeId="3536774b-b673-478b-be17-7620274ab56e" valueTypeId="b79422e0-a1f2-4565-bce8-dec4cb9a94ce"/>
+    <recordSetType typeId="47862671-8e38-49f6-9392-e716e6fcfe46" valueTypeId="dbded57f-ac62-4249-bb7b-c5eeed063707"/>
+    <recordKeyType typeId="f79a12a2-3d2d-46a1-8c2a-2546b52f5cb6" valueTypeId="0d84b122-632f-47c5-9eb0-a3de2f45bc12"/>
+    <recordType typeId="06a8ab0e-456e-4554-817a-29041e32cf58" valueTypeId="9ac800f2-61c1-4584-afa1-8f82ae1a3c29"/>
+    <recordManagerType typeId="56dd1d7d-d4c2-4a59-a22d-f73e371c88ce" valueTypeId="d1f491f8-8725-4d01-b14d-62dacbf9d9d1"/>
+  </producedTypes>
+  <name>ФлагиОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Флаги объектов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Object flags</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="70b465f0-d265-47c9-b06b-3692452b2fc8">
+    <name>Флаг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Flag</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ФлагиОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="2e65f541-cc3a-465e-8090-c17f96bfec57">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8bf16c9d-a318-431d-a656-dacc6ee43faf">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>User</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

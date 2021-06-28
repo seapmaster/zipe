@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eea4205e-89ee-48e0-8176-c3d3d1e1a584">
+  <producedTypes>
+    <managerType typeId="16c28f19-a80b-4aa9-94bb-f78bb922295d" valueTypeId="c0f35728-c1ee-4fc0-895c-081b0f29d377"/>
+    <valueManagerType typeId="322da281-c5da-4bc0-9c32-def3699de2d7" valueTypeId="9a502249-1922-4311-bb4c-1119da870712"/>
+    <valueKeyType typeId="3bbfed77-55a5-4d32-bfea-0227a84ad0ea" valueTypeId="b9c399fb-6df0-4003-a296-0ecfe770f203"/>
+  </producedTypes>
+  <name>ВыгружатьФайлыВоВнешнееХранилище</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгружать файлы во внешнее хранилище</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

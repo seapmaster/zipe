@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03823772-8688-4b22-812a-db294ebfeb55">
+  <producedTypes>
+    <selectionType typeId="8b78f42c-28be-4c66-9c0f-479d55cac1eb" valueTypeId="17ff889f-29e1-4b4c-8fb5-ab256356b24f"/>
+    <listType typeId="005bb0e5-3b9f-4162-b586-99ac41c05666" valueTypeId="4e570cc1-ebae-49a0-a7d5-847e5ec6a42a"/>
+    <managerType typeId="e50597f2-8127-41ab-947f-fe9c86881176" valueTypeId="7b12ee09-1bd4-4c75-be07-93091693fa15"/>
+    <recordSetType typeId="a7bff5c1-e577-4369-8eca-a16cfdd8e94d" valueTypeId="5128e387-bba4-4f27-9520-17d65a59184d"/>
+    <recordKeyType typeId="91a07cf5-2b8f-4ce0-a3b5-2d51e9774a31" valueTypeId="9385522f-a161-4ec4-8fc8-dd5d1d156374"/>
+    <recordType typeId="bc0e72ff-f01c-4fb4-aa29-0bbeb37e72d9" valueTypeId="b2b3673a-a238-4172-ae29-3518000ce8c2"/>
+    <recordManagerType typeId="977cb31e-6598-47e8-9a4c-1113de13b098" valueTypeId="50051736-f0f4-443f-92a7-a278a852473c"/>
+  </producedTypes>
+  <name>СвязанныеИзделияЭкземпляровКомплектующихИзделийКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные изделия экземпляров комплектующих изделий корабля</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СвязанныеИзделияЭкземпляровКомплектующихИзделийКорабля.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Связанные изделия экземпляров комплектующих изделий корабля</value>
+  </explanation>
+  <resources uuid="85b160a1-9cb2-412c-b83c-56772f866da1">
+    <name>ВидСвязи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид связи</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСвязейКомплектующихИзделийКорабля</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>вид связи экземпляров комплектующих изделий (конструктуивная, механическая, электрическая)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c0c83428-acac-42b7-89fa-84cd75ba869d">
+    <name>Экземпляр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экземпляр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭкземплярыКомплектующихИзделийКорабля</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>экземпляр комплектующего изделия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="21344002-6291-4502-84bf-987d742011e3">
+    <name>СвязанноеИзделие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанное изделие</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭкземплярыКомплектующихИзделийКорабля</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>экземпляр связанного комплектующего изделия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bdc54954-9d77-4c97-8940-2e870c536782">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

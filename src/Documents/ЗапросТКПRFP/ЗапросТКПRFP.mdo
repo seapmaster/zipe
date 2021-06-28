@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96eab57c-d061-4b74-b2f4-ca0b2888341c">
+  <producedTypes>
+    <objectType typeId="aa0cfc4a-19b0-4128-b2c8-f55aede9ee15" valueTypeId="3e64fdae-3425-4cee-801c-3f78148fbaa4"/>
+    <refType typeId="d57b35a9-5aa6-4edb-8454-53110d052a80" valueTypeId="f9594c66-1a03-4f74-bd98-f18ef34bcc75"/>
+    <selectionType typeId="d2fe3fe2-0785-4918-bf50-7b99f330aba5" valueTypeId="8a3fcc7e-b51f-4e00-92f1-5fdc6e5caf0d"/>
+    <listType typeId="2f16ec1c-4af3-460b-8609-bf0b519603cb" valueTypeId="2ab35215-a79f-4d14-9f50-bf2188ecea10"/>
+    <managerType typeId="9c7bb787-9138-4ddc-ab33-0e1a7da2eed6" valueTypeId="84675553-8b67-4d5c-9f0b-1d9c472fda99"/>
+  </producedTypes>
+  <name>ЗапросТКПRFP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрос ТКП-RFP</value>
+  </synonym>
+  <comment>Запросы на ТКП-RFP</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЗапросТКПRFP.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата формирования заявки Заказчиком</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Внутренний номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Журнал запросов ТКП-RFP</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Запросы на ТКП-RFP</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗапросТКПRFP.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗапросТКПRFP.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ЗапросТКПRFP.Form.ФормаВыбора</defaultChoiceForm>
+  <posting>Deny</posting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="ab1110b4-fabc-44be-b680-2bf5d1a565c9">
+    <name>НомерЗаказчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер заказчика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер запроса, присвоенный Заказчиком</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="17a38570-140f-4dbe-8d70-7b8ee90d0069">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИностранныеЗаказчики</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказчик ПС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="11e5b6c7-af94-4ec6-9b91-795cdea1ce13">
+    <name>СрокПодачиТКП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок подачи ТКП</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок подачи технико-коммерческого предложения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b4da8379-9c5f-47bb-a7ac-76ec6a7854a2">
+    <name>СрокПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок поставки (дней)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок поставки ПС в днях</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="834cea1b-7dab-4832-8747-ae588c14c8cd">
+    <name>УсловияПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия поставки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Типовые условия поставки Инкотермс-2010</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="99bf2f17-e2d5-4149-8c3d-3b7492c6f5d9">
+    <name>Грузополучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузополучатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИностранныеЗаказчики</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Грузополучатель ПС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="303ceb3f-d5fd-4aa0-bfdf-4462e0630827">
+    <name>АдресОтправкиТКП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес отправки ТКП</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИностранныеЗаказчики</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес отправки технико-коммерческого предложения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="067e611b-a774-4376-b2f2-93984b136a25">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>дополнительная информация по запросу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1994d715-1818-44ac-884f-a8093eb71160">
+    <name>НомерФСВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ФС ВТС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер запроса, присвоенный ФС ВТС при регистрации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e7d4725b-ce7b-444e-b407-557dc3fd3f7e">
+    <name>ДатаРегистрацииФСВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации ФС ВТС</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата регистрации запроса ФС ВТС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fab69bd2-ab6d-449d-a174-ae6bac05ad44">
+    <name>РуководительПроектаВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель проекта ВТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Руководитель проекта Департамента ВТС, ответственный за выполнение заявки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a5b0a6fa-04c3-4030-aea6-ff8d3855dd0f">
+    <name>ОтветственноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственное лицо</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d00bec6f-f21a-445c-8ad8-a8209229393c">
+    <name>Телефоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефоны</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a245e16-348c-467c-ad77-0922b80b03b6">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9d888434-9c92-4c60-8790-f00ba0965d59">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0d79c21d-d91a-433f-ba3b-48d13632cff9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cc679c50-996a-4115-a84f-dd298e2af501">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

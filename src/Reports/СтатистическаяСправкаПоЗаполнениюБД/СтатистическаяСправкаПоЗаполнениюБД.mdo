@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f1b126f-9dec-4fa4-a56d-9142a80c76d1">
+  <producedTypes>
+    <objectType typeId="e9a6f384-1c4a-4547-b8bb-99370397f639" valueTypeId="44a0d587-e15f-403a-ae4a-78c1fa2b8ed0"/>
+    <managerType typeId="7804b620-2fa4-49e9-b8ad-16d081097ff4" valueTypeId="7f5822cb-b5dd-4197-961f-6504b9532713"/>
+  </producedTypes>
+  <name>СтатистическаяСправкаПоЗаполнениюБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистическая справка по активности ДЗО в части заполнения базы данных ИСС ЗИП-Э</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СтатистическаяСправкаПоЗаполнениюБД.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="06a36225-b2ea-4ccb-a5cf-3f2e5be64e94">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

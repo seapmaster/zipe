@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="832765c9-5149-47f9-94c8-9bba398a8758">
+  <name>ИнтеграцияС_КСУ_НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с КСУ НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Использование справочников и классификаторов смежных систем, формирование запросов на внесение изменений (в случае отсутствия необходимых данных) и получение ответов на сформированные запросы.
+Ведение журналов учета поступивших и обработанных запросов, посланных запросов и полученных ответов смежных систем.</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Импорт</picture>
+  </picture>
+  <content>DataProcessor.Удалить_НастройкаИнтеграцииС_КСУ_НСИ</content>
+  <content>DataProcessor.ВыгрузкаДанныхДляНСИ</content>
+  <subsystems>БизнесПроцессыИЗадачи</subsystems>
+</mdclass:Subsystem>

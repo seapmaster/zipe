@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РодительСсылка</dataPath>
+			<field>РодительСсылка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент структуры родитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СоставляющаяЧасть</dataPath>
+			<field>СоставляющаяЧасть</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Составляющая часть</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СоставляющаяЧастьЭлементСтруктуры</dataPath>
+			<field>СоставляющаяЧастьЭлементСтруктуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Составляющая часть элемент структуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СоставляющаяЧастьСпецификация</dataPath>
+			<field>СоставляющаяЧастьСпецификация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Составляющая часть спецификация</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Владелец</dataPath>
+			<field>Владелец</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель КАК РодительСсылка,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК Ссылка,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения КАК СоставляющаяЧасть,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.ПредметСнабжения КАК ПредметСнабжения
+ПОМЕСТИТЬ ВТ_ЭлементыСтруктуры
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+ГДЕ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Тип = &amp;Тип
+{ГДЕ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Владелец.*}
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СпецификацииПС.ПредметСнабжения КАК ПредметСнабжения,
+	СпецификацииПС.СоставляющаяЧасть КАК СоставляющаяЧасть
+ПОМЕСТИТЬ ВТ_Спецификация
+ИЗ
+	РегистрСведений.СпецификацииПС КАК СпецификацииПС
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ЭлементыСтруктуры КАК ВТ_ЭлементыСтруктуры
+		ПО (СпецификацииПС.ПредметСнабжения = ВТ_ЭлементыСтруктуры.ПредметСнабжения
+				ИЛИ СпецификацииПС.ПредметСнабжения = ВТ_ЭлементыСтруктуры.СоставляющаяЧасть)
+
+СГРУППИРОВАТЬ ПО
+	СпецификацииПС.ПредметСнабжения,
+	СпецификацииПС.СоставляющаяЧасть
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЭлементыСтруктуры.Ссылка КАК ЭлементСтруктуры,
+	ВТ_ЭлементыСтруктуры.СоставляющаяЧасть КАК ПредметСнабжения,
+	ВТ_Спецификация.СоставляющаяЧасть КАК ПредметСнабженияСоставляющаяЧасть
+ПОМЕСТИТЬ ВТ_ЭСтруктурыДляПроверки
+ИЗ
+	ВТ_ЭлементыСтруктуры КАК ВТ_ЭлементыСтруктуры
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Спецификация КАК ВТ_Спецификация
+		ПО ВТ_ЭлементыСтруктуры.СоставляющаяЧасть = ВТ_Спецификация.ПредметСнабжения
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	ВТ_ЭлементыСтруктуры.Ссылка,
+	ВТ_ЭлементыСтруктуры.СоставляющаяЧасть,
+	ВТ_ЭлементыСтруктурыПодчиненные.СоставляющаяЧасть
+ИЗ
+	ВТ_ЭлементыСтруктуры КАК ВТ_ЭлементыСтруктуры
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЭлементыСтруктуры КАК ВТ_ЭлементыСтруктурыПодчиненные
+		ПО ВТ_ЭлементыСтруктуры.Ссылка = ВТ_ЭлементыСтруктурыПодчиненные.РодительСсылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЭСтруктурыДляПроверки.ЭлементСтруктуры КАК РодительСсылка,
+	ВТ_ЭлементыСтрукутрыИтог.Ссылка КАК СоставляющаяЧастьЭлементСтруктуры,
+	ЕСТЬNULL(ВТ_ЭлементыСтрукутрыИтог.СоставляющаяЧасть, ВТ_Спецификация.СоставляющаяЧасть) КАК СоставляющаяЧасть,
+	ВТ_Спецификация.СоставляющаяЧасть КАК СоставляющаяЧастьСпецификация
+ИЗ
+	ВТ_ЭСтруктурыДляПроверки КАК ВТ_ЭСтруктурыДляПроверки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЭлементыСтруктуры КАК ВТ_ЭлементыСтрукутрыИтог
+		ПО ВТ_ЭСтруктурыДляПроверки.ЭлементСтруктуры = ВТ_ЭлементыСтрукутрыИтог.РодительСсылка
+			И ВТ_ЭСтруктурыДляПроверки.ПредметСнабженияСоставляющаяЧасть = ВТ_ЭлементыСтрукутрыИтог.СоставляющаяЧасть
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Спецификация КАК ВТ_Спецификация
+		ПО ВТ_ЭСтруктурыДляПроверки.ПредметСнабжения = ВТ_Спецификация.ПредметСнабжения
+			И ВТ_ЭСтруктурыДляПроверки.ПредметСнабженияСоставляющаяЧасть = ВТ_Спецификация.СоставляющаяЧасть
+ГДЕ
+	(ВТ_ЭлементыСтрукутрыИтог.СоставляющаяЧасть ЕСТЬ NULL
+			ИЛИ ВТ_Спецификация.СоставляющаяЧасть ЕСТЬ NULL)
+	И НЕ(ВТ_ЭлементыСтрукутрыИтог.СоставляющаяЧасть ЕСТЬ NULL
+				И ВТ_Спецификация.СоставляющаяЧасть ЕСТЬ NULL)</query>
+	</dataSet>
+	<parameter>
+		<name>Тип</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Изделие</value>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СоставляющаяЧасть</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СоставляющаяЧастьЭлементСтруктуры</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СоставляющаяЧастьСпецификация</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СоставляющаяЧастьСпецификация</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СоставляющаяЧастьСпецификация</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>есть</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СоставляющаяЧастьЭлементСтруктуры</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СоставляющаяЧастьЭлементСтруктуры</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>есть</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РодительСсылка</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>РодительСсылка.ЗИП</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

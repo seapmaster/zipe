@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b3a19d8-5275-48a5-bcc9-cae5baf88f51">
+  <producedTypes>
+    <selectionType typeId="5395c0aa-2739-44c7-bbc9-087a5e574692" valueTypeId="829747cf-3454-47f9-858e-d09813045834"/>
+    <listType typeId="ab3a7f4f-78b6-4b06-934b-ebe3ad526588" valueTypeId="8ad68b23-88ef-4cc5-8091-6148fbc7c13f"/>
+    <managerType typeId="6a63e759-773d-43ec-938d-309d8d2e3f98" valueTypeId="d8a11087-5ace-4d42-a8bc-d6d82d59072b"/>
+    <recordSetType typeId="e0c12d5c-8a2e-4abd-bedc-59ff460b8874" valueTypeId="6da1c01c-50bf-4c32-b170-a68f1d7e4771"/>
+    <recordKeyType typeId="35c15a90-5a83-44a6-ba67-dd26fc4434fe" valueTypeId="24053f20-f2ba-4b3a-9937-0b06968d94b1"/>
+    <recordType typeId="ea310442-699d-4c74-bbdf-9272340e47bc" valueTypeId="e83e48d7-b201-4c2b-9195-240dd84110a8"/>
+    <recordManagerType typeId="56381f79-85b3-4a6d-812a-9f7bda0876b5" valueTypeId="84ac99a4-4f8c-4064-a389-eeac0ee3cebe"/>
+  </producedTypes>
+  <name>ЭлементыСтруктурыКораблейДляЗаполненияЗаведованияПодчиненных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Элементы структуры кораблей для заполнения заведования подчиненных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="9f44ef5e-5bf5-4926-9da0-f89715b4b981">
+    <name>Заведование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заведование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БоевыеЧасти</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="0580e79f-3542-48ef-a8f0-ce8db57bcef3">
+    <name>ЭлементСтруктуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент структуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

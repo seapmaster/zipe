@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28c0961c-dfdd-45f7-92b1-a38a797ef74b">
+  <name>ExchangeStatus</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange status</value>
+  </synonym>
+  <namespace>http://seaproject.ru/exchange_status</namespace>
+</mdclass:XDTOPackage>

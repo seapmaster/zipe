@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ceda8136-4bd9-4891-96e6-17f7f56c66e7">
+  <producedTypes>
+    <objectType typeId="5f758a19-f1a8-426b-8ad3-b0129eb0b0d7" valueTypeId="059e3554-b7d1-42ab-b1c4-c7d17dc7bb46"/>
+    <refType typeId="6e3a09b6-7c20-44ad-8409-6971585d208d" valueTypeId="c57aead3-7310-4eb2-89d7-8f83805f47f6"/>
+    <selectionType typeId="475737b0-8015-424c-b7e5-e6594d2b4e05" valueTypeId="432b800c-67f9-4d93-b023-d641995d7a9d"/>
+    <listType typeId="810a89c5-b2fd-45b0-a12a-a58cf179a5b6" valueTypeId="c67f9cdb-9610-49a3-b5b5-ef5728654604"/>
+    <managerType typeId="59a120eb-1c61-44b2-b32e-39bcb0fbd8ea" valueTypeId="8396e9ef-ac46-4711-92f3-3a15536e21c5"/>
+  </producedTypes>
+  <name>ТипыПоказателейИзделий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы показателей изделий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипыПоказателейИзделий.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТипыПоказателейИзделий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>наименование показателя</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>внутренний код</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>типы показателей изделий (срок службы до ремонта, срок службы до списания, наработка на отказ и т.д.)</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>2</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8e7f01ba-ece4-4d75-b185-6bf93167b05e">
+      <name>НаработкаНаОтказ</name>
+      <description>Наработка на отказ</description>
+      <code xsi:type="core:StringValue">
+        <value>05</value>
+      </code>
+    </items>
+    <items id="7d80b470-d456-49fe-bcd9-e8838afc7ee4">
+      <name>НазначенныйРесурсДоЗаводскогоРемонта</name>
+      <description>Ресурс до ремонта</description>
+      <code xsi:type="core:StringValue">
+        <value>01</value>
+      </code>
+    </items>
+    <items id="edce2320-58c3-4c23-891a-095a42932139">
+      <name>НазначенныйРесурсДоСписания</name>
+      <description>Ресурс до списания</description>
+      <code xsi:type="core:StringValue">
+        <value>02</value>
+      </code>
+    </items>
+    <items id="fd9a0ce0-5e77-43bf-be61-e00cc47e0a3e">
+      <name>СрокИзготовления</name>
+      <description>Срок изготовления</description>
+      <code xsi:type="core:StringValue">
+        <value>06</value>
+      </code>
+    </items>
+    <items id="dbb55c7a-ba50-43d5-9332-2646fdba4be7">
+      <name>НазначенныйСрокСлужбыДоЗаводскогоРемонта</name>
+      <description>Срок службы до ремонта</description>
+      <code xsi:type="core:StringValue">
+        <value>03</value>
+      </code>
+    </items>
+    <items id="b10f2c4d-ed2f-40f9-bb1f-d66c7e60e47c">
+      <name>НазначенныйСрокСлужбыДоСписания</name>
+      <description>Срок службы до списания</description>
+      <code xsi:type="core:StringValue">
+        <value>04</value>
+      </code>
+    </items>
+    <items id="e59402d6-321d-47fc-8d2a-e99c44da9fd4">
+      <name>СрокХранения</name>
+      <description>Срок хранения</description>
+      <code xsi:type="core:StringValue">
+        <value>07</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТипыПоказателейИзделий.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ТипыПоказателейИзделий.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="3dddb38f-4f0d-42be-8f48-32b844f20f5b">
+    <name>ВидПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид показателя</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыПоказателей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>вид показателя (безотказность, долговечность, ремонтопригодность, сохраняемость)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="646a2ea1-d74e-45aa-b5a5-0e2c460c95f8">
+    <name>ТипПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип показателя</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыПоказателей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>тип учета расхода показателя (по сроку, по ресурсу)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6cfa0a19-730f-4a38-beba-535dfe6ffa2e">
+    <name>УчетРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет ремонтов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>признак ведения учета ремонтов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="328ba5da-f545-4cc5-9152-b606edc9f141">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6fe940e9-b2d0-49b8-8ddb-5e5dba3af1ee">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

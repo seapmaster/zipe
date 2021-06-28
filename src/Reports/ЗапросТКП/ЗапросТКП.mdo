@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a770efc5-c2d1-41bf-b956-14cefb44cbaf">
+  <producedTypes>
+    <objectType typeId="ee8f0a64-2654-4a6a-bbb3-796df231f8c9" valueTypeId="0027d5c3-0ce3-45a8-aba5-61fd16f5a636"/>
+    <managerType typeId="d9dfda5a-7a97-4af0-b01b-cdf4570d2be8" valueTypeId="3ee3b31c-c237-48a2-9a4d-52ce827e64dd"/>
+  </producedTypes>
+  <name>ЗапросТКП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрос - поручение представления коммерческого предложения</value>
+  </synonym>
+  <comment>Запрос - поручение представления коммерческого предложения от потенциального поставщика предметов снабжения</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЗапросТКП.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ЗапросТКП.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Запрос - поручение представления коммерческого предложения от потенциального поставщика предметов снабжения</value>
+  </explanation>
+  <forms uuid="4cbbc504-895c-4273-8768-3fc9b5cd7f49">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e2845d14-cd02-48e8-b509-01349f47f2c1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="925f15a9-15e1-42ed-b3f9-5a1a6c69635c">
+  <name>АктуализацияДанныхКаталогаПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализация данных каталога предметов снабжения</value>
+  </synonym>
+  <methodName>CommonModule.КорректировкаДанныхСправочников.АктуализацияДанныхКаталогаПредметовСнабжения</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

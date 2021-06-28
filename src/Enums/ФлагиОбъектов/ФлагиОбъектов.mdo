@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc2631b1-5e1b-403a-85d7-9f42aab85b4e">
+  <producedTypes>
+    <refType typeId="fd054ffb-eb84-4e58-b6e8-576de712a5c8" valueTypeId="93e082d4-2492-400b-8358-1e5c456e58d5"/>
+    <listType typeId="507cb1d0-d949-4bcb-a494-2868e02b639e" valueTypeId="98a2cc21-5800-4614-8eae-5499c385a884"/>
+    <managerType typeId="b828bf6c-fe7f-4a96-ae14-0484f7edcba8" valueTypeId="dc241fac-f4cb-405d-ad54-0611eaf7ad00"/>
+  </producedTypes>
+  <name>ФлагиОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Флаги объектов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Object flags</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultChoiceForm>Enum.ФлагиОбъектов.Form.ФормаВыбора</defaultChoiceForm>
+  <enumValues uuid="18f7c779-598d-4d3b-a932-d0b0a3c436d2">
+    <name>Красный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Красный флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Red flag</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9350c4d1-a1ce-4a33-8bef-b8ff75866432">
+    <name>Синий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синий флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Blue flag</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c3622aa7-1854-4f7d-a1ca-f615378ebd31">
+    <name>Желтый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Желтый флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Yellow flag</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bd914114-2719-4856-832b-390e542a58c9">
+    <name>Зеленый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зеленый флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Green flag</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="08cad68c-1f43-4479-8b2b-11905c8e37b8">
+    <name>Оранжевый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оранжевый флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Orange flag</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3cf6b4a6-317e-4497-9221-00adca06b397">
+    <name>Лиловый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лиловый флаг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Purple flag</value>
+    </synonym>
+  </enumValues>
+  <forms uuid="37976fa3-0a62-48fd-9eb2-9102e3b9d435">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Choice form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Enum>

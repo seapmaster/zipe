@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>РеквизитыОбъекта</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НовоеЗначение</dataPath>
+			<field>НовоеЗначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Реквизит</dataPath>
+			<field>Реквизит</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтароеЗначение</dataPath>
+			<field>СтароеЗначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипИзменения</dataPath>
+			<field>ТипИзменения</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИсторияИзмененияРеквизитовОбъектов.Реквизит КАК Реквизит,
+	ИсторияИзмененияРеквизитовОбъектов.Автор,
+	ИсторияИзмененияРеквизитовОбъектов.Дата КАК Дата,
+	ИсторияИзмененияРеквизитовОбъектов.СтароеЗначение,
+	ИсторияИзмененияРеквизитовОбъектов.НовоеЗначение,
+	ИсторияИзмененияРеквизитовОбъектов.ТипИзменения КАК ТипИзменения
+ИЗ
+	РегистрСведений.ИсторияИзмененияРеквизитовОбъектов КАК ИсторияИзмененияРеквизитовОбъектов
+ГДЕ
+	ИсторияИзмененияРеквизитовОбъектов.Объект = &amp;ОбъектИзменений
+	И ВЫБОР КОГДА &amp;ПоказатьТолькоИзменения ТОГДА (Объект, Реквизит) В (ВЫБРАТЬ РАЗЛИЧНЫЕ Объект, Реквизит ИЗ РегистрСведений.ИсторияИзмененияРеквизитовОбъектов ГДЕ НЕ ТипИзменения = ЗНАЧЕНИЕ(Перечисление.ТипыИзмененийОбъектов.Создан)) ИНАЧЕ ИСТИНА КОНЕЦ
+</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>РеквизитыТЧ</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИмяТЧ</dataPath>
+			<field>ИмяТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя табличной части</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвторТЧ</dataPath>
+			<field>АвторТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаТЧ</dataPath>
+			<field>ДатаТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НовоеЗначениеТЧ</dataPath>
+			<field>НовоеЗначениеТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новое значение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеквизитТЧ</dataPath>
+			<field>РеквизитТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реквизит</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтароеЗначениеТЧ</dataPath>
+			<field>СтароеЗначениеТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Старое значение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипИзмененияТЧ</dataPath>
+			<field>ТипИзмененияТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип изменения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючСвязи</dataPath>
+			<field>КлючСвязи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ связи</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтрокиТЧ</dataPath>
+			<field>НомерСтрокиТЧ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер строки ТЧ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИсторияИзмененияРеквизитовТабличныхЧастей.ИмяТЧ КАК ИмяТЧ,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.КлючСвязи КАК КлючСвязи,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.Реквизит КАК РеквизитТЧ,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.Автор КАК АвторТЧ,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.Дата КАК ДатаТЧ,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.СтароеЗначение КАК СтароеЗначениеТЧ,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.НовоеЗначение КАК НовоеЗначениеТЧ,
+	ИсторияИзмененияРеквизитовТабличныхЧастей.ТипИзменения КАК ТипИзмененияТЧ,
+	ВЫБОР КОГДА Реквизит = "НомерСтроки" ТОГДА НовоеЗначение ИНАЧЕ 0 КОНЕЦ КАК НомерСтрокиТЧ
+ИЗ
+	РегистрСведений.ИсторияИзмененияРеквизитовТабличныхЧастей КАК ИсторияИзмененияРеквизитовТабличныхЧастей
+ГДЕ
+	ИсторияИзмененияРеквизитовТабличныхЧастей.Объект = &amp;ОбъектИзменений
+	И НЕ ИсторияИзмененияРеквизитовТабличныхЧастей.Реквизит = "КлючСвязи"
+	И ВЫБОР КОГДА &amp;ПоказатьТолькоИзменения ТОГДА (Объект, Реквизит, КлючСвязи) В (ВЫБРАТЬ РАЗЛИЧНЫЕ Объект, Реквизит, КлючСвязи ИЗ РегистрСведений.ИсторияИзмененияРеквизитовТабличныхЧастей ГДЕ НЕ ТипИзменения = ЗНАЧЕНИЕ(Перечисление.ТипыИзмененийОбъектов.Создан)) ИНАЧЕ ИСТИНА КОНЕЦ
+</query>
+	</dataSet>
+	<totalField>
+		<dataPath>НомерСтрокиТЧ</dataPath>
+		<expression>Максимум(НомерСтрокиТЧ)</expression>
+		<group>КлючСвязи</group>
+	</totalField>
+	<parameter>
+		<name>ОбъектИзменений</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объект изменений</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:TypeSet xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef</v8:TypeSet>
+			<v8:TypeSet xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef</v8:TypeSet>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПоказатьТолькоИзменения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Показать только изменения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ОбъектИзменений</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПоказатьТолькоИзменения</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>29b30802-8b4a-4f07-80a0-4deaf2600c69</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История изменения объекта</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Реквизит</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СтароеЗначение</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НовоеЗначение</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТипИзменения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Автор</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemGroup">
+							<dcsset:groupType>OrGroup</dcsset:groupType>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">СтароеЗначение</dcsset:left>
+								<dcsset:comparisonType>Filled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:FilterItemComparison">
+								<dcsset:left xsi:type="dcscor:Field">НовоеЗначение</dcsset:left>
+								<dcsset:comparisonType>Filled</dcsset:comparisonType>
+							</dcsset:item>
+							<dcsset:presentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скрыть незаполненные реквизиты </v8:content>
+								</v8:item>
+							</dcsset:presentation>
+							<dcsset:userSettingID>bbaf33c3-44e0-4a60-9ce4-812fc627880b</dcsset:userSettingID>
+							<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Скрыть незаполненные реквизиты</v8:content>
+								</v8:item>
+							</dcsset:userSettingPresentation>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Реквизит</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ТипИзменения.Порядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>НовоеЗначениеТЧ</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ТипИзменения</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ГИТ_ТипыИзмененийОбъектов.Создан</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>НовоеЗначение</dcsset:field>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:field>СтароеЗначение</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+									<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
+									<dcscor:value xsi:type="xs:decimal">24</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>Реквизит</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Размещение</dcscor:parameter>
+									<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Cut</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+									<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:row>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменение полей объекта</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ИмяТЧ</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ИмяТЧ</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Together</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>КлючСвязи</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemField">
+								<dcsset:field>НомерСтрокиТЧ</dcsset:field>
+								<dcsset:orderType>Asc</dcsset:orderType>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:OrderItemField">
+								<dcsset:field>КлючСвязи</dcsset:field>
+								<dcsset:orderType>Asc</dcsset:orderType>
+							</dcsset:item>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>КлючСвязи</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:outputParameters>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>МакетОформления</dcscor:parameter>
+								<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+							</dcscor:item>
+						</dcsset:outputParameters>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>РеквизитТЧ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ДатаТЧ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>СтароеЗначениеТЧ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>НовоеЗначениеТЧ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ТипИзмененияТЧ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>АвторТЧ</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemGroup">
+									<dcsset:groupType>OrGroup</dcsset:groupType>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">СтароеЗначениеТЧ</dcsset:left>
+										<dcsset:comparisonType>Filled</dcsset:comparisonType>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:FilterItemComparison">
+										<dcsset:left xsi:type="dcscor:Field">НовоеЗначениеТЧ</dcsset:left>
+										<dcsset:comparisonType>Filled</dcsset:comparisonType>
+									</dcsset:item>
+									<dcsset:presentation xsi:type="v8:LocalStringType">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скрыть незаполненные реквизиты</v8:content>
+										</v8:item>
+									</dcsset:presentation>
+									<dcsset:userSettingID>e9f34730-bde0-447b-afab-1d3a7d3bbded</dcsset:userSettingID>
+									<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скрыть незаполненные реквизиты в табличных частях</v8:content>
+										</v8:item>
+									</dcsset:userSettingPresentation>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>КлючСвязи</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>РеквизитТЧ</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>ДатаТЧ</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:OrderItemField">
+									<dcsset:field>ТипИзмененияТЧ.Порядок</dcsset:field>
+									<dcsset:orderType>Asc</dcsset:orderType>
+								</dcsset:item>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>РеквизитТЧ</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ДатаТЧ</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>СтароеЗначениеТЧ</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>НовоеЗначениеТЧ</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>ТипИзмененияТЧ</dcsset:field>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:SelectedItemField">
+									<dcsset:field>АвторТЧ</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:conditionalAppearance>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>НовоеЗначениеТЧ</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">ТипИзмененияТЧ</dcsset:left>
+											<dcsset:comparisonType>Equal</dcsset:comparisonType>
+											<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ГИТ_ТипыИзмененийОбъектов.Создан</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">#CCFFCC</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>СтароеЗначениеТЧ</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter>
+										<dcsset:item xsi:type="dcsset:FilterItemComparison">
+											<dcsset:left xsi:type="dcscor:Field">ТипИзмененияТЧ</dcsset:left>
+											<dcsset:comparisonType>Equal</dcsset:comparisonType>
+											<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ГИТ_ТипыИзмененийОбъектов.Удален</dcsset:right>
+										</dcsset:item>
+									</dcsset:filter>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>ЦветФона</dcscor:parameter>
+											<dcscor:value xsi:type="v8ui:Color">#FF9900</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>НовоеЗначениеТЧ</dcsset:field>
+										</dcsset:item>
+										<dcsset:item>
+											<dcsset:field>СтароеЗначениеТЧ</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter/>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+											<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+										</dcscor:item>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
+											<dcscor:value xsi:type="xs:decimal">24</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+								<dcsset:item>
+									<dcsset:selection>
+										<dcsset:item>
+											<dcsset:field>РеквизитТЧ</dcsset:field>
+										</dcsset:item>
+									</dcsset:selection>
+									<dcsset:filter/>
+									<dcsset:appearance>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>Размещение</dcscor:parameter>
+											<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Cut</dcscor:value>
+										</dcscor:item>
+										<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+											<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+											<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+										</dcscor:item>
+									</dcsset:appearance>
+								</dcsset:item>
+							</dcsset:conditionalAppearance>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Together</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменение табличных частей объекта</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="066e090d-7c53-484c-9f08-3608d6bd9287">
+  <name>ОбщероссийскиеКлассификаторы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общероссийские классификаторы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ЕКПС</content>
+  <content>Catalog.ОКСМ</content>
+  <content>Catalog.ОКЕИ</content>
+  <content>Catalog.ТНВЭД</content>
+  <content>Catalog.Инкотермс2010</content>
+  <content>Catalog.ОКВ</content>
+  <content>Catalog.ОКАТО</content>
+  <content>Catalog.ОКВЭД2</content>
+  <content>Catalog.ОКПД2</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

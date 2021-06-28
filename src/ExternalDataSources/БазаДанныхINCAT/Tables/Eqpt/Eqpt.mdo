@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="422c8732-027f-4c6d-88a8-176cccc8645d">
+  <producedTypes>
+    <refType typeId="b4f29ab7-d84b-4a18-858a-72124d1793fb" valueTypeId="6bffd4a7-bc15-4235-9774-cc6c7b0b579a"/>
+    <listType typeId="f9bcc9df-85da-4d25-8709-d1c62a9deee6" valueTypeId="b1984124-b32c-4002-8874-4bd8540e4d61"/>
+    <objectType typeId="aa8389f0-563e-458b-992c-5e708ddc2002" valueTypeId="bd1ec831-fab2-403b-9c16-b2fd455fa361"/>
+    <managerType typeId="b459d4d1-573c-4a56-83f0-6f3a52f9b879" valueTypeId="1a9cdc68-27ce-44b4-9de8-a2090ba28e17"/>
+    <recordManagerType typeId="745f3ff1-1218-49ef-8d31-0ac234a9d95f" valueTypeId="ab28d805-5afb-446b-9f52-1556f815ad7c"/>
+    <recordSetType typeId="59683d40-b3d3-43b6-b9da-98f00dc5c656" valueTypeId="5289a4fb-d54b-4e62-82e6-aaa0aef6e5d7"/>
+    <recordType typeId="6e67cc13-d25a-4eaa-bc43-bdacf50928cb" valueTypeId="c6f10443-8ef0-4ffb-a453-ff50dc7443e4"/>
+    <recordKeyType typeId="57544c08-9120-46e0-b5c2-81ba12e7ce00" valueTypeId="d50e903c-a8a3-4b61-b56d-2d878404a1c3"/>
+  </producedTypes>
+  <name>Eqpt</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Eqpt</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="c2ce6f0c-f03c-48fa-802a-8e8f7b48e007">
+    <name>EqptItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>EqptItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="2c744f12-2c33-4aff-bd67-1db3be15cb8b">
+    <name>YearObsolescence</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>YearObsolescence</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="270af095-773f-4676-9ffd-bd6edf00533e">
+    <name>HoursEstimatedLife</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>HoursEstimatedLife</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="eafb0fa2-35f9-4834-afd7-84bb1bb241c6">
+    <name>HoursMTBF</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>HoursMTBF</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="8b8459b1-2313-403e-8b98-ab812f7bb580">
+    <name>HoursMTBR</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>HoursMTBR</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43620fff-f8ea-418b-9357-065844776d0a">
+  <producedTypes>
+    <objectType typeId="324d3e4d-6d4b-4c4b-aa74-e98e3833d638" valueTypeId="7a061cd1-9ae7-4c01-8873-2cd2292fd95b"/>
+    <managerType typeId="14f9b14c-7d6c-4948-a604-6bb4e5582e37" valueTypeId="dd056704-426a-4c17-84a8-145726975a2a"/>
+  </producedTypes>
+  <name>СтатистикаПоЗагруженнымДанным</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика по загруженным данным</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.СтатистикаПоЗагруженнымДанным.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СтатистикаПоЗагруженнымДанным.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="75d10a23-11aa-455d-afd1-2d0265d7b4c7">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d34e05dd-95af-4720-80cb-5f1acac60083">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

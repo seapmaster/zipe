@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48bb0387-8a69-4309-82b5-59adb09d2498">
+  <producedTypes>
+    <selectionType typeId="64624877-68b4-48f2-8e17-e34732392b83" valueTypeId="2b66eb3d-ac4e-41f1-bcec-e11fefa7d6b8"/>
+    <listType typeId="a4056cd8-32df-44ed-87fb-8e6fb33903aa" valueTypeId="aeff07be-f3c2-44f4-bd32-9f7339dbfbaa"/>
+    <managerType typeId="9973697f-da81-4d68-84c4-379a88746580" valueTypeId="81c612c9-23dd-4a77-9ddd-afd0e21d4265"/>
+    <recordSetType typeId="31b1dc33-65d8-4d93-9639-907f5c5ebbcc" valueTypeId="0e969350-19aa-4d05-8c08-636067fca36a"/>
+    <recordKeyType typeId="9f2ceaae-c2d1-4575-9e2d-ebd177f2b84f" valueTypeId="799c9549-c8ef-43a8-8135-6b6c5fd33bca"/>
+    <recordType typeId="caa079d9-ce14-4ef8-9b2a-9c7830087acc" valueTypeId="c255fe7c-40e6-4e11-a070-aeeee9816b70"/>
+    <recordManagerType typeId="dc99c447-b303-41c9-9e82-85a847055ae4" valueTypeId="0d745bf4-134f-4a24-909f-4412903861a6"/>
+  </producedTypes>
+  <name>КонтрактыСЗаказчикомПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контракты с заказчиком по заявкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="77647195-476b-4ef3-bbfe-610c2a884ef4">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Заявка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ec058969-a054-469e-b4ce-700c04a25afa">
+    <name>ИдентификаторПозиции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор позиции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

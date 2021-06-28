@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dddc2d95-f181-4b96-bf76-88a1d795bb2c">
+  <name>РазделФСВТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раздел ФСВТС</value>
+  </synonym>
+</mdclass:CommonPicture>

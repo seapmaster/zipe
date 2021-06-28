@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4d7993d-d56c-4fae-92ab-d3384e0bb894">
+  <name>ИностранныйЗаказчик</name>
+  <synonym>
+    <key>ru</key>
+    <value>Иностранный заказчик (ИНЗ)</value>
+  </synonym>
+</mdclass:Role>

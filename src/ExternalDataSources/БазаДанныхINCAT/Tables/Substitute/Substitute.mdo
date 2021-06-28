@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17b84e5d-d8de-4d20-9feb-8a116007edc4">
+  <producedTypes>
+    <refType typeId="e495c278-b175-4712-9df0-3fdbc957b33b" valueTypeId="defc3a6e-5616-4f90-86cb-6b0c57836aa3"/>
+    <listType typeId="5237e4a8-3c28-4a94-86f7-b9d1c60499b6" valueTypeId="e77bd55a-336f-4f2e-a5d8-646287ce947f"/>
+    <objectType typeId="7dfe0f78-6813-47e6-970b-46a204da90cc" valueTypeId="6fc7fa21-b58e-4b1e-a627-e9c4b69f2485"/>
+    <managerType typeId="cc15b98d-b483-4ee4-9483-18b165039592" valueTypeId="11dab948-76ac-4388-848d-afb5e37b1574"/>
+    <recordManagerType typeId="306acb9f-0c97-4bbb-968f-d5358a91345e" valueTypeId="a9972e48-2e80-4b34-8556-7b13ff8ad937"/>
+    <recordSetType typeId="9418348b-756a-4d41-8987-998352ebc8bf" valueTypeId="dc78315d-59b1-4184-b6cf-3573166ef42f"/>
+    <recordType typeId="73d61ba1-7b67-4d79-96e1-4391b5f4f823" valueTypeId="ec0c9ee6-8048-44b3-a72f-dc4aa89a52c1"/>
+    <recordKeyType typeId="229aaea3-db07-44ff-9164-fdd8874877ce" valueTypeId="36908930-612d-4b0d-adb2-fd9412b65208"/>
+  </producedTypes>
+  <name>Substitute</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Substitute</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="03b5ee2b-b8ce-4449-8fdd-cee37a8505ce">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="88ebc4bf-fd52-4826-88ae-c51249dbec2c">
+    <name>SubstituteItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>SubstituteItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="5a43eeae-b82f-4782-a7f5-cce6c8705be3">
+    <name>SubstituteType</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>SubstituteType</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

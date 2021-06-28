@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dae42776-8a49-47fd-9265-18bb43320cf8">
+  <producedTypes>
+    <selectionType typeId="be05a3a9-434d-4ace-8ac4-b29841d14d68" valueTypeId="0b480dd4-0615-49cb-9055-344c2c77acd8"/>
+    <listType typeId="c42aabf9-aea2-45d9-ab3c-2683e65fec66" valueTypeId="1143f407-05d6-4ddc-a779-ac1e0f0d2a2c"/>
+    <managerType typeId="8663ef61-5027-4ed1-849d-1ba50e1eec61" valueTypeId="c084d288-d54c-493a-b290-c54959ac9b15"/>
+    <recordSetType typeId="d8c489d7-94a5-4bde-a860-b9b743c0ffb9" valueTypeId="784485bc-9c51-48b8-9f29-4c3d97e2e425"/>
+    <recordKeyType typeId="935ee498-43eb-411a-a4ef-84b764873843" valueTypeId="0e6152a2-fc5a-43a7-bb37-7b2bf25fdf88"/>
+    <recordType typeId="362a7892-fdf4-4402-80d4-1f36ce99812c" valueTypeId="ea118af0-66ee-4ce8-abb0-3beffe8abe2d"/>
+    <recordManagerType typeId="5896fb68-c846-402d-83e7-ebec16913f89" valueTypeId="df53c898-07ad-431b-9185-31c4b0244fd0"/>
+  </producedTypes>
+  <name>ВыгруженныеПредметыСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгруженные предметы снабжения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="24ea43e8-3908-4c2a-8afc-c5fef60e82c9">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыВыгрузкиПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="f37352f2-d29d-4d88-95f1-0d1ce2b7600b">
+    <name>ДатаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="babb7605-cc14-46d7-bc15-10d093abeb81">
+    <name>Поставщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поставщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e2c0d3e7-a453-4de2-b390-01b4a707d530">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

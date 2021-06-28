@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa7e1b0e-5e7a-467a-8fc9-3917ca313526">
+  <producedTypes>
+    <objectType typeId="9faa1b90-641f-44b2-a670-407d46df0f95" valueTypeId="2793a57c-b311-4b16-9b0a-927de75c801d"/>
+    <refType typeId="8b6f3fcd-e1eb-4e0b-ae55-3ccc6bd198b5" valueTypeId="e9ea7431-72b4-46dc-a538-9d895cff0e35"/>
+    <selectionType typeId="d871bb38-11c7-4a6f-ad14-25c09cc192c7" valueTypeId="8c04372b-5853-4114-a69f-823a4551390c"/>
+    <listType typeId="6ee0aa41-e74b-4b02-8a8d-3eb027022ceb" valueTypeId="697a42cb-f97d-4f42-9123-c9d698497918"/>
+    <managerType typeId="c64d4cbc-58cd-49ee-84af-c695ca1612a7" valueTypeId="dde2ac09-941a-450f-be22-97be730c18bd"/>
+  </producedTypes>
+  <name>ЕКПС</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЕКПС</value>
+  </synonym>
+  <comment>Единый классификатор предметов снабжения</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЕКПС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЕКПС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>наименование класса/группы</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код (Класса/Группы)</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>код класса/группы</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>Единый классификатор предметов снабжения (группы и классы предметов снабжения)</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>3</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>4</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <editType>InDialog</editType>
+  <defaultObjectForm>Catalog.ЕКПС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ЕКПС.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ЕКПС.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="628c230b-025c-4b24-8266-a3c2ae78a3e7">
+    <name>ОписаниеГруппировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание группировки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>развернутое описание группировки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="62911337-2087-4e7d-aeb6-3380895ff6eb">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6aeeb230-8a43-48c8-9ea8-369974de5599">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4c7c5b8c-050a-47b1-8bb2-9b09e04268c0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="31bbf811-9a70-41c1-950b-564a5517c8e5">
+    <name>Классификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

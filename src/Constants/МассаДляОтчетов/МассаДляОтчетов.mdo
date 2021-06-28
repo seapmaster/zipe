@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1629e7a-f173-48e8-a3cf-e6482aa53a1f">
+  <producedTypes>
+    <managerType typeId="e2521fe7-98d8-4930-a715-6bea46098670" valueTypeId="44afe623-bd71-4586-82fa-5b24f2413d5e"/>
+    <valueManagerType typeId="a6eae90b-bf0d-45ea-a206-801936c7a9f1" valueTypeId="e06a7065-59e2-4833-915a-0bae06fc3dc1"/>
+    <valueKeyType typeId="6bbc6af4-d22f-5438-ae75-2c7351c1c32e" valueTypeId="9fd6cec6-d1e1-5ef5-9b99-be8df1524ffc"/>
+  </producedTypes>
+  <name>МассаДляОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Масса (для отчетов)</value>
+  </synonym>
+  <comment>//Веденеев 25.12.2017 //ОПЗ 6</comment>
+  <type>
+    <types>CatalogRef.ХарактеристикиПредметовСнабжения</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

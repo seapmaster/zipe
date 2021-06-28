@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e1812f7-696c-43fc-81ca-2098e406fe73">
+  <producedTypes>
+    <objectType typeId="2ab0c97e-a672-42d8-92f3-9f68d04af0a6" valueTypeId="a10fc73b-af3d-4925-98d1-c1332a56a45a"/>
+    <managerType typeId="da4428ae-c092-4188-9086-b51d90096407" valueTypeId="f5fc9ebc-2174-44f6-8c5d-701eca9ae624"/>
+  </producedTypes>
+  <name>УдалениеДублейИзТЧПоставщики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление дублей из таблицы поставщиков предметов снабжения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УдалениеДублейИзТЧПоставщики.Form.Форма</defaultForm>
+  <forms uuid="f2d10388-1f09-4673-9683-001bf68977ca">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

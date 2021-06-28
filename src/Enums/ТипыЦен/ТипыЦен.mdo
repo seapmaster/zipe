@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07b68402-e6fb-43bb-b973-cabbac8d161c">
+  <producedTypes>
+    <refType typeId="909ad6e8-539c-4954-8bda-ae181c280927" valueTypeId="9882277c-f774-4741-9235-c050a740b0b5"/>
+    <listType typeId="23c20e07-8fe3-4e81-867f-841982544900" valueTypeId="69295899-6429-4b40-8c90-8f46d8ea5d22"/>
+    <managerType typeId="e0230db5-294c-4798-acd3-69f5a15b378e" valueTypeId="a99b7abc-b8c7-4ebe-8a24-2c055c64c756"/>
+  </producedTypes>
+  <name>ТипыЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы цен</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1095336a-89e7-4f44-8b38-e14cff65ce45">
+    <name>Внутренняя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренняя</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ac56ee6-b14f-42cc-b46d-df337325b2f5">
+    <name>Внешняя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

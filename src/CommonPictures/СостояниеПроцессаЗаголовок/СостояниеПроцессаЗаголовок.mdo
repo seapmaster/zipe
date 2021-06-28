@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d8744042-9847-4350-9ad1-f3603409102c">
+  <name>СостояниеПроцессаЗаголовок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние процесса заголовок</value>
+  </synonym>
+</mdclass:CommonPicture>

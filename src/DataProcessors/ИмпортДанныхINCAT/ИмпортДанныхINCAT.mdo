@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7beab279-e920-4421-8ae0-98223904b986">
+  <producedTypes>
+    <objectType typeId="839bef7e-1334-4fb4-a53e-c9b00e89a5d6" valueTypeId="2015240f-3d45-4a6f-9385-960aec542162"/>
+    <managerType typeId="31dd7f22-affe-4265-a8a6-3dec27fab91a" valueTypeId="61b1b303-d3d0-4c7b-8185-351a2dda7f37"/>
+  </producedTypes>
+  <name>ИмпортДанныхINCAT</name>
+  <synonym>
+    <key>ru</key>
+    <value>Импорт данных INCAT</value>
+  </synonym>
+  <comment>//веденеев 28.08.2017// обработка импорта данных INCAT (проект 11356) в формате MS Access</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ИмпортДанныхINCAT.Form.Форма</defaultForm>
+  <forms uuid="a03c72ad-3102-4d00-93fc-6d7889c06f0e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

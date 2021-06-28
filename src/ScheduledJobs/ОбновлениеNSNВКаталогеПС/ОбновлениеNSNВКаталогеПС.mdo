@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f640dfeb-2b49-4ede-87a5-28c80a96cb9f">
+  <name>ОбновлениеNSNВКаталогеПС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление NSN в каталоге ПС</value>
+  </synonym>
+  <methodName>CommonModule.ОбщиеФункцииСервер.ОбновлениеNSNВКаталогеПС</methodName>
+  <description>Обновление NSN в каталоге ПС</description>
+  <key>ОбновлениеNSNВКаталогеПС</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>1</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

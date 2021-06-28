@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aff14fb2-17d2-4d9b-8bf8-284f3ca4ed9a">
+  <name>ЗаявкиИКонтракты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки и контракты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Отображение перечня заявок с возможностью их добавления, корректировки, удаления и просмотра содержимого заявки.</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Цены</picture>
+  </picture>
+  <content>Catalog.Инкотермс2010</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.ДоговорыСПоставщиком</content>
+  <content>Document.Контракт</content>
+  <content>Document.Заявка</content>
+  <content>Document.ЗапросТКПRFP</content>
+  <content>InformationRegister.ЭтапыВыполненияЗаявки</content>
+  <content>Document.РезультатыТендера</content>
+  <content>DataProcessor.МастерЗагрузкиЦенПоставщиков</content>
+  <subsystems>Цены</subsystems>
+</mdclass:Subsystem>

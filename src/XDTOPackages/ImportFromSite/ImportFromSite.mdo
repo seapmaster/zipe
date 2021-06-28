@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6b206c7-9da1-4de5-a939-13625a9351da">
+  <name>ImportFromSite</name>
+  <synonym>
+    <key>ru</key>
+    <value>Import from site</value>
+  </synonym>
+  <namespace>http://seaproject.ru/iss_zip/import_from_site</namespace>
+</mdclass:XDTOPackage>

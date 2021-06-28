@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2e10f06-704e-4928-b06c-846d32c5526f">
+  <name>УдалениеДублейПоставщиковПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление дублей из таблицы поставщиков предметов снабжения</value>
+  </synonym>
+  <methodName>CommonModule.РегламентныеЗаданияПереопределяемый.УдалитьДублиПоставщиковПредметовСнабжения</methodName>
+  <description>Удаление дублей из таблицы поставщиков предметов снабжения</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

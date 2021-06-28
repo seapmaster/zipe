@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6009d188-1805-43a0-b925-a66ca89a8eaf">
+  <name>ОбменДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Пополнение массивов данных по ЗИП от ДЗО, РОЭ, МО РФ и Контрагентов посредством файлов заданной структуры.</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбменДанными</picture>
+  </picture>
+  <content>InformationRegister.ЛогЗагрузки</content>
+  <content>DataProcessor.ЗагрузкаДанныхИзФайла</content>
+  <content>Report.ОтчетПоЗагруженнымДанным</content>
+  <content>DataProcessor.ВыгрузкаДляСайта</content>
+  <content>DataProcessor.ИмпортЗаявок</content>
+  <content>DataProcessor.ИмпортСтруктурыКораблей</content>
+  <content>DataProcessor.ЗагрузкаЦенПоПроекту877</content>
+  <content>DataProcessor.ЗагрузкаПоставщиковИзExcel</content>
+  <content>DataProcessor.ЗагрузкаКартинокМурена</content>
+  <content>Report.СтатистикаПоЗагруженнымДанным</content>
+  <content>DataProcessor.ИмпортДанныхINCAT</content>
+  <content>DataProcessor.ИмпортДанныхПредметовСнабженияИзExcel</content>
+  <content>DataProcessor.ВыгрузкаФайловПСДляПоставщиков</content>
+  <content>InformationRegister.ВыгруженныеПредметыСнабжения</content>
+  <content>Enum.СтатусыВыгрузкиПредметовСнабжения</content>
+  <content>DataProcessor.ВыгрузкаДанныхВФорматеINCAT</content>
+  <content>BusinessProcess.ВзаимодействиеСРОЭ</content>
+  <content>InformationRegister.ВходящиеЭлектронныеПисьма</content>
+  <content>InformationRegister.ИсходящиеЭлектронныеПисьма</content>
+  <content>BusinessProcess.УведомлениеОФормированииЗаявки</content>
+  <content>BusinessProcess.ЗапросНаАктуализациюКаталогаПоставщика</content>
+  <content>DataProcessor.ОбменДаннымиСПоставщиками</content>
+  <content>DataProcessor.ИмпортКаталогаНАТО</content>
+  <content>BusinessProcess.ФормированиеЗаявки</content>
+  <subsystems>ПочтовыеСообщенияИсходящие</subsystems>
+</mdclass:Subsystem>

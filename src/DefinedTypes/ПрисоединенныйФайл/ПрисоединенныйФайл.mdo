@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bef6081e-f377-41d6-83a1-b0e218a3fb46">
+  <producedTypes>
+    <containerType typeId="38cab6fc-a064-4995-9ab1-0e13c91bc34e" valueTypeId="af4be178-f85b-4a44-ab7a-db749c737979"/>
+  </producedTypes>
+  <name>ПрисоединенныйФайл</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенный файл</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ПочтовоеСообщениеПрисоединенныеФайлы</types>
+    <types>CatalogRef.ФлотыПрисоединенныеФайлы</types>
+    <types>CatalogRef.КаталогПредметовСнабженияПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗапросТКПRFPПрисоединенныеФайлы</types>
+    <types>CatalogRef.ПроектыКораблейПрисоединенныеФайлы</types>
+    <types>CatalogRef.КонтрактПрисоединенныеФайлы</types>
+    <types>CatalogRef.БоевыеЧастиПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЯзыкиПрисоединенныеФайлы</types>
+    <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИППрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗаявкаПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗапросНаАктуализациюКаталогаПоставщикаПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗаказыПрисоединенныеФайлы</types>
+    <types>CatalogRef.РезультатыТендераПрисоединенныеФайлы</types>
+    <types>CatalogRef.ОКСМПрисоединенныеФайлы</types>
+    <types>CatalogRef.ЗаявкаФСВТСПрисоединенныеФайлы</types>
+    <types>CatalogRef.ШаблоныСообщенийПрисоединенныеФайлы</types>
+    <types>CatalogRef.ВзаимодействиеСРОЭПрисоединенныеФайлы</types>
+  </type>
+</mdclass:DefinedType>

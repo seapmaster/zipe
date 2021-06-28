@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61c0297e-b8db-4b83-9aaa-6f12bb9d3b3f">
+  <name>ИнтеграцияКИС_УМТО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция КИС УМТО</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>HTTPService.ExchangeUMTO</content>
+  <content>Document.Контракт</content>
+  <content>Catalog.Организации</content>
+  <content>Catalog.КаталогПредметовСнабжения</content>
+  <content>CommonModule.ОбменСУМТО</content>
+  <content>InformationRegister.ИсторияЗапросовУМТО</content>
+  <parentSubsystem>Subsystem.Интеграция</parentSubsystem>
+</mdclass:Subsystem>

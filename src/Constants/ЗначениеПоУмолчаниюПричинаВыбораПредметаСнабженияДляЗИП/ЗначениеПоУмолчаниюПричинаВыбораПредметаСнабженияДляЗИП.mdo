@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="905e66f9-1404-48c3-ae2f-d9d23e18a2d3">
+  <producedTypes>
+    <managerType typeId="cf9e69f4-add0-4963-b997-348cd23dc370" valueTypeId="a2ce8ed5-0891-46f7-84f0-1e64dc08abaf"/>
+    <valueManagerType typeId="5fadb176-207f-444c-b85a-162d4ffa2184" valueTypeId="4b129f53-1017-41d8-beee-468cac933143"/>
+    <valueKeyType typeId="7ef4b2f5-91cc-54af-9e80-95136035ddaf" valueTypeId="95efd146-3bb8-52f2-bd57-65241280f856"/>
+  </producedTypes>
+  <name>ЗначениеПоУмолчаниюПричинаВыбораПредметаСнабженияДляЗИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значение по умолчанию причина выбора предмета снабжения для ЗИП</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ПричиныВыбораПредметаСнабженияДляЗИП</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f02e128-7864-43da-bae1-3d48ca5bfcc6">
+  <producedTypes>
+    <refType typeId="e4635cc2-b01f-42f1-8627-7ad9815fe419" valueTypeId="a9c3bbe1-197d-49f0-a290-4a74531687d1"/>
+    <listType typeId="49065af0-2b70-40ce-92c5-85cd88be4c38" valueTypeId="6ab7ab93-c5fc-4f45-8ab4-e98cdd095d59"/>
+    <objectType typeId="708a37ab-4907-4530-94a2-25f7d00a713b" valueTypeId="65e30305-b05e-4368-8474-67d877bb17eb"/>
+    <managerType typeId="3107a361-e81a-4847-beca-a5c7883a5f31" valueTypeId="f76d7ba4-a7b5-482d-9d3a-e5f4c1a386a9"/>
+    <recordManagerType typeId="fa8141e1-5350-4beb-97cc-8a0ede7694b5" valueTypeId="a9ae998f-72c3-4910-bcbe-0c28ec6d8346"/>
+    <recordSetType typeId="14bef340-c9cd-45dd-bbf5-8c94738c0a0b" valueTypeId="01e02ea8-0e1c-4d2b-87a5-b10ae71df8a3"/>
+    <recordType typeId="a9192d0b-efac-4df8-9237-8901e10ed4ad" valueTypeId="f8bd06b2-0b0c-4742-82d4-e29842b3193e"/>
+    <recordKeyType typeId="59e854ae-f54b-4835-bd13-65c05aa072d8" valueTypeId="63000936-9e4c-407a-bed7-71376bbdf5e0"/>
+  </producedTypes>
+  <name>EASK</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>EASK</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="c8545b65-d9be-4348-8bed-0228bc85fe9c">
+    <name>EASKItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>EASKItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="54f17adc-c0eb-43cd-b784-f912ea52339e">
+    <name>EASKType</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>EASKType</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="100041d3-a341-46c1-a208-8eb178cc7de6">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="cb42a01d-360b-4d35-9d10-973e52e3b043">
+    <name>QtyConstituent</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>QtyConstituent</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="8b16c7ae-dfdc-41b5-bf71-9258612e09b4">
+    <name>EASKBookRef</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>EASKBookRef</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="953ce2c7-72a2-4827-8e39-950b480ef386">
+    <name>QtyBDManufacturer</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>QtyBDManufacturer</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="d95515d2-e3fe-4586-9063-3cd8158231dc">
+    <name>QtyOBManufacturer</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>QtyOBManufacturer</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="95c522b3-a6cf-4529-925c-2d2626fa44b4">
+    <name>QtyLTEManufacturer</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>QtyLTEManufacturer</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

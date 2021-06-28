@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2908724d-60cf-4711-adbc-e1206c85adf5">
+  <name>ШаблонФайлаОбменаСПоставщиками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблон файла обмена с поставщиками</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

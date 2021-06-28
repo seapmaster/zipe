@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="235150d9-2ca0-4bad-b049-aabf35001f58">
+  <name>Интеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <subsystems>ИнтеграцияКИС_УМТО</subsystems>
+  <subsystems>Интеграция_ХранилищеФайлов</subsystems>
+</mdclass:Subsystem>

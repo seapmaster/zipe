@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9484bb75-ae64-42c3-8085-497f0c849bb0">
+  <producedTypes>
+    <selectionType typeId="1b6eb2b5-087e-4cfd-9fca-21a20d127243" valueTypeId="181852cb-e568-454d-883f-9fef68aa71af"/>
+    <listType typeId="c94f541f-605f-45d9-bcf0-bcb32e784245" valueTypeId="92fd04a2-6b09-4f10-82d8-7dae0ab0e965"/>
+    <managerType typeId="8ea4552e-e203-4bff-9a4d-2bf870cb1e0b" valueTypeId="25aa57b7-7a58-483b-be5b-f0e5d637850e"/>
+    <recordSetType typeId="a901b6de-32f9-4d6a-ab04-4c1b0e3d24f7" valueTypeId="67fbfe05-af36-4899-93cb-acc7a2cd8973"/>
+    <recordKeyType typeId="8de45de0-2760-4515-893e-af7e9e484f16" valueTypeId="aed9e74e-1600-4d18-ab2f-4ff37f698f26"/>
+    <recordType typeId="34234f81-7aad-4759-8ac0-b4973926cbb5" valueTypeId="ca286493-9d00-4dc0-9f26-f955097db092"/>
+    <recordManagerType typeId="1262defc-f7fa-4a05-bdfc-4fb30e609101" valueTypeId="a1051b24-42dd-469a-b7f8-98e1217aab95"/>
+  </producedTypes>
+  <name>ЭталонныеИзделияВСтруктуреЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Эталонные изделия в структуре заказов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЭталонныеИзделияВСтруктуреЗаказов.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f0de28db-7b2a-4bf4-8c4b-a19c9549a7eb">
+    <name>ЭлементСтруктурыЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент структуры заказа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="76bda0d8-84e5-4187-9651-7cdc63e1ab1d">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="709c9278-211c-40ed-957f-e8d7e9f9d5ef">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

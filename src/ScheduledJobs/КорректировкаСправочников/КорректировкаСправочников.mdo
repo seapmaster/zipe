@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94d8cf66-ef2d-49d5-ac55-47bf899d938c">
+  <name>КорректировкаСправочников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка справочников</value>
+  </synonym>
+  <methodName>CommonModule.КорректировкаДанныхСправочников.КорректировкаСправочников</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e638911e-de1b-4fbe-a9ba-9b6860d5d5e4">
+  <producedTypes>
+    <refType typeId="8976eff4-b4ec-4485-992d-370971764980" valueTypeId="ec7d9527-e70f-4a29-91db-da44b529b11b"/>
+    <listType typeId="387f2a21-19a5-40c5-8ed1-6f3aeac2362a" valueTypeId="a8ae3c15-eca5-4ae6-97e6-301b991d86b9"/>
+    <managerType typeId="8988b6ba-4679-46dd-b8d6-d8f05ca0ef67" valueTypeId="c07f8542-b6e5-40d8-9660-e1ee2e99d802"/>
+  </producedTypes>
+  <name>ТипыКонтрактов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы контрактов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ed1c27a9-3543-4030-9f84-26d5b987c838">
+    <name>Контракт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aa1d6ef4-4383-4b7f-9d3a-24cfd1da907a">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8b2371b1-1ef5-4527-be17-dfde8c9ab78b">
+    <name>КоммерческоеПредложение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коммерческое предложение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a769857a-0dee-4ddb-91ae-7c0339af1b25">
+    <name>ТКП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТКП</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

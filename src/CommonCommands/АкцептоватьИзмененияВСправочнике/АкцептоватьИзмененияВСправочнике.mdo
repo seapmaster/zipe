@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="959cb16e-2e0e-4b2e-9c21-974c9046a90b">
+  <name>АкцептоватьИзмененияВСправочнике</name>
+  <synonym>
+    <key>ru</key>
+    <value>Акцептовать изменения</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType/>
+  <representation>PictureAndText</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Отправить изменения на согласование руководителю</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.BusinessProcessStart</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

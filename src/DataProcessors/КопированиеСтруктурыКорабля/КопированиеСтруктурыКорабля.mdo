@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25ea2c0a-fa68-4971-92d6-1de53c090465">
+  <producedTypes>
+    <objectType typeId="6003be9b-e3b1-4aed-ba1b-60cbabbd7696" valueTypeId="b33d8830-6ce3-4b66-8223-48fd0e1920d9"/>
+    <managerType typeId="2db98fd6-816f-425a-afa9-f93a9268f7f7" valueTypeId="6fbe2896-05d3-47de-9205-e85ecc99db06"/>
+  </producedTypes>
+  <name>КопированиеСтруктурыКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Копирование структуры корабля</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КопированиеСтруктурыКорабля.Form.Форма</defaultForm>
+  <forms uuid="344e7d05-41dc-49c3-9089-48274451791f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="818836aa-c227-442c-941d-44461349384e">
+  <name>КрасныйФлаг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Красный флаг</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Red flag</value>
+  </synonym>
+</mdclass:CommonPicture>

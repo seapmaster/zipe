@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="256e8bd0-73f8-4a02-8ee0-444321cf4b8c">
+  <producedTypes>
+    <selectionType typeId="8198bd6f-e96a-4faa-bc61-ec348ccac753" valueTypeId="067676be-1093-4cb0-b388-3a9c22671365"/>
+    <listType typeId="713bb045-7be2-475d-96e5-db9d1bebb5fd" valueTypeId="f1f6fb30-e9bc-456a-a761-a939543261bd"/>
+    <managerType typeId="b69bcf1f-7448-4942-976a-230fa057a036" valueTypeId="41c9755f-96f5-4643-a5eb-3c99b59ef298"/>
+    <recordSetType typeId="0de02afe-f6d1-49f7-9ba7-62d581a6d4c4" valueTypeId="d98d9001-afdd-4bf3-bb3f-c9faca598cd7"/>
+    <recordKeyType typeId="984848d0-9604-4c7a-ab07-58d914d3b9d0" valueTypeId="087b3ae2-3ee2-4b7f-a5b7-099ab2acc3eb"/>
+    <recordType typeId="262095ca-1392-4877-b091-ed42d03fc7ca" valueTypeId="837d4cfd-19f2-4907-831c-2ae837938a10"/>
+    <recordManagerType typeId="89edf269-0285-4a55-a3f1-6e83c97691e3" valueTypeId="893e8c43-fad2-46c1-99e4-c973a246114b"/>
+  </producedTypes>
+  <name>КодыINCAT</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды INCAT</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fe46d744-b8e7-4b01-8870-2842f4ff9709">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="556a9222-e110-4782-82e1-4df7f57e7720">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0cd85902-093a-4e05-af2c-23a9bc0a90ff">
+    <name>КодINCAT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код INCAT</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

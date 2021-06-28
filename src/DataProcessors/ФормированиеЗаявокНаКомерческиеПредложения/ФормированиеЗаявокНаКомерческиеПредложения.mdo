@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d0988712-cb6c-42dd-a66e-30f5701d6e24">
+  <producedTypes>
+    <objectType typeId="08d82371-30ad-4f6a-b2a7-aeb92fba4950" valueTypeId="25a2d1e3-3396-4eff-b9ed-5c667d3bac9b"/>
+    <managerType typeId="3765b901-9663-4e27-ae8a-8198f69933ec" valueTypeId="936e1489-545e-4ab3-83f6-bb5c6e10a979"/>
+  </producedTypes>
+  <name>ФормированиеЗаявокНаКомерческиеПредложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование заявок на комерческие предложения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФормированиеЗаявокНаКомерческиеПредложения.Form.Форма</defaultForm>
+  <forms uuid="13e910ad-b528-4972-b192-21a544473841">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7ae81cc8-700d-4193-b2ef-3b54a8da2647">
+    <name>МакетПредметыСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет предметы снабжения</value>
+    </synonym>
+  </templates>
+  <templates uuid="456dbffa-9423-41d9-bdea-bab0693fa813">
+    <name>МакетПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет письма</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

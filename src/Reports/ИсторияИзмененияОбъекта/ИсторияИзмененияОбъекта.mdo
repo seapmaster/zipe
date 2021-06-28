@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ab9db8d-64fc-4ff3-8a00-2b4ee3daa843">
+  <producedTypes>
+    <objectType typeId="430d60ed-e425-4a2e-8d3f-3302763ac98f" valueTypeId="a19d1366-01aa-4ec4-bc35-9077afd9a371"/>
+    <managerType typeId="7620594b-8286-401f-a483-208b0a9d6c32" valueTypeId="a2ca1257-637f-4d4b-8bd2-08329d140c27"/>
+  </producedTypes>
+  <name>ИсторияИзмененияОбъекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменения объекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ИсторияИзмененияОбъекта.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ИсторияИзмененияОбъекта.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="b2378a77-b5d3-43e5-8dc9-445e3b3d6c1e">
+    <name>ОбъектИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект изменений</value>
+    </synonym>
+    <type>
+      <types>AnyRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6ae1cb0c-a3f3-4814-84ff-510cdd660cc3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bbc1b44c-4d84-40fa-b024-c2d5e4f60a50">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

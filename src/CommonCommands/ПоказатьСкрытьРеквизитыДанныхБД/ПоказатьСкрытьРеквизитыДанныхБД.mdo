@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6716d45-e571-44db-b8d0-6be0b4070b85">
+  <name>ПоказатьСкрытьРеквизитыДанныхБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показать/скрыть данные БД</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

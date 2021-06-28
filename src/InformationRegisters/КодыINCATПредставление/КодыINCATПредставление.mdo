@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8941377b-60c1-4cbd-ba5a-e9b55fde1e65">
+  <producedTypes>
+    <selectionType typeId="1a220c65-240c-49f2-98af-5ed257b5e941" valueTypeId="99414ec5-d347-43ca-b67a-c7faaa4f6f1f"/>
+    <listType typeId="5fda8f3b-9557-4a6e-944c-766f310da137" valueTypeId="e4048e00-3ed5-420e-ac3a-02b88b2140e1"/>
+    <managerType typeId="fd87142a-e5f9-4e07-b6b7-733c8d3907f9" valueTypeId="9b14621d-996e-4cdf-b36a-0fcd54a26807"/>
+    <recordSetType typeId="0018cc35-3646-450a-8aa3-33c38f266ad2" valueTypeId="cabcb2ea-82fb-4668-8464-fb8564f6cbdd"/>
+    <recordKeyType typeId="c347a3c4-953c-47ba-9f76-d1829d0a5836" valueTypeId="a512de1b-3fe8-4297-b36c-da77f4ea1614"/>
+    <recordType typeId="0c0b9861-ec9a-4ac0-bd00-fd66e1daeb69" valueTypeId="a17725a3-d5a0-4ffa-94d3-b9123599126c"/>
+    <recordManagerType typeId="28faba79-2a48-4985-98c0-fd50e7a3306f" valueTypeId="dc88ed64-beff-4f98-b435-7f61018c49c3"/>
+  </producedTypes>
+  <name>КодыINCATПредставление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды INCAT Представление</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="94832ca2-a1b1-4182-80aa-26ff0bef4be5">
+    <name>Представление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="32a84703-53fe-4668-9f2d-39fd32c4fd79">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba645897-6d9b-4ddf-99b0-06997baa5259">
+  <producedTypes>
+    <objectType typeId="0c8ce7c3-0bfb-4a95-8a43-5a4da66852e8" valueTypeId="47e52a29-96d9-4f42-a1b1-a60fb1c71c44"/>
+    <managerType typeId="b8bba8bd-90e6-4e42-983d-90b055248b4c" valueTypeId="a52c28fd-86be-41ef-a34e-9efff1dd3348"/>
+  </producedTypes>
+  <name>ВыгрузкаФайловПСДляПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка файлов ПС для поставщиков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаФайловПСДляПоставщиков.Form.Форма</defaultForm>
+  <forms uuid="24761044-84f7-4f7d-b155-f7630f55758b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="50bfa741-90a5-4fcf-96dc-218ecf63f360">
+    <name>МакетExcel</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет excel</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="8d1f5963-6bbb-43a3-8704-bed9fcdfaeca">
+    <name>МакетWord</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет word</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="924fe925-2261-497d-8819-c3e0e42d1b1a">
+    <name>МакетPDF</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет PDF</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:DataProcessor>

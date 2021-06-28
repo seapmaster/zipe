@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f2a83cd-fa10-4728-8024-f9dbf2b5f62c">
+  <producedTypes>
+    <objectType typeId="d1dec6a9-795b-49d1-b3da-b7396cb58d00" valueTypeId="38fd3404-48c3-4ca6-8fb1-16a966afa8ac"/>
+    <refType typeId="c11219a2-4b33-46e9-b58a-507257470e0b" valueTypeId="76eaa55c-fadc-4743-8d91-ef221eb974df"/>
+    <selectionType typeId="d0d61a41-52d8-403d-907f-f27189ddccef" valueTypeId="92d62a2b-a261-489e-8bb0-75a03cebd623"/>
+    <listType typeId="db63ca20-bc3f-4c85-912f-bd4f0ef12ea5" valueTypeId="58d16e24-6b49-4e47-8fba-491b80ffe4a5"/>
+    <managerType typeId="a8ab64df-84a6-4c61-9fe5-1e774119e3ef" valueTypeId="4fe21d17-1621-4d9d-87bb-0734002b434a"/>
+  </producedTypes>
+  <name>ЭкземплярыКомплектующихИзделийКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экземпляры комплектующих изделий корабля</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭкземплярыКомплектующихИзделийКорабля.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭкземплярыКомплектующихИзделийКорабля.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <toolTip>
+      <key>ru</key>
+      <value>элемент структуры корабля, экземпляром которого является данный элемент</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>наименование экземпляра оборудования</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>код экземпляра оборудования</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>Экземпляры комплектующих изделий корабля</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЭкземплярыКомплектующихИзделийКорабля.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЭкземплярыКомплектующихИзделийКорабля.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ЭкземплярыКомплектующихИзделийКорабля.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="64ddfae6-dbb4-4cf3-a530-505aa5133dc7">
+    <name>СудовойНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Судовой номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>судовой номер экземпляра</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb88651c-22dd-4908-9553-a13d49deec6f">
+    <name>ЗаводскойНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заводской номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>заводской номер экземпляра</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="40ab37d1-76db-41c5-bfcb-098bc5f0cba5">
+    <name>УчетныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетный номер</value>
+    </synonym>
+    <comment>Учетный номер изделия по справочнику Юпитер-СТО</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>учетный номер изделия по справочнику Юпитер-СТО</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7aae86c1-21f4-40d4-a09c-b43225975741">
+    <name>НомерПозиции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер позиции</value>
+    </synonym>
+    <comment>Номер позиции на чертеже системы</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>номер позиции на чертеже системы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="36112cd2-249c-4d12-9b9f-39873626daed">
+    <name>Помещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помещение</value>
+    </synonym>
+    <comment>Помещение, в котором установлен экземпляр комплектующего изделия</comment>
+    <type>
+      <types>CatalogRef.Помещения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>помещение, в котором установлен экземпляр комплектующего изделия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4dd5c1e9-9975-4780-85e9-bfb1fb0b7988">
+    <name>ДатаИзготовления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изготовления</value>
+    </synonym>
+    <comment>Дата изготовления комплектующего изделия</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>дата изготовления комплектующего изделия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d817c8fe-adff-4955-baaf-73923735d640">
+    <name>ДатаВвода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата ввода</value>
+    </synonym>
+    <comment>Дата ввода в эксплуатацию</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>дата ввода комплектующего изделия в эксплуатацию</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="75cd8e13-6951-4e26-ab93-bef497ff74c3">
+    <name>ДополнительнаяИнформация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная информация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1fcf5107-8fd5-429b-87a5-75f61cd50564">
+    <name>Корабль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корабль</value>
+    </synonym>
+    <comment>для связи при отборах</comment>
+    <type>
+      <types>CatalogRef.Заказы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>корабль, на котором установлено комплектующее изделие</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="e12ca7b2-23eb-407d-b080-90a374efad6c">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e148fbdb-c023-49cb-9052-170a69ee97f1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="aa0ff2b4-5fa1-4ab5-b074-2f645307a2ea">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

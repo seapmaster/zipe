@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="756263cb-9a64-447c-a243-4c4f53bdbcb9">
+  <producedTypes>
+    <objectType typeId="96669cb6-27b7-4b30-8ab9-b55fa1a0058f" valueTypeId="2d1ae43f-7150-4f78-8541-623f8f1b30a5"/>
+    <managerType typeId="ea95aed0-38c3-4b22-a3ca-9f89a27821ad" valueTypeId="9338d494-090f-4481-a2d9-7537df879cb0"/>
+  </producedTypes>
+  <name>ПереченьКомплектующихИзделийКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перечень комплектующих изделий корабля (форма 7)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПереченьКомплектующихИзделийКорабля.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="2f7db4d3-a81b-448b-a65d-9975e964951d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

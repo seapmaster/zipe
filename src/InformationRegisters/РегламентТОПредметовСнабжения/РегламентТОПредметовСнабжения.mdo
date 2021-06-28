@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae64487b-5c57-47bd-ab01-ee3df2ea6e54">
+  <producedTypes>
+    <selectionType typeId="8da86a95-55c0-4b5f-9c9e-6c9725fd8e12" valueTypeId="0a4c96f9-3a73-4c07-9567-b1ee9309ddd4"/>
+    <listType typeId="e72cad8a-6185-476e-ab45-995751d47aa6" valueTypeId="93000711-21d1-4be0-a037-d171555ab9fd"/>
+    <managerType typeId="fa3a5eeb-c628-4f8e-bbac-56794582a6a0" valueTypeId="b2ead5d4-c9ca-4be9-939f-564efc737451"/>
+    <recordSetType typeId="0bfad7f4-5d5d-45fa-a371-83693a28d402" valueTypeId="ba1421cf-5143-4f1a-9bbd-c5ade092e6b9"/>
+    <recordKeyType typeId="caf25c1a-59eb-438e-a880-c1ed305ae386" valueTypeId="04a4c821-f656-4459-bfc9-f34497dac53c"/>
+    <recordType typeId="215191b7-461d-431a-a401-718aa4eef1b6" valueTypeId="3183f28e-9391-4abe-97db-e956d83bfcbb"/>
+    <recordManagerType typeId="ec8fb5da-f4a0-4dc5-a249-84ba5735e25c" valueTypeId="b860e8d1-f269-4afa-afd9-71d5b1a9c7c7"/>
+  </producedTypes>
+  <name>РегламентТОПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламент ТО ПС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="79b1854e-538a-454d-b4a2-7d78578d65d8">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf09d6a0-0439-46f2-8abe-b73d7515415d">
+    <name>Продолжительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжительность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="64b69008-a7d9-4bf1-9585-bdbd297883e8">
+    <name>ТрудоемкостьРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудоемкость работы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="85f86e72-6117-4907-bada-7b547ffdd55b">
+    <name>ТрудоемкостьСопутствующихРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Трудоемкость сопутствующих работ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="94ad3296-d3cf-410d-953d-454d6be3d8a1">
+    <name>ПорядковыйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядковый номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ff2032be-f4ff-463a-8838-34c215bc0e0b">
+    <name>ЕдиницаИзмеренияПериодичности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения периодичности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКЕИ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1ea68ce8-14bb-4a9f-a27f-6e4db3090115">
+    <name>ЕдиницаИзмеренияПродолжительности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения продолжительности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКЕИ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="ba0f7a95-010b-4135-b355-fead46c16f9d">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e82a70a0-205e-4e9e-bc7e-f9714d0a7002">
+    <name>ВидРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

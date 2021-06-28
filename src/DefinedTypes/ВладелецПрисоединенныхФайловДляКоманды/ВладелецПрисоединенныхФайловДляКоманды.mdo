@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96074867-3edf-4296-b4da-0f3d327f78c2">
+  <producedTypes>
+    <containerType typeId="87190dfd-5cfc-4124-9cc6-4d1d3982a51f" valueTypeId="3477c185-e17f-46b9-bac1-60526fc0e4e9"/>
+  </producedTypes>
+  <name>ВладелецПрисоединенныхФайловДляКоманды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владелец присоединенных файлов для команды</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.Контракт</types>
+    <types>BusinessProcessRef.ЗапросНаАктуализациюКаталогаПоставщика</types>
+    <types>CatalogRef.БоевыеЧасти</types>
+    <types>BusinessProcessRef.ВзаимодействиеСРОЭ</types>
+    <types>CatalogRef.Флоты</types>
+    <types>DocumentRef.РезультатыТендера</types>
+    <types>DocumentRef.ПочтовоеСообщение</types>
+    <types>CatalogRef.Заказы</types>
+    <types>CatalogRef.ШаблоныСообщений</types>
+    <types>DocumentRef.Заявка</types>
+    <types>CatalogRef.ПроектыКораблей</types>
+    <types>DocumentRef.ЗаявкаФСВТС</types>
+    <types>DocumentRef.ЗапросТКПRFP</types>
+    <types>CatalogRef.ДоговорыСПоставщиком</types>
+    <types>CatalogRef.КаталогПредметовСнабжения</types>
+    <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af40b747-ed5f-41a8-9069-296ffcd3d379">
+  <producedTypes>
+    <refType typeId="8ed3ffee-c728-44b4-90fd-2fd35e9db573" valueTypeId="ff2ed92a-439e-4d00-9107-2f7409a29895"/>
+    <listType typeId="6693954c-1757-4333-b337-a94caad578fc" valueTypeId="75adb83a-7ff3-4c14-90be-61e203f763a9"/>
+    <objectType typeId="58f050d7-0f9e-4c98-93fb-9d75d8d9a7fc" valueTypeId="4013dc0b-1428-488d-a363-22618c08d024"/>
+    <managerType typeId="85a39443-7dce-4e3f-9a63-4f133a49340c" valueTypeId="18a186bc-d9b8-44e3-a009-43b39f821f32"/>
+    <recordManagerType typeId="1808065f-941c-4cc1-b13e-6d99499979fe" valueTypeId="e4444816-7ee4-48b0-aba6-14c4addb6cba"/>
+    <recordSetType typeId="79ad0ac4-258a-45b8-ba7e-be16e0d5ecbf" valueTypeId="9b94f3f9-53f7-418c-b912-cfc4c8d173d4"/>
+    <recordType typeId="5f3dbeaf-87bc-4bf4-8cd7-53a9d78cf4dc" valueTypeId="f7aefb0b-ad39-4c2d-b34a-3e203b7a2862"/>
+    <recordKeyType typeId="ae5dd02f-8be6-494e-bd54-ef7c94c7b65f" valueTypeId="af66bf6b-35da-4664-b507-a00fb1e24c0c"/>
+  </producedTypes>
+  <name>ДЭ_без__ITEM</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>&quot;ДЭ_без_ ITEM&quot;</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="b7b3c26d-c21b-4a51-8a9a-bb115b2defae">
+    <name>Поле2</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле2</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="fdc4a273-8ac3-4319-9c40-852bbd88ef9d">
+    <name>Packing_List</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Packing List</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="a332692e-e733-46c4-894f-3fab4b0e3656">
+    <name>Поле4</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле4</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="af1ce7cc-c5c8-4e31-98d1-db61fc31bd28">
+    <name>Поле5</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле5</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="706ac82a-d910-4c8b-8682-940fa672d4cd">
+    <name>Поле16</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле16</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="6e8939e1-8c9b-4711-830c-f8fe1d476078">
+    <name>Поле17</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле17</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4a39111-b9eb-46c1-b002-47311fb3bb38">
+  <producedTypes>
+    <objectType typeId="28da10f0-891f-4632-a065-eb0cb4c2c8cd" valueTypeId="e622875b-6290-40ed-bc98-edbcfd9d12b5"/>
+    <refType typeId="15068549-a880-40a5-b5c2-b2470a1183e1" valueTypeId="c8ababb3-6dee-49eb-a038-36defbd97313"/>
+    <selectionType typeId="7c1bb8d7-1f95-4555-9352-ebe0216675cc" valueTypeId="5b91e141-f487-446e-8a33-23776316f9cf"/>
+    <listType typeId="472e918b-aa82-485b-9aa5-87e7c05564c8" valueTypeId="93f24281-be92-441e-a575-aa83756771b3"/>
+    <managerType typeId="2cc780d5-62b0-4f5a-9106-60b468839930" valueTypeId="3dc50778-b3a2-4004-b813-f9d5b33f20c6"/>
+  </producedTypes>
+  <name>ДоступностьДокументацииДляИзготовленияПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступность документации для изготовления предметов снабжения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>1</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="e23b0f02-4871-41a7-95eb-c3edb0cb20b2">
+      <name>ВНаличииНеПредоставляется</name>
+      <description>В наличии, не предоставляется</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+    </items>
+    <items id="5f2f9429-d763-4f33-a219-140a2cb00f8d">
+      <name>ВНаличииПредоставляется</name>
+      <description>В наличии, предоставляется</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+    </items>
+    <items id="6b104729-25f8-4d81-95d7-83a4b80b48c8">
+      <name>Отсутствует</name>
+      <description>Отсутствует</description>
+      <code xsi:type="core:StringValue">
+        <value>3</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения.Form.ФормаСписка</defaultListForm>
+  <forms uuid="facbc798-3cb2-4568-b211-f190765d34b5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4fcf1e1-8df5-4ae2-b408-15c27fa55423">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b6075dd7-f593-4754-9087-7f62d0750dc2">
+  <producedTypes>
+    <selectionType typeId="4c80c9b9-9a8d-4a22-8e94-a511da6d8965" valueTypeId="ffab420b-a67a-48b5-83db-e7c5be82d70b"/>
+    <listType typeId="7eb077e5-f5b8-4e70-9ca0-bc1a6a39aaf9" valueTypeId="c4f75aca-54bc-4492-b0f8-ff35bc319fa6"/>
+    <managerType typeId="b14595f1-a4fa-452a-b09e-f78357c86457" valueTypeId="d8094199-aed8-4064-9c35-3eec69d13b37"/>
+    <recordSetType typeId="9361f1ed-1ea4-4fc8-a8d5-f4f9a993da26" valueTypeId="8e7fa968-0ed4-4ca9-80a9-f1ecd7e84099"/>
+    <recordKeyType typeId="02c8264c-306e-43e6-b1d0-61dd41f3da36" valueTypeId="f32b59f7-6b22-455c-aa7a-e43dde0598b3"/>
+    <recordType typeId="6b206384-1467-4306-8cb3-d90fd4692507" valueTypeId="a6ede3b0-b67e-41d2-a227-2feadce4aac5"/>
+    <recordManagerType typeId="0c97e79e-a01b-4e14-badc-46115230f90a" valueTypeId="8961e9b3-2f2c-4cb8-affe-c893d6313ce3"/>
+  </producedTypes>
+  <name>ОчередьОбновленияНаименованийКомплектующихИзделийИЗИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь обновления наименований комплектующих изделий и ЗИП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ОчередьОбновленияНаименованийКомплектующихИзделийИЗИП.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="06bc7fc3-ca1c-472a-b66a-a06bbe996ef9">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="cb349439-abc6-4fdc-9c26-7e689cfcde55">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

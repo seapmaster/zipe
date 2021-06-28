@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40801fb1-a36c-4624-b61a-a4ead0bd2d35">
+  <name>ПочтовыеСообщенияИсходящие</name>
+  <synonym>
+    <key>ru</key>
+    <value>Почтовые сообщения исходящие</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ПочтовоеСообщениеПрисоединенныеФайлы</content>
+  <content>Document.ПочтовоеСообщение</content>
+  <content>InformationRegister.ПочтовыеСообщенияИсходящие</content>
+  <parentSubsystem>Subsystem.ОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

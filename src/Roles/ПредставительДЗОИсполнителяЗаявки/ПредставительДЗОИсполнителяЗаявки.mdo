@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0072754c-0ace-416e-bcb2-19882908dea2">
+  <name>ПредставительДЗОИсполнителяЗаявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Представитель ДЗО - исполнителя заявки (ПДЗО)</value>
+  </synonym>
+</mdclass:Role>

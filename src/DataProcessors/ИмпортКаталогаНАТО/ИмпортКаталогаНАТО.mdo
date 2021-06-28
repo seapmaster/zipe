@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2aee229-c63c-42a0-9a47-79dca5b3e5fd">
+  <producedTypes>
+    <objectType typeId="c9c4e1ce-5320-4847-a16c-9530d2f17d9a" valueTypeId="9c882f7a-ce4d-41db-99f2-828b8dfffb0a"/>
+    <managerType typeId="d2ff83b8-3414-409b-b4ac-455dc5e06e9c" valueTypeId="1ef6df83-df0f-4244-b84c-9784120d98b7"/>
+  </producedTypes>
+  <name>ИмпортКаталогаНАТО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Импорт каталога НАТО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ИмпортКаталогаНАТО.Form.Форма</defaultForm>
+  <forms uuid="5c689071-75d5-4098-9c5b-3b5759516dc6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

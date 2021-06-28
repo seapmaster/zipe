@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3dcb363-8613-4848-9fd4-a7afa293e76b">
+  <producedTypes>
+    <managerType typeId="de006d43-2f24-423e-9f74-2f33ee9f67ed" valueTypeId="fc69e39c-88ad-4246-ba4e-0738af769d08"/>
+    <valueManagerType typeId="e986a150-6cf4-4435-82b5-dfe68b5da613" valueTypeId="699d5acd-cee5-4127-85a0-548d96e44d58"/>
+    <valueKeyType typeId="5108e74d-df84-53ba-bf83-da164bee755c" valueTypeId="305f5718-88b6-5d1e-921f-772ab6db7277"/>
+  </producedTypes>
+  <name>СлужебныйЗаказ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Служебный заказ</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Заказы</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c31406c6-6d96-4f81-bd2e-7c6752b52544">
+  <name>ОбменС_ХранилищемФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с хранилищем файлов</value>
+  </synonym>
+  <methodName>CommonModule.ОбменСХранилищемФайлов.ОбработатьОчередьХранилищаФайлов</methodName>
+  <description>Обмен с хранилищем файлов</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>3600</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

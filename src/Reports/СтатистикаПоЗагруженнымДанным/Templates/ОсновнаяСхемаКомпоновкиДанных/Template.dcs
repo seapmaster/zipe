@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Корабль</dataPath>
+			<field>Корабль</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корабль</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗИПБаза</dataPath>
+			<field>КоличествоЗИПБаза</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество ЗИПБаза</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВИзделии</dataPath>
+			<field>КоличествоВИзделии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество в изделии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоКартинок</dataPath>
+			<field>КоличествоКартинок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество картинок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВнутреннихЦен</dataPath>
+			<field>КоличествоВнутреннихЦен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество внутренних цен</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПоставщиков</dataPath>
+			<field>КоличествоПоставщиков</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество поставщиков</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВнешнихЦен</dataPath>
+			<field>КоличествоВнешнихЦен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество внешних цен</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЭлементовСтруктуры</dataPath>
+			<field>КоличествоЭлементовСтруктуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество элементов структуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗИПБорт</dataPath>
+			<field>КоличествоЗИПБорт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество ЗИПБорт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоХарактеристик</dataPath>
+			<field>КоличествоХарактеристик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество характеристик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПредметовСнабжения</dataPath>
+			<field>КоличествоПредметовСнабжения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество предметов снабжения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоЗИПДЭ</dataPath>
+			<field>КоличествоЗИПДЭ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество ЗИПДЭ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК Архив,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Владелец КАК Корабль
+ПОМЕСТИТЬ ТаблицаГрупп
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+ГДЕ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Наименование = "Архив"
+	И СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель = ЗНАЧЕНИЕ(Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПустаяСсылка)
+;
+ВЫБРАТЬ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Владелец КАК Корабль,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК КоличествоЭлементовСтруктуры,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения КАК КоличествоПредметовСнабжения,
+	ВЫБОР КОГДА СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Количество &gt; 0 ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоВИзделии,
+	ВЫБОР КОГДА СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПБорт &gt; 0 ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоЗИПБорт,
+	ВЫБОР КОГДА СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПБаза &gt; 0 ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоЗИПБаза,
+	ВЫБОР КОГДА СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПДЭ &gt; 0 ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоЗИПДЭ,
+	ВЫБОР КОГДА ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ ВладелецФайла ИЗ Справочник.КаталогПредметовСнабженияПрисоединенныеФайлы) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоКартинок,
+	ВЫБОР КОГДА ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ ПредметСнабжения ИЗ РегистрСведений.ЦеныПредметовСнабжения.СрезПоследних(, Цена &gt; 0 И ТипЦены = ЗНАЧЕНИЕ(Перечисление.ТипыЦен.Внутренняя))) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоВнутреннихЦен,
+	ВЫБОР КОГДА ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ ПредметСнабжения ИЗ РегистрСведений.ЦеныПредметовСнабжения.СрезПоследних(, Цена &gt; 0 И ТипЦены = ЗНАЧЕНИЕ(Перечисление.ТипыЦен.Внешняя))) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоВнешнихЦен,
+	ВЫБОР КОГДА ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ Ссылка ИЗ Справочник.КаталогПредметовСнабжения.ИзготовителиИПоставщики ГДЕ НЕ Контрагент = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоПоставщиков,
+	ВЫБОР КОГДА ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ Ссылка ИЗ Справочник.КаталогПредметовСнабжения.Характеристики ГДЕ НЕ Значение = Неопределено) ТОГДА 1 ИНАЧЕ 0 КОНЕЦ КАК КоличествоХарактеристик
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+ГДЕ
+	НЕ Ссылка В ИЕРАРХИИ (ВЫБРАТЬ Архив ИЗ ТаблицаГрупп)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоВИзделии</dataPath>
+		<expression>Сумма(КоличествоВИзделии)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоВнешнихЦен</dataPath>
+		<expression>Сумма(КоличествоВнешнихЦен)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоВнутреннихЦен</dataPath>
+		<expression>Сумма(КоличествоВнутреннихЦен)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЗИПБаза</dataPath>
+		<expression>Сумма(КоличествоЗИПБаза)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЗИПБорт</dataPath>
+		<expression>Сумма(КоличествоЗИПБорт)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЗИПДЭ</dataPath>
+		<expression>Сумма(КоличествоЗИПДЭ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоКартинок</dataPath>
+		<expression>Сумма(КоличествоКартинок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПоставщиков</dataPath>
+		<expression>Сумма(КоличествоПоставщиков)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоХарактеристик</dataPath>
+		<expression>Сумма(КоличествоХарактеристик)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоПредметовСнабжения</dataPath>
+		<expression>Количество(Различные КоличествоПредметовСнабжения)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоЭлементовСтруктуры</dataPath>
+		<expression>Количество(КоличествоЭлементовСтруктуры)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Без файлов</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Без файлов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Корабль</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПредметовСнабжения</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предметов снабжения</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоЭлементовСтруктуры</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элементов структуры</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество элементов структуры корабля в которых заполнена информация</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоВнешнихЦен</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Внешних цен</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоВнутреннихЦен</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Внутренних цен</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоВИзделии</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Кол. в изделии</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоЗИПБаза</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЗИП Б</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоЗИПБорт</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЗИП Борт</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоЗИПДЭ</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ЗИП ДЭ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоКартинок</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Картинок</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоПоставщиков</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поставщиков</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоХарактеристик</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Характеристик</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Корабль.Владелец</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Корабль.БортовойНомер</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Корабль.ЗаводскойНомер</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Overflow</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Корабль.Наименование</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Корабль.Заказчик</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Корабль.Строитель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Корабль</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Cut</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статистика по загруженным данным</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Корабль.Владелец</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Корабль.Владелец</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Проект</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Корабль</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Корабль.БортовойНомер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Корабль.ЗаводскойНомер</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Корабль.Заказчик</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Корабль.Строитель</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

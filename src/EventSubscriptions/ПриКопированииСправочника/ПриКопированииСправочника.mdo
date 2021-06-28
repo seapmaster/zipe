@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="377beb1f-5b92-44b8-b577-a65bc0479096">
+  <name>ПриКопированииСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>При копировании справочника</value>
+  </synonym>
+  <source>
+    <types>CatalogObject</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.ОбщиеФункцииСервер.ПриКопированииСправочникаПриКопировании</handler>
+</mdclass:EventSubscription>

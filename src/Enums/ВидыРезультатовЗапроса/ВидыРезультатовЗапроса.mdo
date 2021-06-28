@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="330df666-3ceb-41f4-94ea-9b9a681d00d8">
+  <producedTypes>
+    <refType typeId="2cda18b8-4fd5-4811-bdf3-391a37220715" valueTypeId="b323454a-d2a1-40c7-858b-af3f4d745f85"/>
+    <listType typeId="6a5d90a0-4a2f-4578-84ab-c117716fea35" valueTypeId="70ea6d17-97ce-4419-a729-43d177b326de"/>
+    <managerType typeId="b96d1885-23b2-46b9-a6ae-908f04696394" valueTypeId="d179dcb5-4e4f-450e-bbb6-84098903357a"/>
+  </producedTypes>
+  <name>ВидыРезультатовЗапроса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды результатов запроса</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e8d801e5-d305-4bc9-9ea6-eb947cb1d1fb">
+    <name>Новый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новый</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="649efd41-c11a-40e1-a1fa-f566f44cc96e">
+    <name>ЭталонНайден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон найден</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dfb0efc1-8cf7-4dd6-8ebe-abadbe97a5c4">
+    <name>ЭталонНеНайден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон не найден</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="27edda54-22fd-4213-890d-3eb18a460094">
+    <name>ТребуетсяКлассификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требуется классификация</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82691894-d3ac-4e53-a5e6-86a228664c35">
+  <name>ПредставительКонтрагента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Представитель контрагента (ПКА)</value>
+  </synonym>
+</mdclass:Role>

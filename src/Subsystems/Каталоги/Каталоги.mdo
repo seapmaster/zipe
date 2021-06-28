@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65b4b64a-1caa-4f34-9fce-267c023d0c09">
+  <name>Каталоги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталоги</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Хранение оперативных массивов, данных для формирования Заявок на ЗИП, данных для формирования аналитических отчетов, документов (справки, формы, ведомости и т.д.) системы, сформированных в процессе работы.</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ЗИП</picture>
+  </picture>
+  <content>Catalog.Заказы</content>
+  <content>Catalog.КаталогПредметовСнабжения</content>
+  <content>Report.ИерархическаяСтруктураКорабля</content>
+  <subsystems>КораблиНеотображаемая</subsystems>
+  <subsystems>Спецификация</subsystems>
+</mdclass:Subsystem>

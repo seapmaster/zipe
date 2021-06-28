@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonAttribute xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="580e4477-55bc-4b9d-8a2d-f0704defd643">
+  <name>UID</name>
+  <synonym>
+    <key>ru</key>
+    <value>UID</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>36</length>
+      <fixed>true</fixed>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataHistory>Use</dataHistory>
+  <fillValue xsi:type="core:StringValue">
+    <value>                                    </value>
+  </fillValue>
+  <content>
+    <metadata>Catalog.КатегорииЗаявокНаПоставкуПС</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>BusinessProcess.ВзаимодействиеСРОЭ</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>BusinessProcess.ОтправкаВКСУНСИНаКлассификацию</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.КаталогПредметовСнабжения</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>BusinessProcess.ОтправкаВКСУНСИНаПоискПоКоду</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.Пользователи</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.ОКЕИ</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Document.ЗапросТКПRFP</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.Организации</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Document.Заявка</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.ОКВ</metadata>
+    <use>Use</use>
+  </content>
+  <content>
+    <metadata>Catalog.ИностранныеЗаказчики</metadata>
+    <use>Use</use>
+  </content>
+  <autoUse>DontUse</autoUse>
+  <dataSeparation>DontUse</dataSeparation>
+  <usersSeparation>DontUse</usersSeparation>
+  <authenticationSeparation>DontUse</authenticationSeparation>
+  <indexing>Index</indexing>
+  <fullTextSearch>Use</fullTextSearch>
+</mdclass:CommonAttribute>

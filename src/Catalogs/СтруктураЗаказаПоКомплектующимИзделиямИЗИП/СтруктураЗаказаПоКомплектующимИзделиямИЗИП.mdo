@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97782492-e29e-4c93-b2e9-d783bfd07b7e">
+  <producedTypes>
+    <objectType typeId="7f22495e-6afb-408d-b3bb-19b443109a8d" valueTypeId="91417bd9-d187-47a1-a71e-2d016b687638"/>
+    <refType typeId="cabf1cd8-4da5-43bd-8705-e46633d64bf8" valueTypeId="e29842e9-7f00-42cc-8b2e-324ba7e69e78"/>
+    <selectionType typeId="801326ac-3310-4a14-8ab0-c289a8684344" valueTypeId="8b1f5468-44a6-4f87-85cd-79c13db6827c"/>
+    <listType typeId="2212c925-0a59-44f3-b2f4-8246b7b4aed0" valueTypeId="f9a97181-fa20-4954-9d0e-1701eee17326"/>
+    <managerType typeId="f14ace95-c80c-44d6-838e-dad2133f4615" valueTypeId="685e0038-cd4e-4ede-b148-30482b3c97cf"/>
+  </producedTypes>
+  <name>СтруктураЗаказаПоКомплектующимИзделиямИЗИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплектующие изделия и ЗИП</value>
+  </synonym>
+  <comment>Электронная структура комплектующих изделий и ЗИП корабля</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <toolTip>
+      <key>ru</key>
+      <value>корабль</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Заказы.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <toolTip>
+      <key>ru</key>
+      <value>элемент структуры корабля по комплектующим изделиям и ЗИП вышестоящего уровня</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>наименование элемента структуры корабля по комплектующим изделиям на русском языке</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>внутренний код</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Электронная структура комплектующих изделий и ЗИП корабля</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Заказы</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="af9def5a-604a-44d4-b55f-1de4055ec50d">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>тип элемента структуры корабля по комплектующим изделиям и ЗИП (группа, изделие)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="75396ad1-1971-4e6a-aa85-3bb923455b4c">
+    <name>Заведование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заведование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.БоевыеЧасти</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>боевая часть или служба, в чьем заведовании находится элемент структуры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="487e1d6b-2033-4fb8-9296-0b13fe1e7b53">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;Группа изделий&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер группы изделий, если группа представляет собой общекорабельную систему или общекорабельное устройство</value>
+    </toolTip>
+    <mask>NNNNNN-999-9999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value>               </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9d2bfdc7-578b-46f2-b6a4-b926b972d18a">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <comment>Используется для элементов с типами &quot;Изделие&quot; и &quot;ЗИП&quot;</comment>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>предмет снабжения (составные части изделия, инструмент, принадлежности и т.д.) из каталога ПС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="01d0b53a-9002-4ba5-bfb8-a2bce4cb0946">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество в изделии</value>
+    </synonym>
+    <comment>Используется для элементов с типами &quot;Изделие&quot; и &quot;ЗИП&quot;</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество предметов снабжения в изделии (оборудовании)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1dcb99ff-6afb-4daa-acca-c177a28dee8b">
+    <name>КоличествоВЗИПБорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП Борт</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество изделий, включенных в комплект бортового ЗИП</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fc5e4baf-dc7c-4e43-ad83-71aa450af270">
+    <name>КоличествоВЗИПБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП Б</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество изделий, включенных в комплект базового ЗИП</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="55f27bf1-5e2b-4724-abf0-5939014aa356">
+    <name>КоличествоВЗИПДЭ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП ДЭ</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество изделий, включенных в комплект ЗИП длительной эксплуатации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e841f00-d617-4225-860e-99f281f14885">
+    <name>КоличествоВЗИПР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП Р</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество изделий, включенных в комплект ремонтного ЗИП</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="670cde00-c4f8-492d-8375-983e512d6e6b">
+    <name>ВерсияПрошивки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия прошивки</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Версия прошивки памяти /версия ПО</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c0e4899a-548b-423d-bc20-56cfc7ea83b1">
+    <name>ДатаПрошивки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата прошивки</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДЛФ=DD</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДЛФ=DD</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата версии прошивки памяти /дата версии ПО</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b782246c-4400-477d-9177-85f5d89c1f7f">
+    <name>ДобавленИзСпецификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлен из спецификации</value>
+    </synonym>
+    <comment>Используется для элементов с типом &quot;ЗИП&quot;. Значение Истина означает программное создание при обработке изменений спецификации предмета снабжения</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9803e725-0163-4dc1-b1c0-d209b52e93a0">
+    <name>ТипСоставляющейЧасти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип составляющей части</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазделыСпецификацииЗИП</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип предмета снабжения (составная часть, инструмент, принадлежности, материал), предназначенный для группирования по назначению</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8775784d-0024-4d4b-8722-898b4679c5b2">
+    <name>НомерПозицииСпецификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер позиции спецификации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер позиции спецификации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e4c54c3-577c-4b2c-969d-d14b9578d820">
+    <name>ЗИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак включения ПС в ЗИП</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7f72a67e-4724-414a-9330-b48226a87a5f">
+    <name>ОбозначениеДоп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обозначение (доп.)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>дополнительное обозначение элемента структуры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="802d4c30-3ac5-48bc-9ebd-cfcd749db444">
+    <name>Помещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помещение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Помещения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>помещение корабля, в котором располагается элемент структуры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.СтруктураЗаказаПоКомплектующимИзделиямИЗИП.StandardAttribute.Owner</field>
+    </choiceParameterLinks>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="826e88d3-3d67-459b-bda1-49cf08f926a9">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>место хранения изделия/ЗИП</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d75e60c2-0fa7-433c-a297-4577a335385a">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>дополнительная информация по элементу структуры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a30d2fff-a741-442a-8132-4de0d2f20492">
+    <name>ЕстьПодчиненные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть подчиненные</value>
+    </synonym>
+    <comment>признак того, что элемент является родителем</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2ae636bc-0af1-41c0-9aba-e942566acbcb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="07ef7f26-712b-4f35-addd-dc3dd45a6dec">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c65a9a16-b687-4e5c-b445-0f2b5537843b">
+    <name>ФормаИзделия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма изделия</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c9f9808-fbd1-43f7-a60b-756b1044bb0e">
+    <name>ФормаВыполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выполнение</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0cee570d-2c42-4238-973c-d83acf5e8bb3">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4429a97-b3be-4e49-b42f-0aa455d8aaf5">
+  <producedTypes>
+    <refType typeId="67a81e27-05ff-47ae-9469-832e0c034633" valueTypeId="07470c52-e271-438a-a727-3cf45d1d8347"/>
+    <listType typeId="9795b26c-0d73-42d9-95cc-6ee4363243ad" valueTypeId="acfe302d-13cf-4a40-a3a4-bf64c6dd2d28"/>
+    <managerType typeId="ab610cef-553b-4d72-9d58-65617d617df9" valueTypeId="8df99590-2bbd-4baf-995a-d350f847577f"/>
+  </producedTypes>
+  <name>ВидАлгоритма</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид алгоритма</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b278c023-50fb-4f20-95a2-b27db969338b">
+    <name>Код</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e8646fbe-246f-4043-98cd-c6ba3831d1dc">
+    <name>Запрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

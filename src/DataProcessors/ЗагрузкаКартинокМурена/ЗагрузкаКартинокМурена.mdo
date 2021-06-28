@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13e26910-4002-4b2c-b21a-d195671fb8e7">
+  <producedTypes>
+    <objectType typeId="947ae531-8314-4144-b400-d770b382d4ac" valueTypeId="3ae7bcee-144f-4baf-89ad-8efaeb91a1a5"/>
+    <managerType typeId="f7e6af3b-883d-42ec-859f-60eca0d1c7b0" valueTypeId="888bcef2-5f0b-4fdb-998f-f2a76aea0e43"/>
+  </producedTypes>
+  <name>ЗагрузкаКартинокМурена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка картинок по проекту Мурена</value>
+  </synonym>
+  <comment>загрузка картинок из файлов по проекту Мурена</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаКартинокМурена.Form.Форма</defaultForm>
+  <forms uuid="d0d833e5-fbf3-4e2b-9d8b-9dcbe846a272">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

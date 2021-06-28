@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d02492d5-7402-4704-9da3-9011604cef96">
+  <producedTypes>
+    <objectType typeId="31686b78-dac5-4e8c-89b6-0d9d40d67b6e" valueTypeId="84fbe07f-4cb1-4ad7-9022-f813870a91ed"/>
+    <managerType typeId="43785cd9-801d-4cb5-9fbc-f5ec2fa369d2" valueTypeId="9f9fd4e2-d92b-4bcc-a7d7-914481a7227a"/>
+  </producedTypes>
+  <name>ОшибочныеГруппыВСтруктуреКораблей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ошибочные группы в структуре кораблей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОшибочныеГруппыВСтруктуреКораблей.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОшибочныеГруппыВСтруктуреКораблей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="d4e76d5e-82e5-46b4-9889-6a9a65ba9ad7">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9fcfe095-a117-4485-9652-619a75846e80">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

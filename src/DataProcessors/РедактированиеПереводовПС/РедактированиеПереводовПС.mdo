@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3de9252e-8ae2-4cea-a16e-1ca7c2fee808">
+  <producedTypes>
+    <objectType typeId="6e47504f-aed0-4123-9169-fc7439ae7dee" valueTypeId="5bb61143-2078-4850-a80c-e955adf62bbc"/>
+    <managerType typeId="ed8da57a-5db8-4f8a-a1f0-11b1ced7431b" valueTypeId="5a59ec53-b67c-4c2e-ba74-379be2b64a3f"/>
+  </producedTypes>
+  <name>РедактированиеПереводовПС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактирование переводов ПС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РедактированиеПереводовПС.Form.Форма</defaultForm>
+  <forms uuid="94f7481b-2565-4d9d-ab60-ee4517ddf1b4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

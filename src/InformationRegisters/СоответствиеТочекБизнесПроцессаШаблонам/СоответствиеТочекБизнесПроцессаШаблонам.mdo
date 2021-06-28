@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d479e49a-d7ab-420f-83fe-93186e445384">
+  <producedTypes>
+    <selectionType typeId="26980c5f-2d26-4cd3-8b7e-88a9bf1f98a1" valueTypeId="a74ec004-74b7-480b-9466-44d1f24c39b6"/>
+    <listType typeId="dff1fa91-87d7-4a03-b55d-c6e7cbc4a18f" valueTypeId="1bf3c3cb-b321-4827-b5f5-4e5069b4e875"/>
+    <managerType typeId="24549900-da58-41d9-9e67-1612313432df" valueTypeId="009ff4e6-eead-4834-b1ba-f5e89c9dc90c"/>
+    <recordSetType typeId="6920776a-6118-4971-9253-28d72a1aed44" valueTypeId="feeae9b9-89a8-44ae-86e2-fa41b2106a73"/>
+    <recordKeyType typeId="3e3c0653-7253-4b2f-99d0-1d750b921530" valueTypeId="6c178334-3670-45a6-920c-0a5e88d36e94"/>
+    <recordType typeId="c357517c-4dd0-410c-8231-7e0d2cc26271" valueTypeId="5e0f2340-6999-4c05-b202-66491db7a8d4"/>
+    <recordManagerType typeId="3e624c60-d1bb-44bb-98d3-585a64e8830e" valueTypeId="95737ca5-faaa-43d9-909a-d2818b2cc840"/>
+  </producedTypes>
+  <name>СоответствиеТочекБизнесПроцессаШаблонам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие точек бизнес процесса шаблонам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ec1f8467-fba0-43e9-b220-9af48f7818ed">
+    <name>ШаблонСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон сообщения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="98ad3fee-697b-4cb3-bf2c-3b085b2bf276">
+    <name>Точка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRoutePointRef.ОтправкаВКСУНСИНаКлассификацию</types>
+      <types>String</types>
+      <types>BusinessProcessRoutePointRef.ОтправкаВКСУНСИНаПоискПоКоду</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

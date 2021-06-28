@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd253d46-61e0-4668-a204-e470a7c0c0b3">
+  <producedTypes>
+    <selectionType typeId="3dcfc2ca-8183-4ae5-b19a-1ab753dda5bb" valueTypeId="59db09a1-6408-405c-8388-e17ff7bbb9ff"/>
+    <listType typeId="fa00f41b-45f4-466f-bb6e-d70afb4d7348" valueTypeId="baca9bde-2d35-4a72-b39a-db3d3fd00415"/>
+    <managerType typeId="f15d8b37-791c-44da-8363-de587a9d2fed" valueTypeId="423e31d3-bcd2-49be-a941-5bcfe98a7d56"/>
+    <recordSetType typeId="fe1f9650-4ef2-4477-9f06-87cb092e3261" valueTypeId="87c4c39f-1d44-43c3-a664-98e27bc13656"/>
+    <recordKeyType typeId="9b0b9c83-b0af-46d2-8af5-23acf71fe72d" valueTypeId="c6172592-b0e9-47ec-bc36-437e8b69df9e"/>
+    <recordType typeId="9c53bb1a-17f0-4bbc-a6cf-8efe7a705ff8" valueTypeId="220d7b29-477f-4d57-91e1-8a6d1f754e14"/>
+    <recordManagerType typeId="b122e60b-5469-49ae-b786-af83931ce3e8" valueTypeId="850ef674-b3f4-4b23-b9cb-a2036cec87ac"/>
+  </producedTypes>
+  <name>СпецификацииПредметовСнабженияИзменения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спецификации предметов снабжения изменения (старый)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <explanation>
+    <key>ru</key>
+    <value>Таблица изменений История состава предметов снабжения, в том числе входящих в ЗИП.
+Предназначена для последующего изменения структуры заказов по комплектующим изделиям и ЗИП.</value>
+  </explanation>
+  <resources uuid="8543043b-a1a4-46fe-b1f1-79994160df31">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="63082681-5a1b-46da-930b-56929b8a4928">
+    <name>ЭталонОбработан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон обработан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="3066520d-35d4-4d30-ab89-c29365bb6e1f">
+    <name>ВидИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид изменения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыИзмененийСпецификацииПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cba13f7b-f421-452c-95af-5b76af9280e2">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазделыСпецификацииЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6e85169f-d521-4ac0-9a7e-919425fbeee0">
+    <name>НомерПозиции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер позиции</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="da822848-25f2-4423-a410-fdeab375b0e7">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3453adbb-63d6-4e71-a287-c5d3ce1fef5b">
+    <name>СоставляющаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Составляющая часть</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="66999c4c-fc27-46b7-b3f7-4586ed754db4">
+    <name>ЗИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЗИП</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

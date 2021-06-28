@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a3ece0b-16e2-42c5-9245-2e01eb061171">
+  <producedTypes>
+    <selectionType typeId="2b47d3c3-d04c-4eb6-b358-2e2147b10e4e" valueTypeId="8d98cd08-297a-4152-b438-d5021b23eae4"/>
+    <listType typeId="6259b680-2e6b-4ee0-84e4-0de9227dcb33" valueTypeId="1936a92b-27d4-4f87-8f7f-fee6318bd237"/>
+    <managerType typeId="bdc23fa0-6287-44c6-8c6f-bee314575e8f" valueTypeId="bf40bca8-a740-45a4-8867-db1f0eeaa6c2"/>
+    <recordSetType typeId="5db19abe-e92a-4d8f-8004-761006483162" valueTypeId="d3abfb72-2f8f-4db5-bc2e-3ff9f62419a2"/>
+    <recordKeyType typeId="fee53f42-5cc5-4836-858f-09428adacdcd" valueTypeId="dfb953af-d257-4eb4-b3e9-2c6f564cba2a"/>
+    <recordType typeId="bec8d557-5cdb-403e-a71f-d6a0f93b8a05" valueTypeId="a74001cb-16fa-4148-84ae-112ede51318f"/>
+    <recordManagerType typeId="3baf3162-3467-47c6-aa01-700732d57e8c" valueTypeId="2255b0ab-d3df-49e8-9e52-ef90a3e5a341"/>
+  </producedTypes>
+  <name>РазборХранилищеФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разбор хранилище файлов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c8e02296-ee7c-48c3-a66a-e87b3eb8d475">
+    <name>ДатаДобавленияВОчередь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата добавления в очередь</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="de645f93-3d20-4a56-8096-2ed3e833b304">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d37d37de-0d0c-4790-b115-40b2fcc69b55">
+    <name>ДатаПоследнейПопытки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней попытки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ed3f7827-5641-40c0-b74a-05a93d18b711">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="3dde4fe3-9802-4e4a-9e93-31363e35b5b9">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="93a50713-919b-443b-8117-63e780a1081a">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПрисоединенныйФайл</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="412334d8-9471-48f1-a285-905956bba934">
+  <producedTypes>
+    <objectType typeId="884102ac-4c6f-4241-ac8b-96600a920c85" valueTypeId="b5442d3f-d1e2-4594-9b7b-d8bc2cdd153b"/>
+    <refType typeId="511f67fb-0919-4a04-b9e8-48c09a3b9ed4" valueTypeId="e1f02298-adf9-4e87-a1b6-e6d1a7e07b90"/>
+    <selectionType typeId="1a53b9dd-bd70-4506-a6f1-23449f1ee1c1" valueTypeId="90bb598c-64da-4e30-b0b6-e43e6c75f507"/>
+    <listType typeId="6b98997e-76aa-450a-8bd8-61f696953fde" valueTypeId="9583741f-120e-4946-9001-4b9d17dc85f0"/>
+    <managerType typeId="e4541b05-4734-48e8-bf3c-a6cd1808b29d" valueTypeId="82448c8a-da4b-4766-a167-c299b925f873"/>
+  </producedTypes>
+  <name>ОрганизационнаяСтруктура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организационная структура</value>
+  </synonym>
+  <comment>Организационная структура предприятий ОСК</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ОрганизационнаяСтруктура.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ОрганизационнаяСтруктура.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>Организационная структура предприятий ОСК</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ОрганизационнаяСтруктура.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ОрганизационнаяСтруктура.Form.ФормаСписка</defaultListForm>
+  <forms uuid="73912846-89ba-4909-a8f1-28c88d29d282">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0bfa3a9a-56c6-4174-92b9-daf68649e442">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

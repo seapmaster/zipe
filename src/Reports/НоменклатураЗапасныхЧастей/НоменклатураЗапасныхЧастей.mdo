@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01fcf48b-4ffd-4d6c-a2d0-462685f30e31">
+  <producedTypes>
+    <objectType typeId="8abd9dc0-b762-4c09-bf4a-a27dad4f89d0" valueTypeId="6f186296-de0a-4cd3-9825-873ae0b3d4b8"/>
+    <managerType typeId="77e8d920-a1da-46b4-aac6-b0546309bd65" valueTypeId="8fa87024-5b09-455a-93c3-d42245712ec7"/>
+  </producedTypes>
+  <name>НоменклатураЗапасныхЧастей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура запасных частей к комплектующему оборудованию, установленного на кораблях и судах ВМС (форма 2)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.НоменклатураЗапасныхЧастей.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.НоменклатураЗапасныхЧастей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="d95b394c-e2e9-4210-a701-73ee0387f2ce">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="de840e5b-e432-4f41-85c6-97a31df324a0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

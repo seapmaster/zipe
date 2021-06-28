@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d89e492-2f0d-4087-926b-0d482f90c498">
+  <producedTypes>
+    <selectionType typeId="a29be28e-3eed-4511-b6f9-f5d9cc0482c0" valueTypeId="eaf732d1-10e8-43e3-91e2-dcdd353dff33"/>
+    <listType typeId="2535192b-a597-4b26-8a43-230de9add344" valueTypeId="dfd9261c-7369-4a18-9c91-dd7bd790126a"/>
+    <managerType typeId="f10066f1-34d1-476a-ae24-6dba48be9093" valueTypeId="9deccb31-c1a9-411d-969c-20556c62e175"/>
+    <recordSetType typeId="64d09d16-7e26-429b-ab87-141043a11e72" valueTypeId="9f56127d-e725-4a23-8868-40346c98cfc5"/>
+    <recordKeyType typeId="4e7d7d37-1f74-4d3b-861e-620f6ab6ffeb" valueTypeId="3a6db487-0b68-4b70-99b2-ee869efb24cc"/>
+    <recordType typeId="ac8d7870-1202-4f8c-9bc8-db87f03cdc66" valueTypeId="a0481d0f-d3b7-461d-8025-ae2bfc9affcf"/>
+    <recordManagerType typeId="23190575-3159-4514-b001-da90684b9807" valueTypeId="ff1d2507-c759-4d0f-96e9-de0678a216ef"/>
+  </producedTypes>
+  <name>РесурсыИСрокиСлужбыПредметовСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ресурсы и сроки службы предметов снабжения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c9c7bf10-e4f5-489d-8d4d-ffe759958ec6">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение показателя применительно к параметру учета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="a05f5cb5-def9-4a11-996d-a7a72b3e0469">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКЕИ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Единица измерения значения показателя применительно к параметру учета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="49307edf-121a-44ab-aa49-48bebcca0dea">
+    <name>ПорядковыйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядковый номер</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2107cfe8-8782-46f1-bb17-bff8fb39ea6c">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b6c232f4-5ad6-4a20-a7fb-9a362ed90ba2">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыПоказателейИзделий</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Показатель ПС, определяющий ресурс, срок службы, срок хранения, наработку на отказ, срок изготовления, гарантию и т.п.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a3b0a8eb-e417-42d7-8024-0b68ea978bf1">
+    <name>ПараметрУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр учета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПараметрыУчетаПоказателей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметр учета  ресурса или срока службы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

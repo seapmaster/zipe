@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63d04a3e-cf84-491f-bd3b-c9ea3a3259c1">
+  <name>ВычисляемыеПоляВОтчетах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вычисляемые поля в отчетах</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

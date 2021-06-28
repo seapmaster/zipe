@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eda3dd8a-0710-46ca-a70d-71382eb2c361">
+  <name>ОбменСХранилищемФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с хранилищем файлов</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c845872-5f37-4216-9ec7-3c157456487c">
+  <producedTypes>
+    <selectionType typeId="cb1a8793-df59-4214-8d69-36508c3c789a" valueTypeId="06c53ed7-ff40-4797-a41f-76503e58d928"/>
+    <listType typeId="4e06f8fd-87ef-4163-8e8a-e3d017158173" valueTypeId="32668868-5fc2-48fa-b4d7-90cdac147b28"/>
+    <managerType typeId="13b69693-4e06-4819-bcd8-6e8021643210" valueTypeId="c98b5ed2-e217-4f48-ad88-b49e93ecbc4a"/>
+    <recordSetType typeId="d3204ce3-1971-4e50-a5c3-2f2b79106ed6" valueTypeId="d0a3c4da-14ab-4715-a992-5eaee9e963be"/>
+    <recordKeyType typeId="1cfec011-d6d8-4ed7-83f4-94fd2867b2cb" valueTypeId="86bd8737-b499-4302-8eb2-c9b453e6cc82"/>
+    <recordType typeId="3af23fec-f674-4892-9d49-09cd130a7751" valueTypeId="785ce0c9-b1ab-447e-a1d9-a4ab5f1a3703"/>
+    <recordManagerType typeId="afcdaee6-f385-40e3-990b-1fd9dd9d49f7" valueTypeId="ec09e70c-a221-4248-822b-c8b2a189ba07"/>
+  </producedTypes>
+  <name>Цены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цены</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fd9c802a-7c04-4abe-8969-c56db3bee194">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e6dc4f0-9726-4254-ad58-e1b9adf96208">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bcf3ed66-2090-45e5-9f6d-4aa4f525ed95">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКВ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="09c66bea-89a7-4075-8f64-f2bf692d5456">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b7f70de5-b34a-4d74-b789-a4a96c009c97">
+    <name>ВидЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цены</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЦен</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="32c18637-70ca-4ba6-8cb4-c0631aa4c753">
+    <name>КлючАналитики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ аналитики</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлючиАналитикиЦен</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="32a0d567-58ea-49bd-823b-c4cb0af36539">
+    <name>УсловиеПоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие поставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УсловияПоставок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7633ddf-c324-427a-8a02-02bb7902470c">
+  <producedTypes>
+    <refType typeId="4266181b-1157-4a69-bbec-4e32dfc77edb" valueTypeId="04712af2-b5e1-46de-ba26-6d8b6fb2862a"/>
+    <listType typeId="bb16bc49-6cbf-4620-9c6a-053937676b0f" valueTypeId="e7c7aefd-da54-4189-ba0b-dc48041d4ff7"/>
+    <managerType typeId="8ad112c6-6c62-41a5-b358-fe9ab78602c3" valueTypeId="545da54e-3444-4279-a0c5-2e577c4b9801"/>
+  </producedTypes>
+  <name>ВизыСогласования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Визы согласования</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6e4ce477-1978-4d56-9145-f68763da8685">
+    <name>НеСогласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не согласовано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="074eeadd-99a2-4ac0-9a6f-61296c993e8d">
+    <name>Согласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8df28899-049b-4b02-8576-8d0e571958f2">
+    <name>СогласованоСЗамечаниями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано с замечаниями</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

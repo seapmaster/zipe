@@ -1,0 +1,54 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://seaproject.ru/iss_zip/import_from_site">
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
+	<valueType name="GUID" base="xs:IDREF" minLength="36" maxLength="36"/>
+	<valueType name="ShortName" base="xs:string" maxLength="150"/>
+	<valueType name="FullName" base="xs:string" maxLength="1000"/>
+	<valueType name="Code" base="xs:string" maxLength="9"/>
+	<valueType name="Number" base="xs:string" maxLength="9"/>
+	<objectType name="AKPSOrder">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ГУИД" type="d3p1:DocumentRef.Заявка" form="Attribute" localName="id"/>
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="Номер" type="d3p1:Number" localName="orderNumber"/>
+		<property name="Дата" type="xs:date" localName="orderDate"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Заказчик" type="d3p1:CatalogRef.Флоты" localName="customerId"/>
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="Проект" type="d3p1:GUID" localName="shipProjectId"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Заказ" type="d3p1:CatalogRef.Заказы" localName="shipId"/>
+		<property name="ДатаПоставки" type="xs:date" localName="deliveryDate"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="УсловиеПоставки" type="d3p1:CatalogRef.Инкотермс2010" localName="incoterms2010id"/>
+		<property name="ArrayOfAKPSOrdersElement">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/iss_zip/import_from_site" name="AKPSOrdersElement" type="d5p1:AKPSOrdersElement" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="ArrayOfAKPSObjectAttachment">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/iss_zip/import_from_site" name="AKPSObjectAttachment" type="d5p1:AKPSObjectAttachment" upperBound="-1"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="AKPSOrdersElement">
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="КлючСвязи" type="d3p1:GUID" nillable="true" form="Attribute" localName="id"/>
+		<property name="НомерСтроки" type="xs:integer" localName="rowNumber"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Владелец" type="d3p1:DocumentRef.Заявка" localName="shipId"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ПредметСнабжения" type="d3p1:CatalogRef.КаталогПредметовСнабжения" localName="supplyItemId"/>
+		<property name="Количество" type="xs:decimal" localName="amount"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="БоеваяЧасть" type="d3p1:CatalogRef.БоевыеЧасти" localName="departmentId"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Помещение" type="d3p1:CatalogRef.Помещения" localName="placementId"/>
+		<property name="Примечание" type="xs:string" localName="note"/>
+		<property name="ArrayOfAKPSObjectAttachment">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/iss_zip/import_from_site" name="AKPSObjectAttachment" type="d5p1:AKPSObjectAttachment" upperBound="-1"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="AKPSObjectAttachment">
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="id" type="d3p1:GUID" form="Attribute"/>
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="orderId" type="d3p1:GUID" form="Element"/>
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="resourceId" type="d3p1:GUID"/>
+		<property name="designation" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="name" type="d3p1:FullName" nillable="true"/>
+		<property name="resourceExtension" type="xs:string"/>
+	</objectType>
+	<objectType name="ArrayOfAKPSOrder">
+		<property xmlns:d3p1="http://seaproject.ru/iss_zip/import_from_site" name="AKPSOrder" type="d3p1:AKPSOrder" upperBound="-1"/>
+	</objectType>
+</package>

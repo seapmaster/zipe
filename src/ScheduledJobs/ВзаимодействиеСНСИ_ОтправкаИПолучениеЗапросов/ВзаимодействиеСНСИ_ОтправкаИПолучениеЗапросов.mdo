@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2930f77a-6a7c-48ac-af37-50c18936f177">
+  <name>ВзаимодействиеСНСИ_ОтправкаИПолучениеЗапросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаимодействие С НСИ отправка и получение запросов</value>
+  </synonym>
+  <methodName>CommonModule.ВзаимодействиеСНСИ.ВзаимодействиеСНСИ_ОтправкаИПолучениеЗапросов</methodName>
+  <description>Взаимодействие с НСИ</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

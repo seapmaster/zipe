@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="157d2caa-ff32-477b-85fc-3b31763777c4">
+  <name>Интеграция_ХранилищеФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция хранилище файлов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.ОбменСХранилищемФайлов</content>
+  <content>Catalog.НастройкиОбменаСХранилищемФайлов</content>
+  <content>ScheduledJob.ОбменС_ХранилищемФайлов</content>
+  <content>Constant.ВыгружатьФайлыВоВнешнееХранилище</content>
+  <parentSubsystem>Subsystem.Интеграция</parentSubsystem>
+</mdclass:Subsystem>

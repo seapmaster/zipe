@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e66f9f0-dd28-4677-bb95-ad11defcafa6">
+  <name>ExchangeZIP_SITE</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange ZIP SITE</value>
+  </synonym>
+  <namespace>http://seaproject.ru/zip_site</namespace>
+</mdclass:XDTOPackage>

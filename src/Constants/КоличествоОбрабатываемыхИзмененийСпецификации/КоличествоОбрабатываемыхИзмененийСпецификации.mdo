@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4d645b5-50b3-4a99-b1c2-1db51530d208">
+  <producedTypes>
+    <managerType typeId="d664d41d-019a-4f09-b7fd-fb951ac59772" valueTypeId="9128b800-39cd-427b-a590-ae6033de6a00"/>
+    <valueManagerType typeId="da3626b3-f1a5-4ec6-bda4-b8b9e1d130f5" valueTypeId="e84ad0a1-d873-4928-8873-c3c100c3e2ae"/>
+    <valueKeyType typeId="ce70f430-4038-52ef-976c-21328d44cb6a" valueTypeId="e12a50ed-938c-5061-89ac-4c64435bab99"/>
+  </producedTypes>
+  <name>КоличествоОбрабатываемыхИзмененийСпецификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество обрабатываемых изменений спецификации</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

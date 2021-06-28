@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6a8ff9a-680a-47d4-8bc1-a9d30f63ad19">
+  <producedTypes>
+    <objectType typeId="a0957093-7235-4545-b030-1aefd7880935" valueTypeId="0952ead2-fa3e-4b38-b644-5b927a73b1d3"/>
+    <managerType typeId="6c2c3aa5-bba8-4456-8fb8-6551205654ea" valueTypeId="d1b21de9-a8ec-4f59-95e4-b149065de271"/>
+  </producedTypes>
+  <name>РаспространитьПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распространить поставщиков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РаспространитьПоставщиков.Form.Форма</defaultForm>
+  <forms uuid="87427faf-02e2-451f-9b88-4cd91e5194c7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

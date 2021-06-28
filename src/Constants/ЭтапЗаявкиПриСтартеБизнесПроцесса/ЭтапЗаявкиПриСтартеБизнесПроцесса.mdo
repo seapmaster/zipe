@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee5328e9-03e0-438f-a0df-4e5a3359f8e0">
+  <producedTypes>
+    <managerType typeId="a104abaf-00f1-428f-bf1a-1602ce84353a" valueTypeId="ed451c51-9ea4-4dbc-8cbc-e0d14bb9183f"/>
+    <valueManagerType typeId="aac742f3-ed88-4c36-b042-d4bfd4b58766" valueTypeId="91f4feb9-0fbc-4570-9bfc-43f3b3d1b4d2"/>
+    <valueKeyType typeId="38ed6ca6-d397-5899-851b-630ed9fdfb3b" valueTypeId="6a03e9e6-032e-5233-8883-cfb8e2414b91"/>
+  </producedTypes>
+  <name>ЭтапЗаявкиПриСтартеБизнесПроцесса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этап заявки при старте бизнес процесса</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f59a0b5f-09d7-4f58-b818-30b4f1447bc8">
+  <name>ФормированиеОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование отчетности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Формирование отчетов в виде, удобном для вывода на печатающие устройства, на основе данных ИСС ЗИП-Э. 
+Проектирование и разработка форм регламентированной отчетности, формирование и предоставление по запросам пользователей аналитических и статистических отчетов в различных форматах (включая графические), отображение регламентированных отчетов с помощью веб-интерфейса, вывод подготовленных отчетных форм на печать.</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Отчеты</picture>
+  </picture>
+  <content>Report.КаталогКомплектующихИзделийИЗИПКорабляСокращенный</content>
+  <content>Report.ВедомостьЗИПГруппыКомплектующихИзделий</content>
+  <content>Report.ЗапросТКП</content>
+  <content>Report.КоммерческоеПредложениеПоставщика</content>
+  <content>Report.ТехникоКоммерческоеПредложение</content>
+  <content>Report.СтатистическаяСправкаПоПеречнюЗаявок</content>
+  <content>Report.СтатистическаяСправкаПоЗаполнениюБД</content>
+  <content>Report.НоменклатураОборудования</content>
+  <content>Report.НоменклатураЗапасныхЧастей</content>
+  <content>Report.ПереченьКомплектующихИзделийКорабля</content>
+  <content>Report.ПереченьКомплектующихИзделийКорабляСокращенный</content>
+  <content>Report.ПереченьПоставщиковМатериалов</content>
+  <content>Report.ОтчетПоПрименяемостиНаЗаказах</content>
+  <content>Report.СтатистическаяСправкаПоКоличествуЗаявок</content>
+  <content>Report.СтатистическаяСправкаПоПредметамСнабжения</content>
+  <content>Report.КаталогКомплектующихИзделийИЗИПКорабляРасширенный</content>
+  <content>Report.СтатусыЗаявок</content>
+  <content>81be4207-ba57-43b3-be27-e385d3bfb6cc</content>
+</mdclass:Subsystem>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac9e3959-c0bf-4ef7-abfa-27adf1226eb7">
+  <producedTypes>
+    <objectType typeId="3408a43c-e517-470f-ba21-cec90fdcb7c7" valueTypeId="1b33fb6e-1f84-40bf-b813-ac59c8a1affd"/>
+    <managerType typeId="76c7269c-dd63-4027-b9f1-f9cfb6b9e55f" valueTypeId="95aa771d-3ab2-4516-850f-8d4a467094eb"/>
+  </producedTypes>
+  <name>ИсправлениеДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исправление данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ИсправлениеДанных.Form.Форма</defaultForm>
+  <forms uuid="7fb1af23-2ce2-44e5-b392-c3ffb0ea3d86">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

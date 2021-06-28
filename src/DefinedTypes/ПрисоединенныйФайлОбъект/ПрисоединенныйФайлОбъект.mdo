@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b67bfd5-ef23-4205-b7ba-9466517e9999">
+  <producedTypes>
+    <containerType typeId="315ef181-e743-44aa-91b7-263684edae4a" valueTypeId="55aaba3d-0c41-406e-8a7d-6aeccc730f39"/>
+  </producedTypes>
+  <name>ПрисоединенныйФайлОбъект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенный файл объект</value>
+  </synonym>
+  <type>
+    <types>CatalogObject.ПроектыКораблейПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаФСВТСПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаявкаПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗапросНаАктуализациюКаталогаПоставщикаПрисоединенныеФайлы</types>
+    <types>CatalogObject.ВзаимодействиеСРОЭПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПочтовоеСообщениеПрисоединенныеФайлы</types>
+    <types>CatalogObject.ШаблоныСообщенийПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЯзыкиПрисоединенныеФайлы</types>
+    <types>CatalogObject.БоевыеЧастиПрисоединенныеФайлы</types>
+    <types>CatalogObject.КаталогПредметовСнабженияПрисоединенныеФайлы</types>
+    <types>CatalogObject.ФлотыПрисоединенныеФайлы</types>
+    <types>CatalogObject.ИдентификаторыОбъектовМетаданных</types>
+    <types>CatalogObject.СтруктураЗаказаПоКомплектующимИзделиямИЗИППрисоединенныеФайлы</types>
+    <types>CatalogObject.КонтрактПрисоединенныеФайлы</types>
+    <types>CatalogObject.РезультатыТендераПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗапросТКПRFPПрисоединенныеФайлы</types>
+    <types>CatalogObject.ЗаказыПрисоединенныеФайлы</types>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a118c82-f97f-4c04-a3ea-ee307dfbe1f3">
+  <producedTypes>
+    <refType typeId="d3faecad-ec9a-4fe5-b180-c16ba56326ee" valueTypeId="129c6074-47bf-4639-993e-c394fd9ae914"/>
+    <listType typeId="1a217982-dfed-421c-8e08-7f5adf515eb2" valueTypeId="228dd31e-0c7a-499a-9149-d07c31338c57"/>
+    <managerType typeId="64addf2d-ca77-40d3-bd23-1fa82a21c156" valueTypeId="4bdab8d0-2f94-4018-bd88-bbdbda1db509"/>
+  </producedTypes>
+  <name>ВидыКодовПредметовСнабженияДляОтчетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды кодов предметов снабжения для отчетов</value>
+  </synonym>
+  <comment>//20.12.2017 Веденеев П. //для вывода в отчеты согласно ОПЗ 6</comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cbfbbc4a-cc60-4898-8e8b-76df62a0c5e2">
+    <name>INCAT</name>
+    <synonym>
+      <key>ru</key>
+      <value>INCAT</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b7fd3a9b-e352-4969-b5af-f7eb5ac54bcd">
+    <name>NSN</name>
+    <synonym>
+      <key>ru</key>
+      <value>NSN</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="476bcce3-61de-494c-8dc0-454439b3dfaf">
+    <name>ФНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФНН</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="856e5e74-d4b1-4bfe-b5ad-35ad36822d7c">
+    <name>Обозначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обозначение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="49983186-337b-4ea3-a26b-7e6484013e0a">
+    <name>ДокументНаПоставку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ на поставку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cf991df9-1268-4ab5-ad44-1b67c10d8e45">
+    <name>ШифрМарка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шифр/марка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2fb4ab42-ec66-48d6-86c4-90ffb3bc954e">
+    <name>НомерОСК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ОСК</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

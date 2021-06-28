@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="822a7191-d213-4fe4-aa27-13854887d730">
+  <name>ПринятьЗадачуКИсполнению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Принять к исполнению</value>
+  </synonym>
+  <group>FormCommandBarImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Принять задачу к исполнению</value>
+  </toolTip>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

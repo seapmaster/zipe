@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e07e9fe-9b80-4f29-8cd0-8f74a442f9fd">
+  <name>ОбменС_НСИ_ОбработкаПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с НСИ: обработка почты</value>
+  </synonym>
+  <methodName>CommonModule.ОбменСНСИ.ОбменС_НСИ_ОбработкаПочты</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

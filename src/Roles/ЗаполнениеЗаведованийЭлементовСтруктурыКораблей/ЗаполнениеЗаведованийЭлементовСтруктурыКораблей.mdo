@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5fb0406d-eb17-4041-be44-cf3af9b27aee">
+  <name>ЗаполнениеЗаведованийЭлементовСтруктурыКораблей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение заведований элементов структуры кораблей</value>
+  </synonym>
+</mdclass:Role>

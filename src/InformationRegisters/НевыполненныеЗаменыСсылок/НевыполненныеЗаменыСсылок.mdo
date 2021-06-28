@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdc4a669-37fb-4ef6-92c7-73c706a91326">
+  <producedTypes>
+    <selectionType typeId="be80c704-108b-4324-a8dd-d617176e28e6" valueTypeId="43b00733-59a7-4281-8a1e-16d320bdf771"/>
+    <listType typeId="c7be526a-e104-4368-9186-398259f23d87" valueTypeId="d76eb68e-c975-49ed-bc4f-06283809b34d"/>
+    <managerType typeId="ba86cef4-0faf-4594-973b-e4956326673c" valueTypeId="47afdb36-1e58-4b0b-ae48-fba84a8d12cd"/>
+    <recordSetType typeId="b8ee76ed-fee7-4fb4-8d99-77d477d3b5be" valueTypeId="3a481988-ca52-443b-b1b1-f2378114978a"/>
+    <recordKeyType typeId="ee20eb19-9369-4f15-8d04-2de713a5cf95" valueTypeId="c7954d45-d22e-48ed-b75f-6a73dd8e27cf"/>
+    <recordType typeId="69930b2e-df3e-4eb2-b3ff-8c380c263b46" valueTypeId="7cf6e56d-c9e4-4227-859b-0700f387f927"/>
+    <recordManagerType typeId="e8998387-596c-4ee9-af79-285a6835a477" valueTypeId="dab4b463-652e-47cc-9ad4-be3989a516db"/>
+  </producedTypes>
+  <name>НевыполненныеЗаменыСсылок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Невыполненные замены ссылок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НевыполненныеЗаменыСсылок.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НевыполненныеЗаменыСсылок.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c366093c-8ac2-4175-afc9-874bbb42e11b">
+    <name>UIDЗаменившегоЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>UID заменившего элемента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="35ea9e9d-331a-425d-894e-5232b2a38168">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f6b34ed4-8cdf-439c-810e-6d2e57a12959">
+    <name>ДатаЗамены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата замены</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="6487552f-0cd5-4b5d-94d4-16656a14b5ad">
+    <name>ИмяСправочника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя справочника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6b44d25f-5c03-46ff-ab4b-54cc0f8862d2">
+    <name>UIDЗамененногоЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>UID замененного элемента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c79609c9-4b2c-4cb9-962d-5a2095b6743d">
+    <name>ИмяМестаИспользования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя места использования</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="71755d8d-1a3a-45eb-bcee-1b6ba56ecb88">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="def1f008-ea58-497c-8bcc-b9b0d060974f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b20516e-2ff8-4ea5-bb22-4783f941e61c">
+  <producedTypes>
+    <containerType typeId="e0179236-36de-4dd3-b746-ea98a9272172" valueTypeId="a872d78c-ab1a-4f11-bb26-69eef911f03e"/>
+  </producedTypes>
+  <name>БизнецПроцессыВзаимодействияСНСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнец процессы взаимодействия СНСИ</value>
+  </synonym>
+  <type>
+    <types>BusinessProcessRef.ОтправкаВКСУНСИНаПоискПоКоду</types>
+    <types>BusinessProcessRef.ОтправкаВКСУНСИНаКлассификацию</types>
+  </type>
+</mdclass:DefinedType>

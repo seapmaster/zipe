@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43575d06-2400-440f-a93b-bdfbc591fd75">
+  <producedTypes>
+    <managerType typeId="b4868fa5-b853-4278-a6d2-ba7a6214938e" valueTypeId="497646c9-c966-41a3-a37a-6fb9ee58c7dd"/>
+    <valueManagerType typeId="7d8c7568-1b44-4f08-bc9f-5a3fd4616e97" valueTypeId="f5d669a2-a91a-4faa-97b6-4c4a2f43d6d5"/>
+    <valueKeyType typeId="9ac4cc21-a847-5a5a-bf87-8e228178ba56" valueTypeId="2fbf6fab-a2ba-5b63-a448-94a8f857979d"/>
+  </producedTypes>
+  <name>ОсновнаяОрганизация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основная организация</value>
+  </synonym>
+  <comment>//Веденеев П. 10.01.2018// основное юрлицо владельца БД</comment>
+  <type>
+    <types>CatalogRef.Организации</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

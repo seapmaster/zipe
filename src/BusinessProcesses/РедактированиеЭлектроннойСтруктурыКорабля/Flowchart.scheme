@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphicalSchema xmlns="http://v8.1c.ru/8.3/xcf/scheme" xmlns:sch="http://v8.1c.ru/8.2/data/graphscheme" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<BackColor>style:FieldBackColor</BackColor>
+	<GridEnabled>true</GridEnabled>
+	<DrawGridMode>Lines</DrawGridMode>
+	<GridHorizontalStep>20</GridHorizontalStep>
+	<GridVerticalStep>20</GridVerticalStep>
+	<PrintParameters>
+		<Paper xsi:type="xs:decimal">9</Paper>
+		<PageOrientation>Portrait</PageOrientation>
+		<Collate xsi:type="xs:decimal">1</Collate>
+		<Copies>1</Copies>
+		<TopMargin>10</TopMargin>
+		<LeftMargin>10</LeftMargin>
+		<BottomMargin>10</BottomMargin>
+		<RightMargin>10</RightMargin>
+		<BlackAndWhite>false</BlackAndWhite>
+		<PaperSource xsi:type="xs:decimal">7</PaperSource>
+		<FitPageMode>Auto</FitPageMode>
+	</PrintParameters>
+	<Items>
+		<Start id="1" uuid="0e506886-d155-46df-9ace-ce806b7c0b6b">
+			<Properties>
+				<Name>Старт</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>1</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>0</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="20" left="340" bottom="100" right="580"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+			</Properties>
+			<Events>
+				<Event name="BeforeStart"/>
+			</Events>
+		</Start>
+		<ConnectionLine id="2">
+			<Properties>
+				<Name>Линия1</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>2</TabOrder>
+				<BackColor>#000000</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>1</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="460" y="100"/>
+					<Point x="460" y="110"/>
+					<Point x="460" y="110"/>
+					<Point x="460" y="120"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>Старт</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>РедактированиеСтруктурыКорабля</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Completion id="74" uuid="de38fbf1-a4c1-4f42-ae7f-4760652559e0">
+			<Properties>
+				<Name>Завершение</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>41</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>2</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="560" left="340" bottom="640" right="580"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+			</Properties>
+			<Events>
+				<Event name="OnComplete">ЗавершениеПриЗавершении</Event>
+			</Events>
+		</Completion>
+		<Activity id="38" uuid="f7352704-238a-47ac-8f0e-bb90a80169d9">
+			<Properties>
+				<Name>РедактированиеСтруктурыКорабля</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Редактирование электронной структуры корабля ответственным за изменение структуры работником</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Требуется отредактировать структуру комплектующих изделий и ЗИП корабля. Отредактируйте структуру корабля и завершите задачу по окончании редактирования структуры</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>42</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>3</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="120" left="340" bottom="200" right="580"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Редактирование электронной структуры корабля</TaskDescription>
+				<Explanation/>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.РолиИсполнителей.ОтветственныйЗаСтруктуруКорабля</Value>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="39">
+			<Properties>
+				<Name>Линия2</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>43</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>4</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="460" y="200"/>
+					<Point x="460" y="210"/>
+					<Point x="460" y="210"/>
+					<Point x="460" y="220"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>РедактированиеСтруктурыКорабля</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>ПринятиеРешенияОбИзменении</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Switch id="40" uuid="23d48bd8-ca85-459d-a903-b4a7b614e7a3">
+			<Properties>
+				<Name>РешениеОбИзменении</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Принятие автором бизнес-процесса решения о вводе или изменении электронной структуры корабля</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>44</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>5</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="340" left="340" bottom="420" right="580"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Case>
+					<sch:name>Принять</sch:name>
+					<sch:description>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принять</v8:content>
+						</v8:item>
+					</sch:description>
+					<sch:backColor>auto</sch:backColor>
+				</Case>
+				<Case>
+					<sch:name>ОтправитьНаДоработку</sch:name>
+					<sch:description>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправить на доработку</v8:content>
+						</v8:item>
+					</sch:description>
+					<sch:backColor>auto</sch:backColor>
+				</Case>
+			</Properties>
+			<Events>
+				<Event name="SwitchProcessing">РешениеОбИзмененииОбработкаВыбораВарианта</Event>
+			</Events>
+		</Switch>
+		<ConnectionLine id="41">
+			<Properties>
+				<Name>Линия3</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>45</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>6</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="579" y="392"/>
+					<Point x="594" y="392"/>
+					<Point x="594" y="545"/>
+					<Point x="460" y="545"/>
+					<Point x="460" y="560"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>РешениеОбИзменении</Item>
+						<PortIndex>7</PortIndex>
+					</From>
+					<To>
+						<Item>Завершение</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="42">
+			<Properties>
+				<Name>Линия4</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>46</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>7</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="579" y="410"/>
+					<Point x="599" y="410"/>
+					<Point x="599" y="440"/>
+					<Point x="460" y="440"/>
+					<Point x="460" y="460"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>РешениеОбИзменении</Item>
+						<PortIndex>9</PortIndex>
+					</From>
+					<To>
+						<Item>ИсправлениеЗамечанийПоСтруктуреКорабля</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="44" uuid="cf614cbb-3975-4a2f-a37b-ffd3b6ecca01">
+			<Properties>
+				<Name>ИсправлениеЗамечанийПоСтруктуреКорабля</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Доработка структуры корабля в соответствии с замечаниями, внесенными автором бизнес-процесса</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>По структуре корабля есть замечания. Отредактируйте структуру корабля в соответствии с ними и завершите задачу. Замечания:</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>47</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>8</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="460" left="340" bottom="540" right="580"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Доработка структуры корабля в соответствии с замечаниями</TaskDescription>
+				<Explanation>Редактировавщий структуру исполнитель</Explanation>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="45">
+			<Properties>
+				<Name>Линия5</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>48</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>9</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="340" y="500"/>
+					<Point x="320" y="500"/>
+					<Point x="320" y="260"/>
+					<Point x="340" y="260"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ИсправлениеЗамечанийПоСтруктуреКорабля</Item>
+						<PortIndex>1</PortIndex>
+					</From>
+					<To>
+						<Item>ПринятиеРешенияОбИзменении</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="46" uuid="6334ddb0-3c3a-4747-aee6-353e5d1442c1">
+			<Properties>
+				<Name>ПринятиеРешенияОбИзменении</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Запрос на принятие автором бизнес-процесса решения о вводе или изменении электронной структуры корабля</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Структура корабля отредактирована. Проверьте результат редактирования и примите изменения либо отправьте задачу на доработку</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>49</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>10</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="220" left="340" bottom="300" right="580"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Запрос на принятие решения о вводе или изменении электронной структуры корабля</TaskDescription>
+				<Explanation>Автор бизнес-процесса</Explanation>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="47">
+			<Properties>
+				<Name>Линия6</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>50</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>11</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="460" y="300"/>
+					<Point x="460" y="320"/>
+					<Point x="460" y="320"/>
+					<Point x="460" y="340"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ПринятиеРешенияОбИзменении</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>РешениеОбИзменении</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+	</Items>
+</GraphicalSchema>

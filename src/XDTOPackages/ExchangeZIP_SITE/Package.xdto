@@ -1,0 +1,146 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://seaproject.ru/zip_site">
+	<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
+	<valueType name="UID" base="xs:string" length="36" minLength="36" maxLength="36"/>
+	<objectType name="Query">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Ссылка" type="d3p1:DocumentRef.ЗапросТКПRFP" form="Attribute" localName="queryUID"/>
+		<property name="Дата" type="xs:date" localName="date"/>
+		<property name="НомерЗаказчика" localName="customerNumber">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="150"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Заказчик" type="d3p1:CatalogRef.ИностранныеЗаказчики" localName="customerUID"/>
+		<property name="СрокПодачиТКП" type="xs:dateTime" localName="timeSubmitTKP"/>
+		<property name="СрокПоставки" localName="supplyItemDeliveryTime">
+			<typeDef xsi:type="ValueType" base="xs:integer" totalDigits="5"/>
+		</property>
+		<property name="УсловияПоставки" nillable="true" localName="deliveryConditions">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="150"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Грузополучатель" type="d3p1:CatalogRef.ИностранныеЗаказчики" localName="consigneeUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="АдресОтправкиТКП" type="d3p1:CatalogRef.ИностранныеЗаказчики" localName="shippingAdressTKP"/>
+		<property name="Примечание" type="xs:string" nillable="true" localName="notation"/>
+		<property name="НомерФСВТС" localName="numberVTS">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="150"/>
+		</property>
+		<property name="ДатаРегистрацииФСВТС" type="xs:date" localName="dateVTS"/>
+		<property name="ОтветственноеЛицо" nillable="true" localName="responsible">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="250"/>
+		</property>
+		<property name="Телефоны" localName="phones">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="250"/>
+		</property>
+		<property name="ЭлектроннаяПочта" localName="eMail">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="250"/>
+		</property>
+		<property name="Заявки" localName="arrayOfOrders">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="Заявка" type="d5p1:Order" lowerBound="0" upperBound="-1" localName="order"/>
+			</typeDef>
+		</property>
+		<property name="ПрисоединенныеФайлы" localName="arrayOfFiles">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="queryFile" type="d5p1:QueryFile" lowerBound="0" upperBound="-1" localName="queryFile"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="Order">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Ссылка" type="d3p1:DocumentRef.Заявка" lowerBound="1" form="Attribute" localName="orderUID"/>
+		<property name="Дата" type="xs:date" localName="date"/>
+		<property name="НомерЗаказчика" localName="customerNumber">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="150"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Категория" type="d3p1:CatalogRef.КатегорииЗаявокНаПоставкуПС" localName="category"/>
+		<property name="Корабли" type="xs:string" nillable="true" localName="projects"/>
+		<property name="Примечание" localName="notation">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="150"/>
+		</property>
+		<property name="КоличествоПозиций" localName="positionCount">
+			<typeDef xsi:type="ValueType" base="xs:integer" totalDigits="4"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="РуководительПроектаВТС" type="d3p1:CatalogRef.Пользователи" localName="projectLiderVTS"/>
+		<property name="ОбщаяСуммаЗаявки" localName="totalSummOrder">
+			<typeDef xsi:type="ValueType" base="xs:decimal" totalDigits="14" fractionDigits="2"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Валюта" type="d3p1:CatalogRef.ОКВ" localName="currency"/>
+		<property name="ДатаНазначенияДЗО" type="xs:date" localName="purposeDateDZO"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ИсполнительДЗО" type="d3p1:CatalogRef.Организации" localName="executorDZO"/>
+		<property name="ЗагруженаССайта" localName="loadedFromSite">
+			<typeDef xsi:type="ValueType" base="xs:boolean"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ЗапросТКПRFP" type="d3p1:DocumentRef.ЗапросТКПRFP" localName="queryTKPRFP"/>
+		<property name="ЭтапыВыполненияЗаявки" localName="arrayOfOrderStage">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="orderStagesItem" type="d5p1:OrderStagesItem" lowerBound="0" upperBound="-1" localName="orderStagesItem"/>
+			</typeDef>
+		</property>
+		<property name="Спецификация" localName="arrayOfOrderSpecification">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="orderSpecificationItem" type="d5p1:OrderSpecificationItem" lowerBound="0" upperBound="-1" localName="orderSpecificationItem"/>
+			</typeDef>
+		</property>
+		<property name="ЭтапыВыполненияСпецификации" localName="arrayOfOrderSpecificationStages">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="orderSpecificationStageItem" type="d5p1:OrderSpecificationStagesItem" lowerBound="0" upperBound="-1" localName="orderSpecificationStageItem"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="OrderSpecificationItem">
+		<property xmlns:d3p1="http://seaproject.ru/zip_site" name="ИдентификаторПозиции" type="d3p1:UID" localName="specItemID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ПредметСнабжения" type="d3p1:CatalogRef.КаталогПредметовСнабжения" localName="specSupplyItemUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Изделие" type="d3p1:CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП" localName="specShipStructureUID"/>
+		<property name="НаименованиеПредметаСнабженияЗаказчика" localName="specSupplyItemCustomerName">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="250"/>
+		</property>
+		<property name="КодПредметаСнабженияЗаказчика" localName="specSupplyItemCustomerCode">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="150"/>
+		</property>
+		<property name="НаименованиеИзделияЗаказчика" localName="specShipStructureCustomerName">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="250"/>
+		</property>
+		<property name="Количество" localName="specCount">
+			<typeDef xsi:type="ValueType" base="xs:decimal" totalDigits="8" fractionDigits="2"/>
+		</property>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ЕдиницаИзмерения" type="d3p1:CatalogRef.ОКЕИ" localName="specMeasureUID"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ИсполнительДЗО" type="d3p1:CatalogRef.Организации" localName="specExecutorDZO"/>
+		<property name="ЦенаОСК" localName="specPriceOSK">
+			<typeDef xsi:type="ValueType" base="xs:decimal" totalDigits="14" fractionDigits="2"/>
+		</property>
+		<property name="ОписаниеИерархииИзделия" type="xs:string" localName="specDescriptionShipStructure"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="ТекущийЭтап" type="d3p1:CatalogRef.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения" localName="specCurrentStage"/>
+		<property name="ДатаТекущегоЭтапа" type="xs:date" localName="specCurrentStageDate"/>
+		<property name="ПрисоединенныеФайлы" localName="arrayOfFiles">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="orderFile" type="d5p1:OrderFile" lowerBound="0" upperBound="-1" localName="orderFile"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="OrderSpecificationStagesItem">
+		<property xmlns:d3p1="http://seaproject.ru/zip_site" name="ИдентификаторПозиции" type="d3p1:UID" localName="itemID"/>
+		<property name="Дата" type="xs:date" localName="specDate"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Этап" type="d3p1:CatalogRef.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения" localName="specStage"/>
+	</objectType>
+	<objectType name="OrderStagesItem">
+		<property xmlns:d3p1="http://seaproject.ru/zip_site" name="ИдентификаторПозиции" type="d3p1:UID" localName="itemID"/>
+		<property name="Дата" type="xs:date" localName="orderDate"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Этап" type="d3p1:CatalogRef.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения" localName="orderStage"/>
+	</objectType>
+	<objectType name="Data">
+		<property name="Тип" type="xs:string" localName="type"/>
+		<property name="Запросы" localName="arrayOfQuery">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://seaproject.ru/zip_site" name="Запрос" type="d5p1:Query" lowerBound="0" upperBound="-1" localName="query"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="QueryFile">
+		<property xmlns:d3p1="http://seaproject.ru/zip_site" name="Ссылка" type="d3p1:UID" localName="id"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Владелец" type="d3p1:DocumentRef.ЗапросТКПRFP" form="Element" localName="objectId"/>
+		<property name="Наименование" type="xs:string" nillable="true" localName="name"/>
+		<property name="Расширение" type="xs:string" localName="resourceExtension"/>
+	</objectType>
+	<objectType name="OrderFile">
+		<property xmlns:d3p1="http://seaproject.ru/zip_site" name="Ссылка" type="d3p1:UID" localName="id"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise/current-config" name="Владелец" type="d3p1:DocumentRef.Заявка" form="Element" localName="objectId"/>
+		<property name="Наименование" type="xs:string" nillable="true" localName="name"/>
+		<property name="Расширение" type="xs:string" localName="resourceExtension"/>
+	</objectType>
+</package>

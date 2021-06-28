@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78e17b32-d50f-46ae-99b7-366dd806c30c">
+  <producedTypes>
+    <objectType typeId="aa069952-e883-4019-9371-7e1d8ef467c5" valueTypeId="25287d18-bdaa-4b89-8fff-86313d492c65"/>
+    <refType typeId="1bbc4c78-3e08-4ef3-9b2d-88b05c3842f8" valueTypeId="2197eece-315b-4785-9a64-e206cba41d8e"/>
+    <selectionType typeId="fccef7ba-1239-4b3b-b9c2-a8897b948d24" valueTypeId="692492d4-ea6e-4737-b542-214cd3fb98b2"/>
+    <listType typeId="7aac2daf-46d7-4eab-9c35-ac21818c6515" valueTypeId="4998228b-04f8-41f4-99cb-6e8ebe576d45"/>
+    <managerType typeId="dd1fdd00-1a6f-44d8-96d8-fd06785983cd" valueTypeId="b5c6105e-f424-4571-b7fb-a368a8741cc3"/>
+  </producedTypes>
+  <name>ТНВЭД</name>
+  <synonym>
+    <key>ru</key>
+    <value>ТН ВЭД</value>
+  </synonym>
+  <comment>Товарная номенклатура внешнеэкономической деятельности</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТНВЭД.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТНВЭД.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <toolTip>
+      <key>ru</key>
+      <value>группа товарной номенклатуры</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ТНВЭД.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>наименование товарной номенклатуры</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>код товарной номенклатуры</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>Товарная номенклатура внешнеэкономической деятельности</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>13</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТНВЭД.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ТНВЭД.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.ТНВЭД.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="b33594e7-16bd-4e4f-8d26-271dc5c8c04c">
+    <name>ПолноеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>350</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>полное наименование товарной номенклатуры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="bbfbd03d-c66f-4c8a-bb15-129b17cc0576">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9ba1774d-366f-4808-a906-b7a1432f59b5">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2d58d234-f33a-4df1-a278-b2205223ec1a">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ab332446-8164-4165-8d2b-7b3f0b56dae3">
+    <name>тн1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тн1</value>
+    </synonym>
+  </templates>
+  <templates uuid="c9552e47-35cc-415f-811b-77d25a31d185">
+    <name>тн2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тн2</value>
+    </synonym>
+  </templates>
+  <templates uuid="fe3f9cfb-33f3-442c-8e92-611c78ef57ba">
+    <name>тн3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тн3</value>
+    </synonym>
+  </templates>
+  <templates uuid="7f885a8e-131b-4b5d-934f-c87fe61b4850">
+    <name>тн4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тн4</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

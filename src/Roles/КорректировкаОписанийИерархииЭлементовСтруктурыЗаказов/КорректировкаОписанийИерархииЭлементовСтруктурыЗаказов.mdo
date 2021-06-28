@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18409b94-48ce-41dd-a3f1-2a2fe9835a5a">
+  <name>КорректировкаОписанийИерархииЭлементовСтруктурыЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка описаний иерархии элементов структуры заказов</value>
+  </synonym>
+</mdclass:Role>

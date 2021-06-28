@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.ИностранныеЗаказчики.StandardCommand.OpenList</commands>
+      <commands>Catalog.Организации.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПредметыСнабженияНАТО.StandardCommand.OpenList</commands>
+      <commands>Catalog.УтвержденныеНаименованияПредметовСнабжения.StandardCommand.OpenList</commands>
+      <commands>Catalog.Флоты.StandardCommand.OpenList</commands>
+      <commands>Catalog.КлассыИПодклассыКораблей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПроектыКораблей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ХарактеристикиКораблей.StandardCommand.OpenList</commands>
+      <commands>Catalog.ХарактеристикиПредметовСнабжения.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.Справочники.Subsystem.ОбщероссийскиеКлассификаторы</subsystems>
+    <subsystems>Subsystem.Справочники.Subsystem.ВнутренниеСправочникиИСС</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

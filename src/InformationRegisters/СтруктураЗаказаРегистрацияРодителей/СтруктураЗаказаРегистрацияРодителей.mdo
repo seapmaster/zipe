@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3d6514c-9413-41a4-bf9b-bb8f7cb4df03">
+  <producedTypes>
+    <selectionType typeId="ce2b06a9-f318-4351-9506-64625fe20cf6" valueTypeId="a307a5cf-e720-4860-9097-2017ebf076d1"/>
+    <listType typeId="de1b5ef6-1286-4586-bb42-2c804e092fb1" valueTypeId="29e64733-4d36-4aac-8e0a-befb3244899c"/>
+    <managerType typeId="02f667cb-8a25-4e33-9976-96dcc8efa4fd" valueTypeId="96662f93-8b21-4f63-8777-51859ecbf27d"/>
+    <recordSetType typeId="9c14da21-75ce-4e29-bc90-8b4394ce8bfd" valueTypeId="58c9c2b2-191f-46a8-b029-ec9069ff653e"/>
+    <recordKeyType typeId="1c878e4b-f2e6-497a-8147-760ffdc98c9e" valueTypeId="b692c62b-5336-4ad3-aeb4-19a406c2f1e3"/>
+    <recordType typeId="1aeef0f6-97d8-47eb-a1aa-d142c7b9ec70" valueTypeId="e8c02c85-24da-47bb-a91f-fc77b0be90e8"/>
+    <recordManagerType typeId="02862d36-e61d-434f-91d0-bce95be16678" valueTypeId="3bbb01ca-2ed4-4dfb-8e31-974ad22b4a44"/>
+  </producedTypes>
+  <name>СтруктураЗаказаРегистрацияРодителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура заказа регистрация родителей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9fbd3db1-fa00-4763-9547-85a4f80827af">
+    <name>ЭлементСтруктурыЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент структуры заказа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

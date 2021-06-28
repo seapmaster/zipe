@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8882f2b4-237d-4846-8944-5ab6fb2b428f">
+  <producedTypes>
+    <objectType typeId="4203468e-9552-4fa9-b16c-39572c013959" valueTypeId="c170c40d-0632-490c-9f52-f0d34ac7fc02"/>
+    <managerType typeId="038bc52c-4cbc-40d3-9ed0-8ac34b1dc2a5" valueTypeId="9bca141b-0bb7-46f5-9f0e-c2df0d52c882"/>
+  </producedTypes>
+  <name>СтатистическаяСправкаПоКоличествуЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистическая справка по активности заказчиков (количество заявок за период)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СтатистическаяСправкаПоКоличествуЗаявок.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4fa1bb97-9466-41b2-a746-3fc37c10c587">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

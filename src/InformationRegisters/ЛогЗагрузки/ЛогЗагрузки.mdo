@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c23b31a-07d1-469c-bffb-80c17959ff17">
+  <producedTypes>
+    <selectionType typeId="55e87cb0-c3f1-4a47-ac59-137e131ef2ad" valueTypeId="46ddeb27-3f73-450f-bdc4-d411c4e1a8c3"/>
+    <listType typeId="512358a3-0be1-4bfb-ac4f-1b017bf51063" valueTypeId="04a5beef-7453-4120-a572-39c67ec2e67f"/>
+    <managerType typeId="a6a8c077-5767-4f1e-bc81-13e13e84c876" valueTypeId="8b40a450-4ef1-468d-bb87-f2ffd48df95d"/>
+    <recordSetType typeId="8145dc82-a793-4b9a-bc9c-ac43cb73e201" valueTypeId="2a44d840-c223-4ca4-8fb6-76c5b0f31d6a"/>
+    <recordKeyType typeId="d24fe164-4fa4-4b3f-90f3-9a07edb1a44f" valueTypeId="91d492dc-1baa-4c9e-9f2d-3e980ccd524c"/>
+    <recordType typeId="ad3a6a2a-5955-4bb8-a6c1-69a7a0788cf1" valueTypeId="cffa6318-e34d-4e94-a7ab-303162649b16"/>
+    <recordManagerType typeId="54f3c0d9-4b79-465b-bb7c-6b9986f8b59c" valueTypeId="fbf6f917-cf6c-45fd-9663-7af757442c87"/>
+  </producedTypes>
+  <name>ЛогЗагрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лог загрузки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЛогЗагрузки.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЛогЗагрузки.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="4b6ae1c7-bd02-4c20-aefc-214bf43cbe24">
+    <name>СтруктураДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура данных</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6940a2cc-3b15-4adf-9e4a-2a8c0de6d215">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="5abf6906-3fb9-419a-b654-6637a2bd0a23">
+    <name>ПутьКФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путь к файлу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="d5675071-e775-4570-9f75-63efbf621610">
+    <name>ГУИД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГУИД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2cb08ae1-9035-420c-bb6b-9f125e55de31">
+    <name>Файл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cd511f7f-5b35-4581-b882-8b7aabda88e5">
+    <name>ИдентификаторСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор строки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eac3ee6d-82f5-40e6-ad34-251abb2529e2">
+    <name>Объект1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект1 С</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.ОКЕИ</types>
+      <types>CatalogRef.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля</types>
+      <types>CatalogRef.ХарактеристикиПредметовСнабжения</types>
+      <types>CatalogRef.БоевыеЧасти</types>
+      <types>CatalogRef.Заказы</types>
+      <types>CatalogRef.ПредметыСнабженияНАТО</types>
+      <types>CatalogRef.Помещения</types>
+      <types>DocumentRef.Заявка</types>
+      <types>CatalogRef.ПроектыКораблей</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+      <types>CatalogRef.ОКСМ</types>
+      <types>CatalogRef.ЗаказыПрисоединенныеФайлы</types>
+      <types>CatalogRef.РазделыСпецификацииЗИП</types>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="f44013db-db2a-4890-9320-2f1a49bc9a2c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a4d5bbd0-a12d-4f3d-9070-7e2ca2fb352c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

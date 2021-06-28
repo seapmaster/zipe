@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗИПДЭ</dataPath>
+			<field>КоличествоВЗИПДЭ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокСлужбы</dataPath>
+			<field>СрокСлужбы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок службы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокХранения</dataPath>
+			<field>СрокХранения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок хранения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлементСтруктуры</dataPath>
+			<field>ЭлементСтруктуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаНаОтказ</dataPath>
+			<field>НаработкаНаОтказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка на отказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗИПБаза</dataPath>
+			<field>КоличествоВЗИПБаза</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПредметСнабжения</dataPath>
+			<field>ПредметСнабжения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СрокИзготовления</dataPath>
+			<field>СрокИзготовления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок изготовления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаДоРемонта</dataPath>
+			<field>НаработкаДоРемонта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка до ремонта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПравилаПоставки</dataPath>
+			<field>ПравилаПоставки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила поставки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗИП</dataPath>
+			<field>ЗИП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Обозначение</dataPath>
+			<field>Обозначение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обозначение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаДоСписания</dataPath>
+			<field>НаработкаДоСписания</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка до списания</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Корабль</dataPath>
+			<field>Корабль</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корабль</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВЗИПБорт</dataPath>
+			<field>КоличествоВЗИПБорт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поставщик</dataPath>
+			<field>Поставщик</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поставщик</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Тип</dataPath>
+			<field>Тип</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДополнительныеНаименования.Владелец КАК Владелец,
+	ДополнительныеНаименования.ИмяРеквизита КАК ИмяРеквизита,
+	ДополнительныеНаименования.Перевод КАК Перевод
+ПОМЕСТИТЬ втДополнительныеНаименования
+ИЗ
+	РегистрСведений.ДополнительныеНаименования КАК ДополнительныеНаименования
+ГДЕ
+	ДополнительныеНаименования.Язык = &amp;ЯзыкПредставленияДанных
+
+ИНДЕКСИРОВАТЬ ПО
+	Владелец,
+	ИмяРеквизита
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Заказы.Ссылка КАК Корабль,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА ПРЕДСТАВЛЕНИЕССЫЛКИ(Заказы.Владелец)
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, "")
+	КОНЕЦ КАК Проект,
+	ЕСТЬNULL(Флоты.ВидКодовПредметовСнабженияДляОтчетов, ЗНАЧЕНИЕ(Перечисление.ВидыКодовПредметовСнабженияДляОтчетов.NSN)) КАК ВидКодов
+ПОМЕСТИТЬ втКорабль
+ИЗ
+	Справочник.Заказы КАК Заказы
+		ЛЕВОЕ СОЕДИНЕНИЕ втДополнительныеНаименования КАК втДополнительныеНаименования
+		ПО Заказы.Владелец = втДополнительныеНаименования.Владелец
+			И (втДополнительныеНаименования.ИмяРеквизита = "Наименование")
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Флоты КАК Флоты
+		ПО Заказы.Заказчик = Флоты.Ссылка
+ГДЕ
+	Заказы.Ссылка = &amp;Корабль
+
+ИНДЕКСИРОВАТЬ ПО
+	Корабль
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втКорабль.Корабль КАК Корабль,
+	втКорабль.Проект КАК Проект,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Количество КАК Количество,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения КАК ПредметСнабжения,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК ЭлементСтруктуры,
+	втКорабль.ВидКодов КАК ВидКодов,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП КАК ЗИП,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Тип КАК Тип
+ПОМЕСТИТЬ втСтруктураЗаказа
+ИЗ
+	втКорабль КАК втКорабль
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+		ПО втКорабль.Корабль = СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Владелец
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	втСтруктураЗаказа.Корабль КАК Корабль,
+	втСтруктураЗаказа.Проект КАК Проект,
+	втСтруктураЗаказа.Количество КАК Количество,
+	втСтруктураЗаказа.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втСтруктураЗаказа.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втСтруктураЗаказа.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА КаталогПредметовСнабжения.Наименование
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, КаталогПредметовСнабжения.Наименование)
+	КОНЕЦ КАК Наименование,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА КаталогПредметовСнабжения.Обозначение
+		ИНАЧЕ КаталогПредметовСнабжения.ОбозначениеТранслитированное
+	КОНЕЦ КАК Обозначение,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА ЕСТЬNULL(ОКЕИ.Наименование, "")
+		ИНАЧЕ ЕСТЬNULL(ОКЕИ.УсловноеОбозначениеМеждународное, "")
+	КОНЕЦ КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА втСтруктураЗаказа.ВидКодов = ЗНАЧЕНИЕ(Перечисление.ВидыКодовПредметовСнабженияДляОтчетов.INCAT)
+			ТОГДА ВЫБОР
+					КОГДА НЕ КаталогПредметовСнабжения.INCAT = ""
+						ТОГДА КаталогПредметовСнабжения.INCAT
+					КОГДА НЕ КаталогПредметовСнабжения.NSN = "" ИЛИ НЕ КаталогПредметовСнабжения.NSN = Значение(Справочник.ПредметыСнабженияНАТО.ПустаяСсылка)
+						ТОГДА КаталогПредметовСнабжения.NSN
+					КОГДА НЕ КаталогПредметовСнабжения.ФНН = ""
+						ТОГДА КаталогПредметовСнабжения.ФНН
+					КОГДА НЕ КаталогПредметовСнабжения.Обозначение = ""
+						ТОГДА КаталогПредметовСнабжения.Обозначение
+					КОГДА НЕ КаталогПредметовСнабжения.ДокументНаПоставку = ""
+							И НЕ КаталогПредметовСнабжения.Шифр = ""
+						ТОГДА КаталогПредметовСнабжения.ДокументНаПоставку + ": " + КаталогПредметовСнабжения.Шифр
+					ИНАЧЕ КаталогПредметовСнабжения.НомерОСК
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА НЕ КаталогПредметовСнабжения.NSN = "" ИЛИ НЕ КаталогПредметовСнабжения.NSN = Значение(Справочник.ПредметыСнабженияНАТО.ПустаяСсылка)
+					ТОГДА КаталогПредметовСнабжения.NSN
+				КОГДА НЕ КаталогПредметовСнабжения.ФНН = ""
+					ТОГДА КаталогПредметовСнабжения.ФНН
+				КОГДА НЕ КаталогПредметовСнабжения.Обозначение = ""
+					ТОГДА КаталогПредметовСнабжения.Обозначение
+				КОГДА НЕ КаталогПредметовСнабжения.ДокументНаПоставку = ""
+						И НЕ КаталогПредметовСнабжения.Шифр = ""
+					ТОГДА КаталогПредметовСнабжения.ДокументНаПоставку + ": " + КаталогПредметовСнабжения.Шифр
+				ИНАЧЕ КаталогПредметовСнабжения.НомерОСК
+			КОНЕЦ
+	КОНЕЦ КАК Код,
+	ВЫРАЗИТЬ(КаталогПредметовСнабжения.ПравилаУпаковкиТранспортировкиХранения КАК СТРОКА(1000)) КАК ПравилаУпаковкиТранспортировкиХранения,
+	втСтруктураЗаказа.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втСтруктураЗаказа.ПредметСнабжения КАК ПредметСнабжения,
+	втСтруктураЗаказа.ЗИП КАК ЗИП,
+	втСтруктураЗаказа.Тип КАК Тип
+ПОМЕСТИТЬ втПредметыСнабжения
+ИЗ
+	втСтруктураЗаказа КАК втСтруктураЗаказа
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.КаталогПредметовСнабжения КАК КаталогПредметовСнабжения
+			ЛЕВОЕ СОЕДИНЕНИЕ втДополнительныеНаименования КАК втДополнительныеНаименования
+			ПО КаталогПредметовСнабжения.Ссылка = втДополнительныеНаименования.Владелец
+				И (втДополнительныеНаименования.ИмяРеквизита = "Наименование")
+			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ОКЕИ КАК ОКЕИ
+			ПО КаталогПредметовСнабжения.ЕдиницаИзмерения = ОКЕИ.Ссылка
+		ПО втСтруктураЗаказа.ПредметСнабжения = КаталогПредметовСнабжения.Ссылка
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втСтруктураЗаказа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втПредметыСнабжения.Корабль КАК Корабль,
+	втПредметыСнабжения.Проект КАК Проект,
+	втПредметыСнабжения.Количество КАК Количество,
+	втПредметыСнабжения.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втПредметыСнабжения.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втПредметыСнабжения.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	втПредметыСнабжения.ПредметСнабжения КАК ПредметСнабжения,
+	втПредметыСнабжения.Наименование КАК Наименование,
+	втПредметыСнабжения.Обозначение КАК Обозначение,
+	втПредметыСнабжения.Код КАК Код,
+	втПредметыСнабжения.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА втПредметыСнабжения.ПравилаУпаковкиТранспортировкиХранения
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, "")
+	КОНЕЦ КАК ПравилаПоставки,
+	СУММА(ВЫБОР
+			КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.СрокХранения)
+				ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СрокХранения,
+	СУММА(ВЫБОР
+			КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НазначенныйСрокСлужбыДоСписания)
+				ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СрокСлужбы,
+	СУММА(ВЫБОР
+			КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НазначенныйРесурсДоЗаводскогоРемонта)
+				ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НаработкаДоРемонта,
+	СУММА(ВЫБОР
+			КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НазначенныйРесурсДоСписания)
+				ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НаработкаДоСписания,
+	СУММА(ВЫБОР
+			КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.НаработкаНаОтказ)
+				ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НаработкаНаОтказ,
+	СУММА(ВЫБОР
+			КОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Показатель = ЗНАЧЕНИЕ(Справочник.ТипыПоказателейИзделий.СрокИзготовления)
+				ТОГДА РесурсыИСрокиСлужбыПредметовСнабжения.Значение
+			ИНАЧЕ 0
+		КОНЕЦ) КАК СрокИзготовления,
+	втПредметыСнабжения.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втПредметыСнабжения.ЗИП КАК ЗИП,
+	втПредметыСнабжения.Тип КАК Тип
+ПОМЕСТИТЬ втПредметыСнабженияРесурсы
+ИЗ
+	втПредметыСнабжения КАК втПредметыСнабжения
+		ЛЕВОЕ СОЕДИНЕНИЕ втДополнительныеНаименования КАК втДополнительныеНаименования
+		ПО втПредметыСнабжения.ПредметСнабжения = втДополнительныеНаименования.Владелец
+			И (втДополнительныеНаименования.ИмяРеквизита = "ПравилаУпаковкиТранспортировкиХранения")
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РесурсыИСрокиСлужбыПредметовСнабжения КАК РесурсыИСрокиСлужбыПредметовСнабжения
+		ПО втПредметыСнабжения.ПредметСнабжения = РесурсыИСрокиСлужбыПредметовСнабжения.ПредметСнабжения
+
+СГРУППИРОВАТЬ ПО
+	втПредметыСнабжения.Корабль,
+	втПредметыСнабжения.Проект,
+	втПредметыСнабжения.Количество,
+	втПредметыСнабжения.КоличествоВЗИПБорт,
+	втПредметыСнабжения.КоличествоВЗИПБаза,
+	втПредметыСнабжения.КоличествоВЗИПДЭ,
+	втПредметыСнабжения.ПредметСнабжения,
+	втПредметыСнабжения.Наименование,
+	втПредметыСнабжения.Обозначение,
+	втПредметыСнабжения.Код,
+	втПредметыСнабжения.ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+			ТОГДА втПредметыСнабжения.ПравилаУпаковкиТранспортировкиХранения
+		ИНАЧЕ ЕСТЬNULL(втДополнительныеНаименования.Перевод, "")
+	КОНЕЦ,
+	втПредметыСнабжения.ЭлементСтруктуры,
+	втПредметыСнабжения.ЗИП,
+	втПредметыСнабжения.Тип
+
+ИНДЕКСИРОВАТЬ ПО
+	ПредметСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втДополнительныеНаименования
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ втПредметыСнабжения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	втПредметыСнабженияРесурсы.Корабль КАК Корабль,
+	втПредметыСнабженияРесурсы.Проект КАК Проект,
+	втПредметыСнабженияРесурсы.ЭлементСтруктуры КАК ЭлементСтруктуры,
+	втПредметыСнабженияРесурсы.Наименование КАК Наименование,
+	втПредметыСнабженияРесурсы.Код КАК Код,
+	ВЫБОР
+		КОГДА НЕ КаталогПредметовСнабженияИзготовителиИПоставщики.Ссылка ЕСТЬ NULL
+				И Организации.УчастникВТС
+			ТОГДА ВЫБОР
+					КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский)
+						ТОГДА Организации.Наименование
+					ИНАЧЕ Организации.НазваниеОрганизацииАнгл
+				КОНЕЦ
+		ИНАЧЕ "АО ""ОСК"""
+	КОНЕЦ КАК Поставщик,
+	втПредметыСнабженияРесурсы.СрокХранения КАК СрокХранения,
+	втПредметыСнабженияРесурсы.СрокСлужбы КАК СрокСлужбы,
+	втПредметыСнабженияРесурсы.НаработкаДоРемонта КАК НаработкаДоРемонта,
+	втПредметыСнабженияРесурсы.СрокИзготовления КАК СрокИзготовления,
+	втПредметыСнабженияРесурсы.Количество КАК Количество,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПБорт КАК КоличествоВЗИПБорт,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПБаза КАК КоличествоВЗИПБаза,
+	втПредметыСнабженияРесурсы.КоличествоВЗИПДЭ КАК КоличествоВЗИПДЭ,
+	втПредметыСнабженияРесурсы.ПредметСнабжения КАК ПредметСнабжения,
+	втПредметыСнабженияРесурсы.Обозначение КАК Обозначение,
+	втПредметыСнабженияРесурсы.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	втПредметыСнабженияРесурсы.ПравилаПоставки КАК ПравилаПоставки,
+	втПредметыСнабженияРесурсы.НаработкаДоСписания КАК НаработкаДоСписания,
+	втПредметыСнабженияРесурсы.НаработкаНаОтказ КАК НаработкаНаОтказ,
+	втПредметыСнабженияРесурсы.ЗИП КАК ЗИП,
+	втПредметыСнабженияРесурсы.Тип КАК Тип
+ИЗ
+	втПредметыСнабженияРесурсы КАК втПредметыСнабженияРесурсы
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КаталогПредметовСнабжения.ИзготовителиИПоставщики КАК КаталогПредметовСнабженияИзготовителиИПоставщики
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Организации КАК Организации
+			ПО КаталогПредметовСнабженияИзготовителиИПоставщики.Контрагент = Организации.Ссылка
+		ПО втПредметыСнабженияРесурсы.ПредметСнабжения = КаталогПредметовСнабженияИзготовителиИПоставщики.Ссылка
+			И (КаталогПредметовСнабженияИзготовителиИПоставщики.Поставщик)
+
+УПОРЯДОЧИТЬ ПО
+	ЭлементСтруктуры ИЕРАРХИЯ УБЫВ</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>УровеньВходимости</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Уровень входимости</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>НаименованиеПредставление</dataPath>
+		<expression>Наименование + " " + Обозначение</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Наименование</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Поставщик</dataPath>
+		<expression>СоединитьСтроки(Массив(Различные Поставщик), ", ")</expression>
+		<group>ЭлементСтруктуры</group>
+	</totalField>
+	<totalField>
+		<dataPath>НаименованиеПредставление</dataPath>
+		<expression>ВЫБОР 
+	КОГДА ЭлементСтруктуры.ЗИП
+	ТОГДА НаименованиеПредставление
+	ИНАЧЕ ВЫБОР КОГДА &amp;ЯзыкПредставленияДанных = ЗНАЧЕНИЕ(Справочник.Языки.Русский) ТОГДА Представление(ЭлементСтруктуры) ИНАЧЕ ПолучитьПеревод(ЭлементСтруктуры, "Наименование", &amp;ЯзыкПредставленияДанных) КОНЕЦ
+КОНЕЦ</expression>
+	</totalField>
+	<parameter>
+		<name>Корабль</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Корабль</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Заказы</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Заказы.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ЯзыкПредставленияДанных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Язык представления данных</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Языки</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Языки.Русский</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Каталог </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>комплектующих изделий и ЗИП корабля </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Корабль</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>проект </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Проект</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>(сокращенный формат)</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ЦветГраницы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFFFFF</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">12.625</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">14.875</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>ОбъединятьПоГоризонтали</dcscor:parameter>
+							<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Корабль</dcsat:name>
+			<dcsat:expression>Представление(Корабль)</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>Проект</dcsat:name>
+			<dcsat:expression>Представление(Проект)</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ЭлементСтруктуры</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Расшифровка</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Parameter">Ссылка</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ЭлементСтруктуры</dcsat:name>
+			<dcsat:expression>НаименованиеПредставление</dcsat:expression>
+		</parameter>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
+			<dcsat:name>Ссылка</dcsat:name>
+			<dcsat:fieldExpression>
+				<dcsat:field>ЭлементСтруктуры</dcsat:field>
+				<dcsat:expression>ЭлементСтруктуры</dcsat:expression>
+			</dcsat:fieldExpression>
+		</parameter>
+	</template>
+	<fieldTemplate>
+		<field>ЭлементСтруктуры</field>
+		<template>Макет2</template>
+	</fieldTemplate>
+	<groupTemplate>
+		<groupName>Заголовок</groupName>
+		<templateType>Header</templateType>
+		<template>Макет1</template>
+	</groupTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Корабль</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>3123abfe-fc4d-499b-80b3-1d2f1a5a3937</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корабль</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ЯзыкПредставленияДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.Языки.Русский</dcscor:value>
+					<dcsset:userSettingID>8c11a44e-fbd0-45f0-9584-3602ed0ac2ca</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Язык представления данных</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>Заголовок</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Корабль</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Проект</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЭлементСтруктуры</dcsset:field>
+							<dcsset:groupType>Hierarchy</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Код</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СрокХранения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СрокСлужбы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>НаработкаДоРемонта</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>СрокИзготовления</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЗИП</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.УровеньВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЭлементСтруктуры</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Код</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Поставщик</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СрокХранения</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СрокСлужбы</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>НаработкаДоРемонта</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СрокИзготовления</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>НаименованиеПредставление</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

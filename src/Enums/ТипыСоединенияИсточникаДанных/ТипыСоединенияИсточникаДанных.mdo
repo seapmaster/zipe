@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a08776e-0264-4554-b6df-b816a247ba5d">
+  <producedTypes>
+    <refType typeId="320d48fe-d05e-43f0-9bb4-6c732b8266a7" valueTypeId="26c8b1a7-ebf2-43a9-843a-b9a8a0baa815"/>
+    <listType typeId="6ccdfcd2-4deb-4380-b9e5-0efd8c305d14" valueTypeId="d39d6e5e-9d24-47e7-a65d-2449f4208f6a"/>
+    <managerType typeId="b4f2b317-caa6-46bb-9705-ac4d3a4e9b59" valueTypeId="49755137-c63d-4cb0-a0d8-7dee9e31bb70"/>
+  </producedTypes>
+  <name>ТипыСоединенияИсточникаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы соединения источника данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cbdb35fb-0704-4702-b514-33039f8bf769">
+    <name>MSSQLConnection</name>
+    <synonym>
+      <key>ru</key>
+      <value>MSSQLConnection</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="04613eb1-b612-42b8-8e78-18997114035d">
+    <name>WebСервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Web сервис</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dde6064e-2323-477d-bbad-ecc5e380d0ac">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

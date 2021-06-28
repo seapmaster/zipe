@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6614778d-2a0f-4f2a-aeb5-099dfe7a2957">
+  <producedTypes>
+    <refType typeId="18604b0b-5613-45fc-859e-f0c925158027" valueTypeId="243ae54c-46b9-462e-b10c-1059320a7c17"/>
+    <listType typeId="9d06a16c-ddc2-443e-8a9b-b9e3371c1476" valueTypeId="43cbecc1-5c05-48ca-81f2-625c3fd4f47a"/>
+    <managerType typeId="2f67005f-373e-4e8d-9085-ba1a22a5c5cb" valueTypeId="574e65ae-213e-4282-aa70-281c365abf90"/>
+  </producedTypes>
+  <name>ТипыПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы показателей</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="4d08354e-0dc7-4203-a580-18c4aad5041a">
+    <name>ПоСроку</name>
+    <synonym>
+      <key>ru</key>
+      <value>По сроку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="13348048-ca28-4e75-ade3-fdafa29c90e7">
+    <name>ПоРесурсу</name>
+    <synonym>
+      <key>ru</key>
+      <value>По ресурсу</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

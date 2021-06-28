@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphicalSchema xmlns="http://v8.1c.ru/8.3/xcf/scheme" xmlns:sch="http://v8.1c.ru/8.2/data/graphscheme" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<BackColor>style:FieldBackColor</BackColor>
+	<GridEnabled>true</GridEnabled>
+	<DrawGridMode>Lines</DrawGridMode>
+	<GridHorizontalStep>20</GridHorizontalStep>
+	<GridVerticalStep>20</GridVerticalStep>
+	<PrintParameters>
+		<Paper xsi:type="xs:decimal">9</Paper>
+		<PageOrientation>Portrait</PageOrientation>
+		<Collate xsi:type="xs:decimal">1</Collate>
+		<Copies>1</Copies>
+		<TopMargin>10</TopMargin>
+		<LeftMargin>10</LeftMargin>
+		<BottomMargin>10</BottomMargin>
+		<RightMargin>10</RightMargin>
+		<BlackAndWhite>false</BlackAndWhite>
+		<PaperSource xsi:type="xs:decimal">7</PaperSource>
+		<FitPageMode>Auto</FitPageMode>
+	</PrintParameters>
+	<Items>
+		<Start id="1" uuid="0e506886-d155-46df-9ace-ce806b7c0b6b">
+			<Properties>
+				<Name>Старт</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Старт</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>1</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>0</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="40" left="320" bottom="100" right="520"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+			</Properties>
+			<Events>
+				<Event name="BeforeStart"/>
+			</Events>
+		</Start>
+		<ConnectionLine id="2">
+			<Properties>
+				<Name>Линия1</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>2</TabOrder>
+				<BackColor>#000000</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>1</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="420" y="100"/>
+					<Point x="420" y="110"/>
+					<Point x="420" y="110"/>
+					<Point x="420" y="120"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>Старт</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>ЗапросНаАкцептИзменений</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="3" uuid="fa123bb1-d6d4-46b6-9285-47328d5526b2">
+			<Properties>
+				<Name>ЗапросНаАкцептИзменений</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Акцепт изменений, внесенных в справочник</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Внесены изменения в справочник. Для обновления информации в базе данных, их необходимо акцептовать.</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>3</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>2</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="120" left="320" bottom="200" right="520"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Акцепт изменений, внесенных в справочник</TaskDescription>
+				<Explanation/>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.РолиИсполнителей.РуководительПроектаЗИПЭ</Value>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="4">
+			<Properties>
+				<Name>Линия2</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>4</TabOrder>
+				<BackColor>#000000</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>3</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="420" y="200"/>
+					<Point x="420" y="210"/>
+					<Point x="420" y="210"/>
+					<Point x="420" y="220"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ЗапросНаАкцептИзменений</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>АкцептИзменений</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="5" uuid="74a2cd47-0642-4401-8831-720bd844f736">
+			<Properties>
+				<Name>ВнестиИзменения</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оповещение об акцептовании корректировки справочника</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ваши изменения акцептованы Руководителем проекта. Завершите задачу чтобы обновить информацию в базе данных.</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>5</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>4</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="320" left="460" bottom="400" right="660"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Оповещение об акцептовании корректировки справочника</TaskDescription>
+				<Explanation>Автор бизнес-процесса</Explanation>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="6">
+			<Properties>
+				<Name>Линия3</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>6</TabOrder>
+				<BackColor>#000000</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>5</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="560" y="400"/>
+					<Point x="560" y="420"/>
+					<Point x="560" y="420"/>
+					<Point x="560" y="440"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ВнестиИзменения</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>ОбновлениеДанныхСправочника</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="27">
+			<Properties>
+				<Name>Декорация2</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>акцептование изменений в справочник:
+- принято;
+- отклонено.</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>18</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>6</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>true</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Left</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="80" left="820" bottom="180" right="960"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Document</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="34">
+			<Properties>
+				<Name>ДекоративнаяЛиния4</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>24</TabOrder>
+				<BackColor>#000000</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>7</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="520" y="160"/>
+					<Point x="670" y="160"/>
+					<Point x="670" y="130"/>
+					<Point x="820" y="130"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ЗапросНаАкцептИзменений</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>Декорация2</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Dashed</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="35">
+			<Properties>
+				<Name>Декорация5</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>внесение изменений в БД инициатором изменений (автором бизнес-процесса)</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>25</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>8</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>true</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Left</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="240" left="800" bottom="340" right="940"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Document</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="36">
+			<Properties>
+				<Name>ДекоративнаяЛиния7</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>26</TabOrder>
+				<BackColor>#000000</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>9</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="660" y="360"/>
+					<Point x="730" y="360"/>
+					<Point x="730" y="290"/>
+					<Point x="800" y="290"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ВнестиИзменения</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>Декорация5</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Dashed</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Completion id="74" uuid="de38fbf1-a4c1-4f42-ae7f-4760652559e0">
+			<Properties>
+				<Name>Завершение</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Завершение</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>41</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>10</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="560" left="320" bottom="620" right="520"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+			</Properties>
+			<Events>
+				<Event name="OnComplete">ЗавершениеПриЗавершении</Event>
+			</Events>
+		</Completion>
+		<Switch id="38" uuid="25e8ff4a-2df5-489a-be5e-713ee6edb34b">
+			<Properties>
+				<Name>АкцептИзменений</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обработка результата акцепта изменений</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>42</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>11</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="220" left="320" bottom="300" right="520"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Case>
+					<sch:name>Принять</sch:name>
+					<sch:description>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принять</v8:content>
+						</v8:item>
+					</sch:description>
+					<sch:backColor>auto</sch:backColor>
+				</Case>
+				<Case>
+					<sch:name>Отклонить</sch:name>
+					<sch:description>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отклонить</v8:content>
+						</v8:item>
+					</sch:description>
+					<sch:backColor>auto</sch:backColor>
+				</Case>
+			</Properties>
+			<Events>
+				<Event name="SwitchProcessing">АкцептИзмененийОбработкаВыбораВарианта</Event>
+			</Events>
+		</Switch>
+		<ConnectionLine id="40">
+			<Properties>
+				<Name>Линия5</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>44</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>12</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="519" y="272"/>
+					<Point x="560" y="272"/>
+					<Point x="560" y="320"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>АкцептИзменений</Item>
+						<PortIndex>7</PortIndex>
+					</From>
+					<To>
+						<Item>ВнестиИзменения</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="41">
+			<Properties>
+				<Name>Линия8</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>45</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>13</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="320" y="290"/>
+					<Point x="280" y="290"/>
+					<Point x="280" y="380"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>АкцептИзменений</Item>
+						<PortIndex>8</PortIndex>
+					</From>
+					<To>
+						<Item>ОповещениеОбОтклонении</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="43" uuid="53d5dbc7-3884-4fbd-ab0d-51e2f3407857">
+			<Properties>
+				<Name>ОбновлениеДанныхСправочника</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновление данных справочника</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>46</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>14</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="440" left="460" bottom="520" right="660"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Обновление данных справочника</TaskDescription>
+				<Explanation/>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xsi:type="xr:DesignTimeRef">Catalog.Пользователи.СистемнаяУчетнаяЗапись</Value>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="44">
+			<Properties>
+				<Name>Линия4</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>47</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>15</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="560" y="520"/>
+					<Point x="560" y="540"/>
+					<Point x="420" y="540"/>
+					<Point x="420" y="560"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ОбновлениеДанныхСправочника</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>Завершение</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="45">
+			<Properties>
+				<Name>Декорация1</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Внесение изменений в базу данных регламентным заданием</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>48</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>16</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="440" left="800" bottom="540" right="960"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Document</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="46">
+			<Properties>
+				<Name>ДекоративнаяЛиния3</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>49</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>17</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="660" y="480"/>
+					<Point x="730" y="480"/>
+					<Point x="730" y="490"/>
+					<Point x="800" y="490"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ОбновлениеДанныхСправочника</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>Декорация1</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Dashed</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Activity id="47" uuid="4f19d7c1-10f2-4545-9f3c-7103cd6a51fc">
+			<Properties>
+				<Name>ОповещениеОбОтклонении</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оповещение об отклонении корректировки справочника</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ваши изменения отклонены Руководителем проекта. Информация в базе данных не будет изменена.</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>50</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>18</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="380" left="180" bottom="460" right="380"/>
+				<Border width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Border>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<TaskDescription>Оповещение об отклонении корректировки справочника</TaskDescription>
+				<Explanation>Автор бизнес-процесса</Explanation>
+				<Group>false</Group>
+				<AddressingAttributes>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ДополнительныйОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.Исполнитель">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.ОсновнойОбъектАдресации">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+					<AddressingAttribute ref="Task.ЗадачаИсполнителя.AddressingAttribute.РольИсполнителя">
+						<Value xsi:nil="true"/>
+					</AddressingAttribute>
+				</AddressingAttributes>
+			</Properties>
+			<Events>
+				<Event name="InteractiveActivationProcessing"/>
+				<Event name="BeforeCreateTasks">ВыполнитьПередСозданиемЗадач</Event>
+				<Event name="OnCreateTask">ВыполнитьПриСозданииЗадач</Event>
+				<Event name="OnExecute">ВыполнитьПриВыполнении</Event>
+				<Event name="CheckExecutionProcessing"/>
+				<Event name="BeforeExecute"/>
+				<Event name="BeforeExecuteInteractively"/>
+			</Events>
+		</Activity>
+		<ConnectionLine id="48">
+			<Properties>
+				<Name>Линия6</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>51</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>19</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="280" y="460"/>
+					<Point x="280" y="510"/>
+					<Point x="420" y="510"/>
+					<Point x="420" y="560"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ОповещениеОбОтклонении</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>Завершение</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>false</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="49">
+			<Properties>
+				<Name>Декорация3</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>оповещение автора бизнес-процесса об отклонении изменений в БД</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>52</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>20</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>true</Transparent>
+				<Font xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" ref="sys:DefaultGUIFont" kind="WindowsFont"/>
+				<HorizontalAlign>Left</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="380" left="0" bottom="480" right="140"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Document</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="51">
+			<Properties>
+				<Name>ДекоративнаяЛиния1</Name>
+				<Title/>
+				<ToolTip/>
+				<TabOrder>53</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>21</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="180" y="420"/>
+					<Point x="160" y="420"/>
+					<Point x="160" y="430"/>
+					<Point x="140" y="430"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>ОповещениеОбОтклонении</Item>
+						<PortIndex>1</PortIndex>
+					</From>
+					<To>
+						<Item>Декорация3</Item>
+						<PortIndex>3</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Dashed</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+	</Items>
+</GraphicalSchema>

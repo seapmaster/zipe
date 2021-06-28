@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fefa6447-ef23-4f29-bb30-b2d0129918bd">
+  <producedTypes>
+    <refType typeId="79c0fbcc-9503-4a3c-8766-35bf03e0de9b" valueTypeId="841b31fa-b4b1-42ec-914f-0217b2c30ea5"/>
+    <listType typeId="0be5a57e-c3bc-4eeb-ad54-a99ec6d3eac7" valueTypeId="434dae15-28ad-4577-9d09-d47ccffbd876"/>
+    <objectType typeId="074d938f-4cbe-4236-bf36-0b69145618d9" valueTypeId="6c984288-7780-445d-991e-e9c8f10cdff7"/>
+    <managerType typeId="7f33e118-4ff1-40da-a7d4-9bcae10e3447" valueTypeId="98461aad-744b-4b3b-b029-0d24719096d0"/>
+    <recordManagerType typeId="405e9ffb-359e-4ea6-a3f5-f7f1f80962ab" valueTypeId="9c00af49-1712-412d-a06f-8925f3bd0883"/>
+    <recordSetType typeId="69473284-b58c-4d1c-b499-f5194aaf5f8e" valueTypeId="d241fafd-88b9-44c4-8548-35f5d190ff74"/>
+    <recordType typeId="3661681d-40cf-409f-9ee4-b1ab5fd14827" valueTypeId="1a325f12-5cc3-45aa-afd6-7f92a15a13b4"/>
+    <recordKeyType typeId="412b0e99-e07c-4d07-af0d-37587625277a" valueTypeId="f211a02d-ca80-459e-ad6e-771406d5ed5b"/>
+  </producedTypes>
+  <name>Price</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Price</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="f614c775-f057-49df-a223-b697ecf90bdb">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="7c733bd9-32c9-412e-8275-37fd535cc3aa">
+    <name>PriceRef</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>60</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>PriceRef</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="d5105f64-39d4-440d-8833-c65bc627b0ec">
+    <name>PriceData</name>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <nameInDataSource>PriceData</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="a944d260-271c-4238-a5fa-79eeb90740d5">
+    <name>CurrencyCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>CurrencyCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="48cf036a-4936-4e56-8188-356930c6f0e9">
+    <name>VendorCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>6</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>VendorCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="18fb6b10-9b21-4e05-b241-2090c49228d9">
+    <name>Qty</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>38</precision>
+        <scale>8</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>Qty</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f6134fb-7b97-482c-9e93-8d4f198eea67">
+  <producedTypes>
+    <objectType typeId="0b8b6f0e-b005-403e-a129-2c540f24836b" valueTypeId="bfc46291-aeb9-49ad-be4f-35e15cf379a5"/>
+    <managerType typeId="0e199aeb-6246-4952-893d-9b9544bb952d" valueTypeId="ce9be864-6f48-4ca3-beb2-f82c68fda305"/>
+  </producedTypes>
+  <name>ТехникоКоммерческоеПредложение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технико-коммерческое предложение АО &quot;ОСК&quot; по заявкам на поставку предметов снабжения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ТехникоКоммерческоеПредложение.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="4590db1f-d50f-4c3c-b07a-10b80b8bb88a">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

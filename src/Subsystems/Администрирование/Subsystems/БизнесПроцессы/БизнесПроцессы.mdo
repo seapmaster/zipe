@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdba6e6f-8abf-4123-911c-463cfb16ccfb">
+  <name>БизнесПроцессы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес процессы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.РолиИсполнителей</content>
+  <content>Task.ЗадачаИсполнителя</content>
+  <content>BusinessProcess.ОтправкаВКСУНСИНаПоискПоКоду</content>
+  <content>BusinessProcess.ОтправкаВКСУНСИНаКлассификацию</content>
+  <content>BusinessProcess.ВзаимодействиеСРОЭ</content>
+  <content>16a87a6d-8b47-4af2-9be5-0585e0358ab6</content>
+  <content>BusinessProcess.УведомлениеОФормированииЗаявки</content>
+  <content>BusinessProcess.КорректировкаСправочников</content>
+  <content>BusinessProcess.РедактированиеЭлектроннойСтруктурыКорабля</content>
+  <content>InformationRegister.ИсполнителиЗадач</content>
+  <content>BusinessProcess.ЗапросНаАктуализациюКаталогаПоставщика</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a113902-1bc6-4fa8-9a73-5ef2a4c6fc55">
+  <name>КораблиНеотображаемая</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корабли неотображаемая</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>6687e66c-23b7-4632-a43b-3d8f7cfb289f</content>
+  <content>Catalog.БоевыеЧасти</content>
+  <content>BusinessProcess.РедактированиеЭлектроннойСтруктурыКорабля</content>
+  <parentSubsystem>Subsystem.Каталоги</parentSubsystem>
+</mdclass:Subsystem>

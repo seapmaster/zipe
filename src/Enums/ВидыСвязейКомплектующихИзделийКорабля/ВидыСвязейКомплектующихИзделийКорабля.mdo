@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f916faf-e608-444e-8223-e2d3e1680032">
+  <producedTypes>
+    <refType typeId="6e0ec517-5209-4d44-b3e1-4016504aa277" valueTypeId="b1f346c1-ca26-4a05-bd0e-c3213b1bd0c2"/>
+    <listType typeId="5aff56c8-8231-46f5-90b7-ca148d72c613" valueTypeId="3af0a8cd-529d-4a0b-914f-d6dab0a11a0f"/>
+    <managerType typeId="7ad10a90-a34e-4664-a51c-4dc8ae52088d" valueTypeId="a1990798-9651-4d9f-8f77-2c1be0ff1bf1"/>
+  </producedTypes>
+  <name>ВидыСвязейКомплектующихИзделийКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды связей комплектующих изделий корабля</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1f5782c8-71ae-456a-9df6-4e4fb0410cc9">
+    <name>Электрическая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электрическая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e02fab4e-ecf3-44b7-994b-cfa3b082eaf1">
+    <name>Конструктуивная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктуивная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c5c45ea-c7f6-443a-9283-d72b2faaba59">
+    <name>Механическая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Механическая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

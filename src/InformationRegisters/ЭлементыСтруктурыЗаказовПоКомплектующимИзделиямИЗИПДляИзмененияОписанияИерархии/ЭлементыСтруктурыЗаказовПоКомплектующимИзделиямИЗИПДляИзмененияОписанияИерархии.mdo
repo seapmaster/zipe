@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d513cd85-6b04-4879-8a13-d2bcadc36898">
+  <producedTypes>
+    <selectionType typeId="7ffc88f8-bb3c-4759-9261-19726c460d7e" valueTypeId="2e009eda-014f-4af2-886e-91de1805aae9"/>
+    <listType typeId="2df33dd2-dbe8-4c90-9d9c-e7a60f3dc909" valueTypeId="3aa6dd83-96d9-431e-96dc-9ee360249c49"/>
+    <managerType typeId="6b482afa-c165-497a-aaf3-96109bbd9b8a" valueTypeId="266f60a3-9962-4011-8250-917b24573e3a"/>
+    <recordSetType typeId="171164fd-c26c-4cf1-a382-0b1c7ec31140" valueTypeId="1435fcbb-b6b9-4723-a10e-f06beb2104dc"/>
+    <recordKeyType typeId="90f08768-dec7-46aa-ba19-effb77fd13e4" valueTypeId="b7ff3dd3-3e81-42bc-a3d3-1dc0e3acb662"/>
+    <recordType typeId="7777f781-797c-4c10-8f6c-ec8c72cdf335" valueTypeId="bfaf6a1f-fc9f-40f9-9c76-d725cb21c313"/>
+    <recordManagerType typeId="5d58da0d-caa2-49b2-8c8d-9f46a1f6157d" valueTypeId="a5e0de4e-bffe-4f7d-8716-5d411d0a7c71"/>
+  </producedTypes>
+  <name>ЭлементыСтруктурыЗаказовПоКомплектующимИзделиямИЗИПДляИзмененияОписанияИерархии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь обработки входимости Комплектующих и ЗИП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="801609eb-5c13-4aaf-a479-b43122127721">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="d1d7210a-1957-4b1b-8d4c-2a9edd7f81dc">
+    <name>ЭлементСтруктуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент структуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураЗаказаПоКомплектующимИзделиямИЗИП</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

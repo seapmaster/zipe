@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7d35573-0f99-427f-8093-0ce652970e13">
+  <name>ИзменениеСпецификацииЭталонныхЭлементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение спецификации эталонных элементов</value>
+  </synonym>
+  <methodName>CommonModule.СтруктураЗаказаСервер.ОбработатьИзмененияСпецификацийЭталонныхЭлементовСтруктурыЗаказа</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

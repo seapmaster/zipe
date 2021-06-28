@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fbb2c3cd-a0b9-42d5-91a0-c106ddc78569">
+  <name>ЗаявкиФСВТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки ФС ВТС</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделФСВТС</picture>
+  </picture>
+  <content>Document.ЗаявкаФСВТС</content>
+  <content>Document.РаспределениеЗаявки</content>
+  <content>AccumulationRegister.РаспределениеЗаявок</content>
+  <content>BusinessProcess.РаспределениеЗаявкиФСВТС</content>
+  <content>BusinessProcess.СогласованиеРаспределенияЗаявкиФСВТС</content>
+  <content>InformationRegister.ИсполнителиПоПроектам</content>
+  <content>InformationRegister.РегиональныеРуководителиФСВТС</content>
+  <subsystems>НастройкиФСВТС</subsystems>
+  <subsystems>БизнесПроцессыФСВТС</subsystems>
+</mdclass:Subsystem>

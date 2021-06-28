@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58e5f472-304f-44ec-84a8-3869f36a1a21">
+  <name>ИспользоватьБизнесПроцессыДляРедактированияСтруктурыКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать бизнес процессы для редактирования структуры корабля</value>
+  </synonym>
+  <location>Constant.ИспользоватьБизнесПроцессыДляРедактированияСтруктурыКорабля</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>BusinessProcess.РедактированиеЭлектроннойСтруктурыКорабля</content>
+</mdclass:FunctionalOption>

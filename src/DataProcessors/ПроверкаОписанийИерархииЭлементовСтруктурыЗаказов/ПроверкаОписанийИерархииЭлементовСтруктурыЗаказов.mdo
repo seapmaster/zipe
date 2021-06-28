@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d686a455-97c9-4de6-ba16-0b499ad76486">
+  <producedTypes>
+    <objectType typeId="de50207f-a5f7-4747-9502-05775dee9efe" valueTypeId="945cd124-43f8-4e24-98c9-9886c4c7343c"/>
+    <managerType typeId="48af42ac-4144-4bad-bc54-a485b31f0d22" valueTypeId="dc09537d-2609-467a-bc5e-d68c2eba27ce"/>
+  </producedTypes>
+  <name>ПроверкаОписанийИерархииЭлементовСтруктурыЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка соответствия описаний иерархии элементов структуры заказов фактической иерархии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПроверкаОписанийИерархииЭлементовСтруктурыЗаказов.Form.Форма</defaultForm>
+  <forms uuid="1555f196-839a-4e2c-9f4e-81c6e1350594">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

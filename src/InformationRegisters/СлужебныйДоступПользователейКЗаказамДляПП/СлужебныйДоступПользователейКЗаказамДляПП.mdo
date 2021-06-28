@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14d03ffe-e8a7-4cf0-a82f-dce83d386271">
+  <producedTypes>
+    <selectionType typeId="b434c1b1-8e79-4bf8-ae7e-3d6e0941f569" valueTypeId="6333ba8a-1f6e-4c70-b4b7-2624ef3c6401"/>
+    <listType typeId="e1b0be12-7d4e-47d5-993a-648e9ba53766" valueTypeId="b0b03eea-0978-4af4-ad68-589f53236328"/>
+    <managerType typeId="fe55b579-1a58-488e-a4da-3c514f40e527" valueTypeId="800c038a-c55f-42e1-83e3-fee615058f75"/>
+    <recordSetType typeId="4864a59b-e757-47f0-87dc-d0b063406448" valueTypeId="8aaff1aa-9077-4e91-b2ba-67099e6786cc"/>
+    <recordKeyType typeId="3b7713d7-3ea1-4a47-8f27-9da2f67107aa" valueTypeId="39fd8a6d-3096-4a85-bdc2-37fa276448d0"/>
+    <recordType typeId="e91fe5cb-0b66-45ce-b7b9-d950464abd7b" valueTypeId="95b6b714-27b4-4d4a-b8dc-c1e6236f0637"/>
+    <recordManagerType typeId="d6355e80-a80e-43b5-a84d-4b326586db61" valueTypeId="bc6a9793-ead1-430f-b45f-42f7d96c7564"/>
+  </producedTypes>
+  <name>СлужебныйДоступПользователейКЗаказамДляПП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Служебный доступ пользователей к заказам для ПП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="19d7631f-15fa-4320-8bfb-8e176f706c95">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Заказы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3233de76-e3ef-4565-9428-eea78c7812b3">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="57ad4011-7d05-416c-b9e5-1bca6d7d5eec">
+  <producedTypes>
+    <refType typeId="93419e49-5bad-4413-88be-cb5f4b2d12aa" valueTypeId="a30c01bc-e77e-4bb7-b2b1-476dbb3a9332"/>
+    <listType typeId="9876610f-e8e7-46e0-a446-5133da5202a5" valueTypeId="53d9bb76-3a1d-4fed-a1b9-6e5afba36296"/>
+    <managerType typeId="6aba99a5-f7cd-4d89-b077-002921c63c25" valueTypeId="be7b0582-9991-42c2-b8f4-b77f80e32aef"/>
+  </producedTypes>
+  <name>СостоянияОбменаСНСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния обмена с НСИ</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6b8b2695-5d79-4d57-aa31-ea24f5551d61">
+    <name>ЗапросНаПоискСформирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на поиск сформирован</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="36b2334d-61c5-4f5e-99f1-b69c46c28651">
+    <name>КодОСКНайден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОСК найден</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9705037b-af4b-4efd-bba1-3fcb0cbb89cf">
+    <name>КодОСКНеНайден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОСК не найден</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ce115688-b541-47ac-8d0e-f46d8e94a516">
+    <name>ЗапросНаПрисвоениеКодаСформирован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на присвоение кода сформирован</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="77b3bf13-3f97-443d-8b4a-1d17dd819984">
+    <name>КодОСКПрисвоен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОСК присвоен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="696a703a-2876-4398-8c9b-5098b96e4193">
+    <name>КодОСКНеПрисвоен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ОСК не присвоен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

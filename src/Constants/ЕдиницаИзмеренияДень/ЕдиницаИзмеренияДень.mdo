@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="047d7f72-b0c8-4a30-a1b6-eb008d367311">
+  <producedTypes>
+    <managerType typeId="dc1c8491-be49-43b5-82cf-528ed5d8207b" valueTypeId="ca319bf4-ca39-44a0-8ef8-e33cd5cec9d4"/>
+    <valueManagerType typeId="23f6c3a9-9ea8-4761-9191-cb613b19ea6a" valueTypeId="f5adb8de-f525-458e-a056-3b079709dbd2"/>
+    <valueKeyType typeId="49ecb47f-853f-5881-9bf5-849446cb5002" valueTypeId="34602b3e-6186-539b-a6bd-1e10660d94af"/>
+  </producedTypes>
+  <name>ЕдиницаИзмеренияДень</name>
+  <synonym>
+    <key>ru</key>
+    <value>Единица измерения день</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ОКЕИ</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

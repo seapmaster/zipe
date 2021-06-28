@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5b6bf3b-2431-4716-876b-46d60d9f0e91">
+  <name>ВнутренниеСправочникиИСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внутренние справочники ИСС</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВидыРемонта</content>
+  <content>Catalog.ТипДокументацииДляИзготовленияИПоставкиПредметовСнабжения</content>
+  <content>Catalog.ДоступностьДокументацииДляИзготовленияПредметовСнабжения</content>
+  <content>Catalog.ЭтапыВыполненияЗаявокНаПоставкуПредметовСнабжения</content>
+  <content>Catalog.СтатусыЗаписейСправочниковИКаталогов</content>
+  <content>Catalog.ТипыКораблей</content>
+  <content>Catalog.РангиКораблей</content>
+  <content>Catalog.РазделыСпецификацииЗИП</content>
+  <content>Catalog.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля</content>
+  <content>Catalog.ТипыПоказателейИзделий</content>
+  <content>Catalog.ВооружениеКораблей</content>
+  <content>Catalog.ПризнакиПодбораИлиИзготовленияПредметовСнабжения</content>
+  <content>Catalog.ПричиныВыбораПредметаСнабженияДляЗИП</content>
+  <content>Catalog.Помещения</content>
+  <content>Catalog.ТипыЗаменыПредметаСнабженияАналогом</content>
+  <content>Catalog.Языки</content>
+  <content>Catalog.ПараметрыУчетаПоказателей</content>
+  <content>Catalog.КатегорииЗаявокНаПоставкуПС</content>
+  <content>Catalog.СостоянияПроизводстваПС</content>
+  <content>Catalog.ЭтапыВыполненияПунктовЗаявок</content>
+  <parentSubsystem>Subsystem.Справочники</parentSubsystem>
+</mdclass:Subsystem>

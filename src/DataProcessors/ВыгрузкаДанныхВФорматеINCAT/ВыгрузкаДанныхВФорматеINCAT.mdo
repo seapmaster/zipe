@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="609ae017-e1f4-4458-b97e-396d02c5314f">
+  <producedTypes>
+    <objectType typeId="87c8fc4e-0eef-4ab0-a4f6-f7299c391f02" valueTypeId="bbf16876-7901-4f4c-9429-9c478cf9cd6e"/>
+    <managerType typeId="8c9378fc-e89a-44a0-bd13-b136f17b01f1" valueTypeId="648cae19-8c8b-4b0c-8ab4-ef63a3e774ce"/>
+  </producedTypes>
+  <name>ВыгрузкаДанныхВФорматеINCAT</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных в формате INCAT</value>
+  </synonym>
+  <comment>//Веденеев 09.01.2018// обработка выгрузки данных в БД MS Access в формате INCAT </comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаДанныхВФорматеINCAT.Form.Форма</defaultForm>
+  <forms uuid="01cfcf18-6961-4a7d-b28f-b774cd2e954a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3e6e561e-c653-4d83-aad3-8243547dfa04">
+    <name>ФормаПроверкиКодов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма проверки кодов</value>
+    </synonym>
+    <comment>результат проверки наличия кодов INCAT и генерация кодов</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="03a02e6e-e4b9-4566-bc48-d66311196ace">
+    <name>ШаблонБДINCAT</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон БДINCAT</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="c116f730-53b1-4a93-a63d-cade8af72742">
+    <name>СхемаEASK</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема EASK</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

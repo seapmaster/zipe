@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0438978a-bd1a-447e-a2c8-abf5e11e3210">
+  <producedTypes>
+    <objectType typeId="972e04e2-0e77-44af-a31e-23e18e4d3421" valueTypeId="9919d7cc-eda9-48ce-8b78-ccc5adf98376"/>
+    <managerType typeId="730bc190-fcf8-426b-87eb-4d66c9128472" valueTypeId="da0f76d2-3f34-46da-92b1-95b2a2ba90b2"/>
+  </producedTypes>
+  <name>СтатистическаяСправкаПоПредметамСнабжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистическая справка по запрашиваемым Заказчиками предметам снабжения за период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СтатистическаяСправкаПоПредметамСнабжения.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="65ea6649-d39b-4dca-ac0f-ca15f982b2d8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

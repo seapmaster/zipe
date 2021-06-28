@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="703bc629-ab5e-468e-b4c0-8e33262d72e2">
+  <name>ПереопределитьПолучаемуюФормуПрисоединенногоФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переопределить получаемую форму присоединенного файла</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.БоевыеЧастиПрисоединенныеФайлы</types>
+    <types>CatalogManager.ФлотыПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПроектыКораблейПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗапросТКПRFPПрисоединенныеФайлы</types>
+    <types>CatalogManager.КаталогПредметовСнабженияПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗаказыПрисоединенныеФайлы</types>
+    <types>CatalogManager.ПочтовоеСообщениеПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗаявкаПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗапросНаАктуализациюКаталогаПоставщикаПрисоединенныеФайлы</types>
+    <types>CatalogManager.ВзаимодействиеСРОЭПрисоединенныеФайлы</types>
+    <types>CatalogManager.РезультатыТендераПрисоединенныеФайлы</types>
+    <types>CatalogManager.ШаблоныСообщенийПрисоединенныеФайлы</types>
+    <types>CatalogManager.КонтрактПрисоединенныеФайлы</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.ПрисоединенныеФайлыКлиентСервер.ПереопределитьПолучаемуюФормуПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85511941-23da-4e0a-abd7-a0219bdfccdd">
+  <producedTypes>
+    <selectionType typeId="6333e3ca-de6c-4276-bb6c-40830a5f1128" valueTypeId="e5dcd530-048c-4be1-b544-cbf68a3f62fa"/>
+    <listType typeId="9acd2b73-7308-4f35-97d4-1cf319ee7765" valueTypeId="75ad42c0-8d40-4c8e-a2a6-8def26fa5010"/>
+    <managerType typeId="87ea3b84-a8e5-4826-b402-9f10aee98367" valueTypeId="861fa63f-179e-415d-a173-658a58f8848e"/>
+    <recordSetType typeId="78f0caf4-d474-414b-aa2a-b316c27ff7e4" valueTypeId="c7120792-673c-4202-ba4e-599f00c9ce3b"/>
+    <recordKeyType typeId="5ec54fc4-57a9-4959-895a-a0642f95229a" valueTypeId="4f2ad61f-00f9-40e2-a475-421219f58d3d"/>
+    <recordType typeId="372b9836-ee89-40ac-a446-ed63ef676548" valueTypeId="e6bdbb8a-998b-4c39-abb3-adfc03034f0a"/>
+    <recordManagerType typeId="0989f07c-f323-447d-a01c-bd66fc1cc293" valueTypeId="002a755d-a60f-4c06-994d-2b8a78687cee"/>
+  </producedTypes>
+  <name>СтатистикаНаполненияБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика наполнения БД</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="92e65042-69f0-4036-8c09-e1f064dabe93">
+    <name>КоличествоПредметовСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество предметов снабжения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="92f5e4bd-b9ff-470a-abce-0f05195e145a">
+    <name>КоличествоЭлементовСтруктуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество элементов структуры</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cf48607b-9de1-42bf-9189-f69b523c4ed1">
+    <name>КоличествоВнешнихЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество внешних цен</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0325fb83-99ed-4dd7-b1a9-b6a7d90bec86">
+    <name>КоличествоВнутреннихЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество внутренних цен</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0189e816-f9c0-4332-b97c-a596d77dceaf">
+    <name>КоличествоПоставщиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество поставщиков</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dda2d9dc-0170-45b0-a205-f7b1cb4d4b2f">
+    <name>КоличествоХарактеристик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество характеристик</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ade54bd7-68e6-42cc-9b23-82a593503a4b">
+    <name>КоличествоКартинок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество картинок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e98002b2-4fba-41e4-87b0-e3c68f5f01a3">
+    <name>КоличествоВИзделии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество в изделии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5d338e3f-4d51-4ad9-b03b-ff511015a85c">
+    <name>КоличествоЗИПБорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ЗИП Борт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e0c2a1e6-4dfb-49b0-b510-a69ceec0b2c6">
+    <name>КоличествоЗИПДЭ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ЗИПДЭ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d38f61e1-99f5-4ae1-b475-2e58d67db50d">
+    <name>КоличествоЗИПБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ЗИП База</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="238a8db7-c6f7-45b4-85e0-40ff7373c53b">
+    <name>Корабль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корабль</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Заказы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d46f5db1-0917-48fb-8e64-2bd34dd23475">
+  <producedTypes>
+    <refType typeId="24011133-623f-44fc-a05b-fbcdc3fbe0e8" valueTypeId="bdd0dbc8-40be-4daa-86f3-dec2041cdad8"/>
+    <listType typeId="8891daf2-cbc8-4c75-b84f-031537576bbd" valueTypeId="35eadcea-e9f2-4c23-b722-8b82c4ba8855"/>
+    <managerType typeId="231a27b8-6c78-4027-9e45-8d0123c145d9" valueTypeId="2fb52c59-eb34-4b32-ba56-a6210c69d9e0"/>
+  </producedTypes>
+  <name>ТипыЗапросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы запросов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a92c7322-a1c4-43b9-9ac7-ef8059cafb98">
+    <name>ЗапросНаКлассификацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на классификацию</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1486f5ad-6418-45b0-869a-efb136e7d655">
+    <name>ЗапросНаПоиск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на поиск</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

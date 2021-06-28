@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc8aa9f5-4888-4bad-a187-05bee9d07069">
+  <name>ПроцессыИЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процессы и задачи</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Processes and tasks</value>
+  </synonym>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>BusinessProcessRef.ОтправкаВКСУНСИНаПоискПоКоду</types>
+    <types>BusinessProcessRef.УведомлениеОФормированииЗаявки</types>
+    <types>BusinessProcessRef.ЗапросНаАктуализациюКаталогаПоставщика</types>
+    <types>TaskRef.ЗадачаИсполнителя</types>
+    <types>BusinessProcessRef.ВзаимодействиеСРОЭ</types>
+    <types>BusinessProcessRef.ОтправкаВКСУНСИНаКлассификацию</types>
+    <types>BusinessProcessRef.РедактированиеЭлектроннойСтруктурыКорабля</types>
+    <types>BusinessProcessRef.ФормированиеЗаявки</types>
+    <types>BusinessProcessRef.КорректировкаСправочников</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>StdPicture.Task</picture>
+  </picture>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

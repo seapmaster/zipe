@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e22cb486-a2d1-469a-b94c-fee9a9b9c8b5">
+  <name>ПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбщиеФункцииСервер.ПередЗаписьюДокументаПередЗаписью</handler>
+</mdclass:EventSubscription>

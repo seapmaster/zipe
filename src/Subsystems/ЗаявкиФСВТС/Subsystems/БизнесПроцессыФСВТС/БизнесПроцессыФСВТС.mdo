@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5dcfc0e1-f4ea-4db0-8396-c3b20c6db42b">
+  <name>БизнесПроцессыФСВТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес процессы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>BusinessProcess.РаспределениеЗаявкиФСВТС</content>
+  <content>BusinessProcess.СогласованиеРаспределенияЗаявкиФСВТС</content>
+  <parentSubsystem>Subsystem.ЗаявкиФСВТС</parentSubsystem>
+</mdclass:Subsystem>

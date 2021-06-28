@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06df43da-bac8-4a1f-b5cb-a04e127ffca3">
+  <producedTypes>
+    <refType typeId="30752f85-daf5-49da-91ae-1fb7e2e2442c" valueTypeId="c2b51402-741d-4989-9aac-d7b45af47e3f"/>
+    <listType typeId="aa5a7bbb-33b1-4696-bb1b-6922214209da" valueTypeId="127593ae-c586-4b62-824b-2c200d2d83c7"/>
+    <objectType typeId="85f8f181-f53b-4b1a-ab58-dd4d285cfe38" valueTypeId="ff0524c0-0b0b-460f-9fb0-ca8b9ea9f204"/>
+    <managerType typeId="4409fa59-1853-4429-b4b5-279266281ada" valueTypeId="32e62808-bdf3-449f-98d9-c697b5875f34"/>
+    <recordManagerType typeId="0a6f4e99-9620-4459-b51e-0ad264a0ae3b" valueTypeId="e479226a-eadd-4f19-b72b-ede6ddbf0a6f"/>
+    <recordSetType typeId="2ab6684b-a70b-44fe-8720-18b0247e26b3" valueTypeId="aa565ff6-6efc-4eab-bb2a-b13bd0057f8e"/>
+    <recordType typeId="c1ef0a72-de3b-4e93-a500-c73949600ca2" valueTypeId="05d9a3fb-d922-46b7-b414-7d43ea55d3b8"/>
+    <recordKeyType typeId="dcc6a3ae-2323-40bf-a664-97b12338fdaa" valueTypeId="510a91a3-a19b-4733-959b-57db7cb2e8b2"/>
+  </producedTypes>
+  <name>Item</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Item</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="3f8daf73-f5ab-4da2-98df-434ccec70968">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="ef1f0335-0353-483f-ba30-8b35fff48871">
+    <name>ItemDesc</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>60</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemDesc</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="31ad7614-7876-4f17-9e0c-0d6abf680d42">
+    <name>ItemDeno</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemDeno</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="56ded428-a6b4-45d7-b9d9-1fc4feabf5e5">
+    <name>MonthsShelfLife</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>38</precision>
+        <scale>8</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>MonthsShelfLife</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="d9737a30-1b84-4dba-a952-2f0007ef93ae">
+    <name>ItemCodeRus</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCodeRus</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="c5f62f8b-03a6-4eb1-9c02-5f60fc2c5d42">
+    <name>ItemDescRus</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemDescRus</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="1ca3137b-d0d6-4d60-9453-e57077128e42">
+    <name>Поле3</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле3</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="205f834b-2431-4dcc-abfa-9d0a1a1c1f68">
+    <name>Поле4</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Поле4</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88efe119-3f69-4388-b309-a737df4b6eff">
+  <name>ПолучениеПочты_V2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение почты (v2)</value>
+  </synonym>
+  <methodName>CommonModule.ОбменССайтом.ПолучитьПочту</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

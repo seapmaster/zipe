@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfa9c4b8-553d-4fcb-8f78-5c7029b8db21">
+  <producedTypes>
+    <managerType typeId="7a4f2b1d-5adf-4f49-b314-db08cd5371a7" valueTypeId="922e1b22-bf24-4802-9439-141ef6885318"/>
+    <valueManagerType typeId="52f5898a-7a1c-4573-b899-2d94b83909a7" valueTypeId="2ee3ce40-c42f-4a8f-b025-d59e62e56a0a"/>
+    <valueKeyType typeId="f00cf4bb-2f7f-56de-9846-c8f1be032685" valueTypeId="f3b91c48-d306-569f-9bf8-2b89255eb258"/>
+  </producedTypes>
+  <name>ЗначениеПоУмолчаниюРазделСпецификацииЗИП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значение по умолчанию раздел спецификации ЗИП</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.РазделыСпецификацииЗИП</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

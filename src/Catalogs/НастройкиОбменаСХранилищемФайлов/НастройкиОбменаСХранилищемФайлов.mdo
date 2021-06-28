@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6aa30a64-be17-48cf-8204-d10635169509">
+  <producedTypes>
+    <objectType typeId="8ec328d6-a926-4150-925e-fbd6168ad0d4" valueTypeId="f5cb7d12-d3d2-4d8c-9ce6-dbd037b6b261"/>
+    <refType typeId="7995017c-32b2-4881-950b-37956f2fac89" valueTypeId="f4058030-f5f9-4283-9aa5-b3bfdc5ff1c8"/>
+    <selectionType typeId="cb7e74f5-c47c-43aa-9f22-6c325953f6c3" valueTypeId="c7b6c4ec-ce91-42da-9552-7ee449a49660"/>
+    <listType typeId="8c65c853-8a7b-419a-aa56-099e2939a779" valueTypeId="92d01e2b-70f0-4fce-b845-1aca40483bec"/>
+    <managerType typeId="c175a32d-e7c3-47d7-99e7-934dc2416e6f" valueTypeId="2204126a-08f4-4f26-b51a-b686d367804d"/>
+  </producedTypes>
+  <name>НастройкиОбменаСХранилищемФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки обмена с хранилищем файлов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиОбменаСХранилищемФайлов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.НастройкиОбменаСХранилищемФайлов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="6e405df4-fc18-4193-b55f-c53df6016975">
+      <name>Основная</name>
+      <description>Основная</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиОбменаСХранилищемФайлов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="53860e6b-34e0-4617-a7f0-38f4150f2b87">
+    <name>Ресурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07c9d901-2ce0-4c79-bc1f-91662dd8d5f5">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9fb0566-7319-47d5-9609-d7d44ebd51aa">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="023631c8-a86b-4e17-acde-4ac138c82c0d">
+    <name>Сервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25f3c667-2bd5-41b0-af56-87cd72c0aee8">
+    <name>ВремяХраненияВКеше</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время хранения в кеше (ч.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="38e6b57d-9e85-4579-8350-3082532813dc">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

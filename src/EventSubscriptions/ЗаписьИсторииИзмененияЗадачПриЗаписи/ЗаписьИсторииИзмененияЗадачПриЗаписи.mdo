@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fda05458-6076-4729-b405-aaea427ee56a">
+  <name>ЗаписьИсторииИзмененияЗадачПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись истории изменения задач при записи</value>
+  </synonym>
+  <source>
+    <types>TaskObject</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ИсторияИзмененияОбъектовПривилегированный.ЗаписьИсторииИзмененияЗадачПриЗаписи</handler>
+</mdclass:EventSubscription>

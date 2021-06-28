@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97109862-068f-4875-b469-3bffb41f41b9">
+  <name>ПриложениеКПисьмуФСВТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приложение к письму ФС ВТС</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

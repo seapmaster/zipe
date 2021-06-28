@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c51991d-4f91-447c-9c7f-d6d843fa9c76">
+  <name>УправлениеИнтерфейсом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление интерфейсом</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

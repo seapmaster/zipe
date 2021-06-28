@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12f2807a-467a-467a-bbdd-8b80eb42c458">
+  <producedTypes>
+    <refType typeId="25feb396-7179-40e9-ac36-eab94cf1c11d" valueTypeId="8679ecdf-347f-4561-8364-dad0119accce"/>
+    <listType typeId="70bf28db-fd0b-490f-8de3-6c686113be18" valueTypeId="e462c63b-2e7b-4643-9fc1-910ccc779e5b"/>
+    <objectType typeId="0a9f193d-fb73-4aa2-81a2-ae04a13621d6" valueTypeId="fd02e1b5-d847-4a69-8e6e-8b17f4163a68"/>
+    <managerType typeId="611035c2-06aa-47b7-83c1-135e2fb7ede7" valueTypeId="334d2baf-2c60-4185-8bd8-d9b96c746294"/>
+    <recordManagerType typeId="60269aba-ad99-415f-ba08-2a90959d2541" valueTypeId="ca7c8971-4f43-4671-aaf1-5443daa59ef8"/>
+    <recordSetType typeId="4b371bd3-07de-4db3-b973-f3d5684b47f7" valueTypeId="b3566c1a-a2cc-4e96-8025-4059a2ff74e1"/>
+    <recordType typeId="a8590434-c5af-4529-9b5b-3acdcef4b548" valueTypeId="9a0062c6-509c-4985-a309-b326a3b8e3c2"/>
+    <recordKeyType typeId="6b9d817b-042c-4a13-bb02-6f110f576ed9" valueTypeId="e0d85ad9-071b-4bef-aabb-57cb17ff5bed"/>
+  </producedTypes>
+  <name>Characteristic</name>
+  <parentDataSource>ExternalDataSource.БазаДанныхINCAT</parentDataSource>
+  <nameInDataSource>Characteristic</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <useStandardCommands>true</useStandardCommands>
+  <readOnly>true</readOnly>
+  <editType>InDialog</editType>
+  <tableFields uuid="d45bea22-a251-427c-b8fd-0c5249af75be">
+    <name>ItemCode</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>32</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>ItemCode</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="add53a1a-37b1-4a61-8dba-fc2ef3edee36">
+    <name>CharacteristicName</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>CharacteristicName</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="6157d6aa-a069-435e-9829-233719384d05">
+    <name>Value</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>60</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>Value</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

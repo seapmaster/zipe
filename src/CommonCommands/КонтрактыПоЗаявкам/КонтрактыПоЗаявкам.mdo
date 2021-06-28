@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1645cf8d-c957-4978-acc4-a7be325a174d">
+  <name>КонтрактыПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контракты</value>
+  </synonym>
+  <group>FormNavigationPanelGoTo</group>
+  <commandParameterType>
+    <types>DocumentRef.Заявка</types>
+    <types>DocumentRef.ЗапросТКПRFP</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

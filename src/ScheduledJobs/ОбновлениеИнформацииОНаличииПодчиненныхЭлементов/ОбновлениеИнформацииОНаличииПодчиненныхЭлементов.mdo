@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aedd6f74-1b62-499e-acc6-71fc13708e0e">
+  <name>ОбновлениеИнформацииОНаличииПодчиненныхЭлементов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление информации о наличии подчиненных элементов</value>
+  </synonym>
+  <comment>обновляет информацию о наличии/отсутствии подчиненных элементов</comment>
+  <methodName>CommonModule.СтруктураЗаказаСервер.ОбновитьИнформациюОНаличииПодчиненныхЭлементов</methodName>
+  <description>Обновление информации о наличии подчиненных элементов в справочнике &quot;Комплектующие изделия и ЗИП&quot;</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

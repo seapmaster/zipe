@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a442457e-9f12-4f99-93c5-5a9392a966a2">
+  <producedTypes>
+    <objectType typeId="043ed44c-69d0-4de3-90c8-ea0a62d12331" valueTypeId="61eeab3e-34eb-4781-a9b0-ac1633bc9297"/>
+    <managerType typeId="5f1eaaf7-452a-4deb-8d34-0d5f1374ba0b" valueTypeId="54da817e-9964-4b93-a863-e532d2df3a0a"/>
+  </producedTypes>
+  <name>ИерархическаяСтруктураКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Иерархическая структура корабля</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ИерархическаяСтруктураКорабля.Form.Форма</defaultForm>
+  <forms uuid="0148dd4c-5e48-436c-ad1f-ce5c5fb812b8">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ad5dbc4e-368f-4ff4-b5d7-08475adcdac1">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93ce2a05-1c53-45a8-a2a7-221ab3dfd37c">
+  <producedTypes>
+    <objectType typeId="95e4172e-6ddb-4ae6-8963-a36c01d8c081" valueTypeId="2ab17319-c7fe-40be-bf4e-2cc3f631eb46"/>
+    <managerType typeId="f81672b9-ab3f-4401-8678-cf49c1c48466" valueTypeId="89be10a7-12fa-494c-951d-3c24729e8a36"/>
+  </producedTypes>
+  <name>ФормаСпискаПроектыПоЗаказчику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказчики</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ФормаСпискаПроектыПоЗаказчику.Form.Форма</defaultForm>
+  <forms uuid="0fb13df1-3852-4752-8393-076bb6cdbc47">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

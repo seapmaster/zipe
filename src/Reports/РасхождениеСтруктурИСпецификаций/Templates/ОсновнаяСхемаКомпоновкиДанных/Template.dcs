@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОтсутствуетВСпецификации</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗИП</dataPath>
+			<field>ЗИП</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Изделие</dataPath>
+			<field>Изделие</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изделие</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИзделиеПС</dataPath>
+			<field>ИзделиеПС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изделие ПС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НетВСпецификации</dataPath>
+			<field>НетВСпецификации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет в спецификации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НетВСтруктуре</dataPath>
+			<field>НетВСтруктуре</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нет в структуре</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СоставнаяЧачсть</dataPath>
+			<field>СоставнаяЧачсть</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Составная чачсть</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДубликатВСтруктуре</dataPath>
+			<field>ДубликатВСтруктуре</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дубликат в структуре</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель КАК Изделие,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.ПредметСнабжения КАК ИзделиеПС,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК СоставнаяЧачсть,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП КАК ЗИП,
+	Истина КАК НетВСпецификации,
+	Ложь КАК НетВСтруктуре,
+	Ложь КАК ДубликатВСтруктуре
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СпецификацииПредметовСнабжения КАК СпецификацииПредметовСнабжения
+		ПО СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.ПредметСнабжения = СпецификацииПредметовСнабжения.ПредметСнабжения
+			И СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения = СпецификацииПредметовСнабжения.СоставляющаяЧасть
+			И СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП = СпецификацииПредметовСнабжения.ЗИП
+ГДЕ
+	НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.ПометкаУдаления
+	И СпецификацииПредметовСнабжения.ПредметСнабжения ЕСТЬ NULL
+	И НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)
+	И НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)
+Объединить ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ИзделияВСтруктуре.Ссылка,
+	ИзделияВСтруктуре.ПредметСнабжения,
+	СпецификацииПредметовСнабжения.СоставляющаяЧасть,
+	СпецификацииПредметовСнабжения.ЗИП КАК ЗИП,
+	Ложь,
+	Истина,
+	Ложь
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК ИзделияВСтруктуре
+	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СпецификацииПредметовСнабжения КАК СпецификацииПредметовСнабжения
+	ПО ИзделияВСтруктуре.ПредметСнабжения = СпецификацииПредметовСнабжения.ПредметСнабжения
+		//ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СоставляющиеЧасти
+		//ПО СоставляющиеЧасти.Родитель.ПредметСнабжения = СпецификацииПредметовСнабжения.ПредметСнабжения
+		//	И СоставляющиеЧасти.ПредметСнабжения = СпецификацииПредметовСнабжения.СоставляющаяЧасть
+		//	И СоставляющиеЧасти.ЗИП = СпецификацииПредметовСнабжения.ЗИП
+		//	И ИзделияВСтруктуре.Ссылка = СоставляющиеЧасти.Родитель
+ГДЕ
+	НЕ ИзделияВСтруктуре.ПометкаУдаления
+	И НЕ СпецификацииПредметовСнабжения.СоставляющаяЧасть = ЗНАЧЕНИЕ(Справочник.КаталогПредметовСнабжения.ПустаяСсылка)
+	И НЕ ИзделияВСтруктуре.ЗИП
+	//И СоставляющиеЧасти.Ссылка ЕСТЬ NULL
+	И НЕ ИзделияВСтруктуре.Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)
+	//И НЕ СоставляющиеЧасти.Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)
+	И НЕ (ИзделияВСтруктуре.Ссылка, СпецификацииПредметовСнабжения.СоставляющаяЧасть, СпецификацииПредметовСнабжения.ЗИП) В
+		(ВЫБРАТЬ Родитель, ПредметСнабжения, ЗИП ИЗ Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+		ГДЕ НЕ Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)
+			И НЕ ПредметСнабжения = ЗНАЧЕНИЕ(Справочник.КаталогПредметовСнабжения.ПустаяСсылка)
+			И Родитель.ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ ПредметСнабжения ИЗ РегистрСведений.СпецификацииПредметовСнабжения))
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.ПредметСнабжения,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка КАК Ссылка,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП КАК ЗИП,
+	Ложь КАК НетВСпецификации,
+	Ложь КАК НетВСтруктуре,
+	Истина КАК ДубликатВСтруктуре
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+ГДЕ 
+ (Родитель, ПредметСнабжения, ЗИП) В (
+ВЫБРАТЬ	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель КАК Родитель,
+	ПредметСнабжения КАК ПредметСнабжения,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП КАК ЗИП
+ИЗ
+	Справочник.СтруктураЗаказаПоКомплектующимИзделиямИЗИП КАК СтруктураЗаказаПоКомплектующимИзделиямИЗИП
+ГДЕ
+	НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.ПометкаУдаления
+	И НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения = ЗНАЧЕНИЕ(Справочник.КаталогПредметовСнабжения.ПустаяСсылка)
+	И НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель.Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)	
+	И НЕ СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Тип = ЗНАЧЕНИЕ(Справочник.ТипыУзловЭлектроннойСтруктурыКомплектующихИзделийИЗИПКорабля.Группа)
+//	И Родитель.ПредметСнабжения В (ВЫБРАТЬ РАЗЛИЧНЫЕ ПредметСнабжения ИЗ РегистрСведений.СпецификацииПредметовСнабжения)
+СГРУППИРОВАТЬ ПО
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Родитель,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ПредметСнабжения,
+	СтруктураЗаказаПоКомплектующимИзделиямИЗИП.ЗИП
+
+ИМЕЮЩИЕ
+	Количество(СтруктураЗаказаПоКомплектующимИзделиямИЗИП.Ссылка) &gt; 1)</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОшибкаОбработки</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПредметСнабжения</dataPath>
+			<field>ПредметСнабжения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОшибкиВПредметеСнабжения</dataPath>
+			<field>ОшибкиВПредметеСнабжения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибки в предмете снабжения</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	СпецификацииПредметовСнабженияОчередьИзмененийСрезПоследних.ПредметСнабжения КАК ОшибкиВПредметеСнабжения
+//	,	Истина КАК ОшибкаОбработки
+ИЗ
+	РегистрСведений.СпецификацииПредметовСнабженияОчередьИзменений.СрезПоследних КАК СпецификацииПредметовСнабженияОчередьИзмененийСрезПоследних
+ГДЕ
+	СпецификацииПредметовСнабженияОчередьИзмененийСрезПоследних.НеОбрабатывать</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ОтсутствуетВСпецификации</sourceDataSet>
+		<destinationDataSet>ОшибкаОбработки</destinationDataSet>
+		<sourceExpression>ИзделиеПС</sourceExpression>
+		<destinationExpression>ОшибкиВПредметеСнабжения</destinationExpression>
+		<required>false</required>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>ОшибкаОбработки</dataPath>
+		<expression>Выбор Когда ОшибкиВПредметеСнабжения Есть NULL Тогда Ложь Иначе Истина Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ошибка обработки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>ОшибкаОбработки</dataPath>
+		<expression>Максимум(ОшибкаОбработки)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СоставнаяЧачсть</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗИП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НетВСпецификации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НетВСтруктуре</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДубликатВСтруктуре</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ИзделиеПС</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СистемныеПоля.НомерПоПорядку</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОшибкаОбработки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Изделие</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Изделие.Владелец</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

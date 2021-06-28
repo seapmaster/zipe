@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e42129b-a8d9-41d3-ac3c-6e6ec2a86617">
+  <name>КорректировкаДанныхСправочников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка данных справочников</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

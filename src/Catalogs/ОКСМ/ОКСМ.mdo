@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e963ff1-0c9a-49be-a88b-38ca92b6d276">
+  <producedTypes>
+    <objectType typeId="83dbac9f-251e-448f-95e1-c655a0c81087" valueTypeId="a5d18e82-7208-4fca-ae14-39d1b6ee2afc"/>
+    <refType typeId="d62a8757-1ac6-4e70-9586-73358933d3ff" valueTypeId="00494dfb-455b-4054-82ef-8a018ad125bc"/>
+    <selectionType typeId="1ffd7d0d-3215-40ca-80e4-edd29d45c701" valueTypeId="ffb4a45b-839a-42e3-8001-5cd8a1727ce3"/>
+    <listType typeId="be12d4b5-4d33-40e1-8810-783a546de1be" valueTypeId="11aa49d3-542e-4458-a31a-095871af7e87"/>
+    <managerType typeId="eedaefc6-5be9-46e4-835d-12fb1e030508" valueTypeId="69bb068f-b203-4dd7-8981-0e01df526262"/>
+  </producedTypes>
+  <name>ОКСМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>ОКСМ</value>
+  </synonym>
+  <comment>Общероссийский классификатор стран мира</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ОКСМ.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ОКСМ.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Краткое наименование страны</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Краткое наименование страны мира</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <comment>Код</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Числовой код страны по ОКСМ</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Страна мира</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Общероссийский классификатор стран мира</value>
+  </explanation>
+  <levelCount>1</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>3</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="4e127564-d74f-4dd9-bced-0327f0f4e061">
+      <name>Россия</name>
+      <description>РОССИЯ</description>
+      <code xsi:type="core:StringValue">
+        <value>643</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ОКСМ.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ОКСМ.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="f7a89bfc-e3c9-4894-a2df-6c229b4e0fd8">
+    <name>ПолноеНаименованиеСтраны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование страны</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Полное наименование страны мира</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e8b70ce-27fc-418f-b3f3-e6efbce9f7a2">
+    <name>БуквенныйКодАльфа2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Буквенный код альфа-2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Двузначный буквенный код альфа-2 страны по ОКСМ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d915d338-3e4c-45c3-aef5-a07cf41b05f6">
+    <name>БуквенныйКодАльфа3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Буквенный код альфа-3</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Трехзначный буквенный код альфа-3 страны по ОКСМ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4908923c-e9a4-418b-b2c6-4bc774bf8c05">
+    <name>ФлагСтраны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Флаг страны</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКСМПрисоединенныеФайлы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>государственный флаг страны</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="978640a2-5c4b-4e21-857e-34f00840fba8">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="da2913e3-a29b-423f-9aae-08fed56a7d90">
+    <name>ФормаСпискаСтарая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка старая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="149e72b8-cc03-4b4f-8ca4-07987600c34d">
+    <name>Классификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5e1214c1-9bb2-480c-bdf0-6566a52538ef">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7649bd7b-fe8c-4338-80fc-153160a5e538">
+    <name>Классификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

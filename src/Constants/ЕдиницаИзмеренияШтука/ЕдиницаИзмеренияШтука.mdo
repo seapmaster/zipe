@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37929d1b-cdb4-482e-b4fe-df246d4512a4">
+  <producedTypes>
+    <managerType typeId="33b7b117-8e6c-44bf-9d52-5b30d5c22b52" valueTypeId="19d29e09-98b5-485e-bd62-aac3a1a291b9"/>
+    <valueManagerType typeId="a615965d-2877-4a25-8b1c-a39507ecc7b1" valueTypeId="9ac9149f-5471-4721-beed-1b55202a1888"/>
+    <valueKeyType typeId="6271695c-99bb-5158-910d-6a9e003585ce" valueTypeId="aa8a094f-d472-531f-a5c4-d1ef79a89046"/>
+  </producedTypes>
+  <name>ЕдиницаИзмеренияШтука</name>
+  <synonym>
+    <key>ru</key>
+    <value>Единица измерения штука</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ОКЕИ</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

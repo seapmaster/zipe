@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24811960-f84f-4727-b250-cb6e71f61ae9">
+  <producedTypes>
+    <refType typeId="8a8000f6-6cb9-467d-890e-b79abe033dd2" valueTypeId="16bac29e-c190-4131-925e-3e74f6687a10"/>
+    <listType typeId="aa62c67e-77b9-47f9-8c10-fce9f8d9e698" valueTypeId="a21d1519-1eda-4a35-bf1e-285fac2f17e4"/>
+    <managerType typeId="aec85d2a-b84a-482a-8029-a69fc5c3741a" valueTypeId="d4e8c07a-d566-47c5-baca-af4ff330cb68"/>
+  </producedTypes>
+  <name>СтатусыВзаимодействия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы взаимодействия</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0add7ce5-fac4-400d-a6b3-8785eceb11af">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ff8c3ad8-d6c9-4b65-a242-7b86472e3d15">
+    <name>Новое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новое</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1f047e8f-ca1b-41f8-aea8-0e6e11da9fc7">
+    <name>ВОбработке</name>
+    <synonym>
+      <key>ru</key>
+      <value>В обработке</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2811f867-eb1b-4cb6-99fd-675158ff8f15">
+    <name>ПолученОтветОтНСИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получен ответ от НСИ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6eb94b50-8a18-4e65-ae34-3bf89d2e017a">
+    <name>ОбработкаОтветаОтНСИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка ответа от НСИ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f0caab22-1a37-4e51-9cc1-a034c57612d0">
+    <name>ОшибкаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка обработки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7cb1f232-0627-4fb0-997d-ff5032d68bff">
+    <name>Обработано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработано</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="516dbbab-0404-4326-af6f-614f01c91e0d">
+  <producedTypes>
+    <selectionType typeId="b9de9b6e-39be-4eed-82aa-0462162f15f8" valueTypeId="e37ca54b-fdd6-4031-a27e-559210e302e5"/>
+    <listType typeId="2ed3a955-4dbf-4c77-936b-00c9d358de15" valueTypeId="f3b7f58f-63b2-4d3e-a4bd-34aa73762da9"/>
+    <managerType typeId="50bd2d21-6044-4374-bdce-9effa12f2eca" valueTypeId="b1746402-6b6e-4b27-b8cc-76674721f6ed"/>
+    <recordSetType typeId="1977bb01-a631-43e9-91d5-6ee2cbd05020" valueTypeId="872fe9cf-4c99-469a-bea2-e02cbf40f3b0"/>
+    <recordKeyType typeId="34250595-ff66-450b-bc26-77a3005eeb16" valueTypeId="e7594913-dc10-4298-9b1a-c906ffce7f2e"/>
+    <recordType typeId="a0763d37-2151-4207-9922-07f979636f2d" valueTypeId="aa9042d5-dfc7-40f5-b97a-f94c5ce5cb6e"/>
+    <recordManagerType typeId="251626f1-88a4-48ec-9ece-bda324f0d8e7" valueTypeId="f9560507-4f36-4244-b011-a46cadb23630"/>
+  </producedTypes>
+  <name>СпецификацииПредметовСнабженияОчередьИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Спецификации предметов снабжения очередь изменений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="58b11cfd-88ec-45ef-8e94-a5fa6858e904">
+    <name>ЭталонОбработан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эталон обработан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6ec2a175-cf87-495f-a6a0-1baa91c82285">
+    <name>НеОбрабатывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка обработки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="8b77ce05-9d12-4372-90f7-9d47c0280523">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="077972d8-ad34-41a7-8062-b22d67205de0">
+    <name>ПредметСнабжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет снабжения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КаталогПредметовСнабжения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

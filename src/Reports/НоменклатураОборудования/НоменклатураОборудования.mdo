@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64f58154-47f4-47ad-975d-ddcb271d0461">
+  <producedTypes>
+    <objectType typeId="782343e3-b489-49f2-9493-d01cb4933c14" valueTypeId="9b9e1c74-9bfe-410f-97a7-82474e67b93d"/>
+    <managerType typeId="0f9e2649-9ab1-4f5c-9079-03410ac347fa" valueTypeId="ce6f1c3d-84a0-4b56-8350-45fe30627d66"/>
+  </producedTypes>
+  <name>НоменклатураОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура оборудования, установленного на кораблях и судах ВМС (форма 1)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.НоменклатураОборудования.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.НоменклатураОборудования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="946329c9-0b1d-4a6f-9287-a3f5284efaa6">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1ba2a474-d4bc-4c99-8522-f0e2e7c539bc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

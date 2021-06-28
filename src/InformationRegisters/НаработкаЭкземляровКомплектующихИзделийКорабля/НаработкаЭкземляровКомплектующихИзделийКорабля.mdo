@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40ac4d59-30a8-4f82-8107-a212283a68a5">
+  <producedTypes>
+    <selectionType typeId="184f7759-d9d7-4bde-8339-7e590ac08b65" valueTypeId="17b02b5d-1159-4334-a9de-4a8f2cfad87e"/>
+    <listType typeId="8332db44-390c-486c-97bc-714bea5cf90c" valueTypeId="7b054110-e78c-4076-94c9-80a8e64aafed"/>
+    <managerType typeId="42527377-94fa-4605-99a6-fa2d995db17a" valueTypeId="28bd5807-7213-4ea3-b6ad-30c81e7b49bc"/>
+    <recordSetType typeId="a6a360c0-b20d-45f6-9905-32a98bd06378" valueTypeId="0dda33c3-cc7e-4ab2-9ebb-505e31e77a9a"/>
+    <recordKeyType typeId="7a49b4b8-a293-4ab3-964e-392048426c1b" valueTypeId="115da735-3b70-4890-82f0-c64f62c39d8c"/>
+    <recordType typeId="fff293ee-3ff6-4e55-a3de-4fcd36b481db" valueTypeId="ad0b82cf-e8a9-400b-a6bf-97d72257be96"/>
+    <recordManagerType typeId="596801e9-e0fc-4df4-b0c7-0bf9dca43794" valueTypeId="2fb6c799-773b-40ff-ad81-0fb43624ab89"/>
+  </producedTypes>
+  <name>НаработкаЭкземляровКомплектующихИзделийКорабля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Наработка экземляров комплектующих изделий корабля</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НаработкаЭкземляровКомплектующихИзделийКорабля.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>дата ввода значения ресурса</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Наработка экземляров комплектующих изделий корабля</value>
+  </explanation>
+  <resources uuid="d519207b-11d8-4eb9-8224-c169366b70bb">
+    <name>ЗначениеСНачалаЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение с начала эксплуатации</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>значение ресурса на введенную дату с начала эксплуатации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="2e12f683-dad4-42af-b241-c2ff95e8c9e7">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОКЕИ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>единица измерения значения ресурса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a8215ff7-6fb7-4efd-bf3e-60c9bc75752d">
+    <name>Экземпляр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экземпляр</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭкземплярыКомплектующихИзделийКорабля</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>экземпляр комплектующего изделия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cc5144c4-b0e7-4297-b49e-062179b09436">
+    <name>ПараметрУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр учета ресурса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПараметрыУчетаПоказателей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>параметр учета ресурса (по сроку, наработка, количество циклов, количество выстрелов).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="51207191-093e-48d4-a749-57e704a0e1c9">
+    <name>НачалоЦикла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак начала нового межремонтного цикла</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>признак начала нового межремонтного цикла (указывает на восстановление ресурса оборудования)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7171ee5e-e093-4616-902c-35468e5d88de">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
