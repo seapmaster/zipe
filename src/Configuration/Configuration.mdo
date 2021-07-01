@@ -70,6 +70,7 @@
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
   <subsystems>Subsystem.ЗаявкиФСВТС</subsystems>
   <subsystems>Subsystem.Интеграция</subsystems>
+  <subsystems>Subsystem.Служебное</subsystems>
   <styleItems>StyleItem.ВыполненнаяЗадача</styleItems>
   <styleItems>StyleItem.ИтогиФонГруппы</styleItems>
   <styleItems>StyleItem.ЗавершенныйБизнесПроцесс</styleItems>
@@ -524,6 +525,8 @@
   <commonModules>CommonModule.ОбменСНСИ</commonModules>
   <commonModules>CommonModule.ОбменСУМТО</commonModules>
   <commonModules>CommonModule.ОбменСХранилищемФайлов</commonModules>
+  <commonModules>CommonModule.РаботаСФайламиOffice</commonModules>
+  <commonModules>CommonModule.РаботаСФайламиOfficeКлиент</commonModules>
   <commonAttributes>CommonAttribute.UID</commonAttributes>
   <commonAttributes>CommonAttribute.Автор</commonAttributes>
   <commonAttributes>CommonAttribute.ДатаСоздания</commonAttributes>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a76c20c9-5692-4102-86ce-01875969a1a0">
+  <name>Служебное</name>
+  <synonym>
+    <key>ru</key>
+    <value>Служебное</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.РаботаСФайламиOffice</content>
+</mdclass:Subsystem>
