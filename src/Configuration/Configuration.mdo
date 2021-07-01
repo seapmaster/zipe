@@ -92,7 +92,7 @@
   <commonPictures>CommonPicture.GoogleMaps</commonPictures>
   <commonPictures>CommonPicture.Справочники</commonPictures>
   <commonPictures>CommonPicture.Skype</commonPictures>
-  <commonPictures>CommonPicture.Настройка</commonPictures>
+  <commonPictures>CommonPicture.Настройка_</commonPictures>
   <commonPictures>CommonPicture.ВидыКонтактнойИнформации</commonPictures>
   <commonPictures>CommonPicture.Запросы</commonPictures>
   <commonPictures>CommonPicture.Импорт</commonPictures>
@@ -129,7 +129,7 @@
   <commonPictures>CommonPicture.ЗначокЗаставкиВнешнейОперации</commonPictures>
   <commonPictures>CommonPicture.ИерархическийСписок</commonPictures>
   <commonPictures>CommonPicture.ИзменитьШрифт</commonPictures>
-  <commonPictures>CommonPicture.Информация</commonPictures>
+  <commonPictures>CommonPicture.Информация_</commonPictures>
   <commonPictures>CommonPicture.Информация32</commonPictures>
   <commonPictures>CommonPicture.ИнформацияПоНедоступнымПолям</commonPictures>
   <commonPictures>CommonPicture.ИсторияИзменений</commonPictures>
@@ -1056,6 +1056,7 @@
   <dataProcessors>DataProcessor.спЗагрузкаЗаявок</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеДублейИзТЧПоставщики</dataProcessors>
   <dataProcessors>DataProcessor.МастерЗагрузкиЦенПоставщиков</dataProcessors>
+  <dataProcessors>DataProcessor.ХранилищеМакетов</dataProcessors>
   <informationRegisters>InformationRegister.АдресныеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>

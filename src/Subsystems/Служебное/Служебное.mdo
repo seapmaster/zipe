@@ -7,4 +7,5 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <content>CommonModule.РаботаСФайламиOffice</content>
+  <content>DataProcessor.ХранилищеМакетов</content>
 </mdclass:Subsystem>

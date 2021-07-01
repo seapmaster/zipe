@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c535ec6-172e-4868-b1fb-4cc14bfc3fea">
+  <producedTypes>
+    <objectType typeId="44243c35-7ac8-4ae5-99d7-1078f30d4141" valueTypeId="0a8ef1ea-175b-471e-a703-4ab57b788489"/>
+    <managerType typeId="6f60b669-b5c2-430f-bb8a-e4835269449a" valueTypeId="4826c651-996c-4dde-b797-c25e670770a3"/>
+  </producedTypes>
+  <name>ХранилищеМакетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранилище макетов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ХранилищеМакетов.Form.Форма</defaultForm>
+  <forms uuid="36ee29ef-db4c-4709-b956-da65662a993b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8dd2275b-f4a4-454b-8ea3-112523df3a00">
+    <name>ОбменаСПоставщиками_ПравилаЗаполненияИнформации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмена с поставщиками правила заполнения информации</value>
+    </synonym>
+  </templates>
+  <templates uuid="b0980c3d-e2d8-4313-8db4-6aaa825e5742">
+    <name>ОбменаСПоставщиками_Аналоги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмена с поставщиками аналоги</value>
+    </synonym>
+  </templates>
+  <templates uuid="3e8a6266-4c9d-478a-b4e4-02f7e1fb7b96">
+    <name>ОбменаСПоставщиками_ТехническиеХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмена с поставщиками технические характеристики</value>
+    </synonym>
+  </templates>
+  <templates uuid="a879409b-8439-4323-aca6-7b40fce6d574">
+    <name>ОбменаСПоставщиками_ИнформацияПоИзделиям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмена с поставщиками информация по изделиям</value>
+    </synonym>
+  </templates>
+  <templates uuid="896e6faf-316f-4f6f-895a-832dc924024a">
+    <name>Контракт_ТКПRusEng</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт ТКПRus eng</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

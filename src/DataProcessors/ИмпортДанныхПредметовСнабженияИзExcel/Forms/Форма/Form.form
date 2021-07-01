@@ -300,7 +300,7 @@
           <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
         </items>
         <items xsi:type="form:FormField">
-          <name>ИспользоватьExcelApplication</name>
+          <name>ИспользоватьЗагрузчик1с</name>
           <id>233</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -309,7 +309,7 @@
           </userVisible>
           <dataPath xsi:type="form:MultiLanguageDataPath">
             <paths xsi:type="form:DataPath">
-              <segments>ИспользоватьExcelApplication</segments>
+              <segments>ИспользоватьЗагрузчик1с</segments>
             </paths>
           </dataPath>
           <handlers>
@@ -317,7 +317,7 @@
             <name>ИспользоватьExcelApplicationПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>ИспользоватьExcelApplicationРасширеннаяПодсказка</name>
+            <name>ИспользоватьЗагрузчик1сРасширеннаяПодсказка</name>
             <id>235</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -332,7 +332,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ИспользоватьExcelApplicationКонтекстноеМеню</name>
+            <name>ИспользоватьЗагрузчик1сКонтекстноеМеню</name>
             <id>234</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -5557,10 +5557,10 @@
     </columns>
   </attributes>
   <attributes>
-    <name>ИспользоватьExcelApplication</name>
+    <name>ИспользоватьЗагрузчик1с</name>
     <title>
       <key>ru</key>
-      <value>Использовать Excel.Application</value>
+      <value>Использовать загрузчик 1С</value>
     </title>
     <id>17</id>
     <valueType>
@@ -5573,7 +5573,7 @@
       <common>true</common>
     </edit>
     <settingsSavedData xsi:type="form:DataPath">
-      <segments>ИспользоватьExcelApplication</segments>
+      <segments>ИспользоватьЗагрузчик1с</segments>
     </settingsSavedData>
     <savedData>true</savedData>
   </attributes>

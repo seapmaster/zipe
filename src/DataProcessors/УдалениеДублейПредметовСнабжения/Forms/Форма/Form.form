@@ -583,7 +583,7 @@
               <editMode>EnterOnInput</editMode>
               <showInHeader>true</showInHeader>
               <headerPicture xsi:type="core:PictureRef">
-                <picture>CommonPicture.Информация</picture>
+                <picture>CommonPicture.Информация_</picture>
               </headerPicture>
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>

@@ -122,10 +122,10 @@
         <choiceList>
           <presentation>
             <key>ru</key>
-            <value>Excel.Application</value>
+            <value>1С</value>
           </presentation>
           <value xsi:type="core:StringValue">
-            <value>Excel.Application</value>
+            <value>1С</value>
           </value>
         </choiceList>
       </extInfo>
