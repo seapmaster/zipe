@@ -55,4 +55,46 @@
       <value>Контракт ТКПRus eng</value>
     </synonym>
   </templates>
+  <templates uuid="6da1e034-7a57-4985-a00b-faafd9ec5996">
+    <name>Заявка_ПриложениеКПисьмуФСВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка приложение к письму ФСВТС</value>
+    </synonym>
+  </templates>
+  <templates uuid="7b5b103b-fa7a-44b3-978f-90752d7b8acb">
+    <name>Контракт_ПриложениеКПисьмуФСВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт приложение к письму ФСВТС</value>
+    </synonym>
+  </templates>
+  <templates uuid="c5d5ed29-0cdf-47ca-8836-644b54251244">
+    <name>ВыгрузкаПСПоставщикам_ИнформацияПоИзделиям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ПСПоставщикам информация по изделиям</value>
+    </synonym>
+  </templates>
+  <templates uuid="eea2af9b-bfd2-4ba7-a8e1-538def006c36">
+    <name>ВыгрузкаПСПоставщикам_ТехническиеХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ПСПоставщикам технические характеристики</value>
+    </synonym>
+  </templates>
+  <templates uuid="ec18be45-90a5-4f36-b9db-e05f49dd242d">
+    <name>ВыгрузкаПСПоставщикам_РегламентТОиР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ПСПоставщикам регламент т ои Р</value>
+    </synonym>
+  </templates>
+  <templates uuid="02b68ae0-7e65-4c89-8a14-672b1ec747da">
+    <name>ВыгрузкаПСПоставщикам_ПравилаЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ПСПоставщикам правила заполнения</value>
+    </synonym>
+  </templates>
 </mdclass:DataProcessor>
