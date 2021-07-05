@@ -97,4 +97,44 @@
       <value>Выгрузка ПСПоставщикам правила заполнения</value>
     </synonym>
   </templates>
+  <templates uuid="fce8ae34-c549-4e0e-bd6f-23205e1fde6e">
+    <name>Заявка_ПисьмоФСВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка письмо ФСВТС</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="0cabfb0e-526a-4964-a0fb-708b3c478fb0">
+    <name>Контракт_ПисьмоТКПEng</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт письмо ТКПEng</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e5a62b31-1cd4-4b2d-a818-18de9a6473b4">
+    <name>Контракт_ПисьмоТКПRus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт письмо ТКПRus</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="9c8e5758-98fd-4f37-85b0-9428765202a2">
+    <name>Контракт_ПисьмоФСВТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контракт письмо ФСВТС</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="4f442688-01e6-402e-b0d3-2b7810f9e306">
+    <name>ВыгрузкаПСПоставщикам_Письмо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка ПСПоставщикам письмо</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
 </mdclass:DataProcessor>
